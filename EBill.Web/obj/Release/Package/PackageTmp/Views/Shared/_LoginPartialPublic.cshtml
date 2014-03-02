@@ -1,0 +1,27 @@
+﻿@using Nextsense.ResourcesCommon.Data
+@using Nextsense.ResourcesCommon.Domain
+ 
+    <div>
+
+        <ul>
+          
+            @{
+                ResourcesCommonDataProvider rcdataprovider = new ResourcesCommonDataProvider();
+                List<Language> languages = rcdataprovider.GetAllEnabledLanguages();
+            }
+
+            @if (languages.Count > 1)
+            {
+                <li>
+                    <a tabindex="-1">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValuePublic("_LoginPartial.cshtml.Jazik")</a>
+                    <ul>
+                            @foreach (Language lang in languages)
+                            {
+                                <li><a tabindex="-1" href="@Url.Action("OnLanguageSelectorClick", "LanguageSelectorPublic", new { area = "", Language = lang.ShortTitle })">@lang.Title</a></li>
+                            }
+                    </ul>
+                </li>
+            }
+        </ul>
+    </div>
+ 

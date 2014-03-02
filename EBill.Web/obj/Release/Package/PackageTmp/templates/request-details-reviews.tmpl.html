@@ -1,0 +1,43 @@
+﻿<div class="tabbable"> <!--tabs-left-->
+    <ul class="nav nav-tabs">
+        <!-- ko if: canViewHistory() -->
+        <li class="active history-tab">
+            <a href="#tab11" data-toggle="tab" data-bind="i18n: 'eDozvoli.Web.templates.request-details.Istorija'">Историја</a>
+        </li>
+        <!-- /ko -->
+        <!-- ko if: canViewDeadlines() -->
+        <li class="deadlines-tab">
+            <a href="#tab12" data-toggle="tab" data-bind="i18n: 'eDozvoli.Web.templates.request-details.Rokovi'">Рокови</a>
+        </li>
+        <!-- /ko -->
+    </ul>
+
+    <div class="tab-content">
+        <!-- ko if: canViewHistory() -->
+        <div class="tab-pane active" id="tab11">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header" style="margin-top: -10px">
+                        <h4><span data-bind="i18n: 'eDozvoli.Web.templates.request-details.Istorija'">Историја</span></h4>
+                    </div>
+                    <div class="form-horizontal" data-bind="template: { name: 'request-details-history' }">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /ko -->
+        <!-- ko if: canViewDeadlines() -->
+        <div class="tab-pane" id="tab12">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="page-header" style="margin-top: -10px">
+                        <h4><span data-bind="i18n: 'eDozvoli.Web.templates.request-details.Rokovi'">Рокови</span></h4>
+                    </div>
+                    <div class="form-horizontal" data-bind="template: { name: 'request-details-deadlines', data: RequestDeadlineModel }">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /ko -->
+    </div>
+</div>

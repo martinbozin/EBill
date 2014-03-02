@@ -1,0 +1,87 @@
+﻿<div class="popover-title">
+    <h4><span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.Dokumenti'">Документи</span></h4>
+</div>
+
+<div class="wrap" style="border: solid 1px #eee">
+    <!-- ko if: hasSubmittedDocuments() || hasAdditionalDocuments()  || hasProcessDocuments()-->
+    <div class="tabbable">
+        <ul class="nav nav-tabs">
+            <li class="documents-tab active">
+                <a data-bind="attr: { href: '#doc_tab1_' + Request().RequestId() }, visible: hasSubmittedDocuments()" data-toggle="tab">
+                    <span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.PodneseniDokumenti'">Podneseni Dokumenti</span></a>
+            </li>
+            <li class="documents-tab">
+                <a data-bind="attr: { href: '#doc_tab2_' + Request().RequestId() }, visible: hasAdditionalDocuments()" data-toggle="tab">
+                    <span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.DopoolnitelnoPodneseniDokumenti'">Dopoolnitelno Podneseni Dokumenti</span></a>
+            </li>
+            <li class="documents-tab">
+                <a data-bind="attr: { href: '#doc_tab3_' + Request().RequestId() }, visible: hasProcessDocuments()" data-toggle="tab">
+                    <span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.DokumentiOdPostapka'">Dokumenti od Postapka</span>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" data-bind="attr: { id: 'doc_tab1_' + Request().RequestId() }, visible: hasSubmittedDocuments()">
+                <!-- Podneseni Dokumenti  - (Site od SubmittedDocuments i toa Osnovna Dokumentacija i Dopolnitelna Dokumentacija ) -->
+                <ul data-bind="foreach: RequestTypeDetails().RequiredDocuments"
+                    style="list-style-type: none; margin: 0">
+                    <!-- ko if: $parent.GetSubmittedDocumentsForType($data.DocumentTypeId()).length > 0 -->
+                    <li>
+                        <div data-bind="templateWithOptions: { name: 'public-request-document-row', templateOptions: { listType: 'SubmittedDocuments' } }">
+                        </div>
+                    </li>
+                    <!-- /ko -->
+                </ul>
+                <ul data-bind="foreach: RequestTypeDetails().AdditionalDocuments"
+                    style="list-style-type: none; margin: 0">
+                    <!-- ko if: $parent.GetSubmittedDocumentsForType($data.DocumentTypeId()).length > 0 -->
+                    <li>
+                        <div data-bind="templateWithOptions: { name: 'public-request-document-row', templateOptions: { listType: 'SubmittedDocuments' } }">
+                        </div>
+                    </li>
+                    <!-- /ko -->
+                </ul>
+            </div>
+            <div class="tab-pane" data-bind="attr: { id: 'doc_tab2_' + Request().RequestId() }, visible: hasAdditionalDocuments()">
+                <!-- Dopolnitelno Podneseni Dokumenti  - (Site od AdditionalDocuments i toa Osnovna Dokumentacija i Dopolnitelna Dokumentacija ) -->
+                <ul data-bind="foreach: RequestTypeDetails().RequiredDocuments"
+                    style="list-style-type: none; margin: 0">
+                    <!-- ko if: $parent.GetAdditionalDocumentsForType($data.DocumentTypeId()).length > 0 -->
+                    <li>
+                        <div data-bind="templateWithOptions: { name: 'public-request-document-row', templateOptions: { listType: 'AdditionalDocuments' } }">
+                        </div>
+                    </li>
+                    <!-- /ko -->
+                </ul>
+                <ul data-bind="foreach: RequestTypeDetails().AdditionalDocuments"
+                    style="list-style-type: none; margin: 0">
+                    <!-- ko if: $parent.GetAdditionalDocumentsForType($data.DocumentTypeId()).length > 0 -->
+                    <li>
+                        <div data-bind="templateWithOptions: { name: 'public-request-document-row', templateOptions: { listType: 'AdditionalDocuments' } }">
+                        </div>
+                    </li>
+                    <!-- /ko -->
+                </ul>
+            </div>
+            <div class="tab-pane" data-bind="attr: { id: 'doc_tab3_' + Request().RequestId() }, visible: hasProcessDocuments()">
+                 <!-- Dokumenti od Postapka-->
+                <ul data-bind="foreach: RequestTypeDetails().ProcessDocuments"
+                    style="list-style-type: none; margin: 0">
+                    <!-- ko if: $parent.GetProcessDocumentsForType($data.DocumentTypeId()).length > 0 -->
+                    <li>
+                        <div data-bind="templateWithOptions: { name: 'public-request-document-row', templateOptions: { listType: 'ProcessDocuments' } }">
+                        </div>
+                    </li>
+                    <!-- /ko -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: (!hasSubmittedDocuments() && !hasAdditionalDocuments()  && !hasProcessDocuments())-->
+    <div class="alert alert-block">
+        <span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.NemaZapisi'">Нема пронајдени записи.</span>
+    </div>
+    <!-- /ko -->
+</div>
+<br />

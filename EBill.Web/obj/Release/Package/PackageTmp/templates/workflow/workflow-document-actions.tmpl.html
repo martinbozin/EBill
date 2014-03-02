@@ -1,0 +1,19 @@
+﻿<div class="file-upload-wrap-large">
+<!-- ko if: AvailableDocumentTransitions().length > 0 -->
+
+                <span data-bind="i18n: 'eDozvoli.Web.new-request-attach-document.TipNaDokument'">Тип на документ:</span>
+                <select data-bind="options: AvailableDocumentTransitions(),
+    optionsText: 'Description',
+    optionsCaption: '...',
+    value: $data.selectedDocumentForGenerate
+    ">
+                </select>
+
+                <input type="button" class="request-generate-document btn btn-primary" value="Генерирај документ"
+                    data-bind="enable: $data.CanGenerateDocument(), click: $data.GenerateDocument" />
+          
+                <a href="javascript:void(0)" class="request-upload-document btn btn-primary"
+                    data-bind="i18n: 'eDozvoli.Web.templates.workflow.workflow-document-actions.PrikaciDokument'">Прикачи документ</a>
+    <div class="clear-fix"></div>
+<!-- /ko -->
+</div>

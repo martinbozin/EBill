@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Martin.ResourcesCommon.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SqlDbConnection" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Trusted_Connection=True;Initial Catalog=EBills;Data Source=MARTIN</Value>
+    </Setting>
+    <Setting Name="CacheDurationMinutes" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1440</Value>
+    </Setting>
+    <Setting Name="GetPreferredLanguageProcedure" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">loc.LanguageGetPreferredForUser</Value>
+    </Setting>
+    <Setting Name="SavePreferredLanguageProcedure" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">loc.LanguageSavePreferredForUser</Value>
+    </Setting>
+    <Setting Name="ImageUrl1" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">_layouts/{0}/Images/{1}</Value>
+    </Setting>
+    <Setting Name="ImageUrl2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">{0}/Images/{1}</Value>
+    </Setting>
+    <Setting Name="ImageUrl3" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ImageUrl4" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ImageUrl5" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

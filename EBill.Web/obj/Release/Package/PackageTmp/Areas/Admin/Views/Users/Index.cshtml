@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Home.Index.cshtml.Title");
+}
+@*@section Sidebar
+{
+    <ul id="main-nav" class="nav nav-list">
+        <li class="nav-header">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Navigation.Meni")</li>
+        <li class="active">
+            <a href="@Url.Action("Index", "Users")" rel="Users" title="@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("_AdminNavigation.Pocetna.Korisnici")">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("_AdminNavigation.Pocetna.Korisnici")</a>
+        </li>
+    </ul>
+}*@
+<ul id="buttonList" class="nav nav-pills noBottomMargin" data-bind="foreach: AvailableRoles ">
+    <li>
+        <a href="#" class="role-filter-element" data-bind="text: RoleNameTrans, attr: { rel: RoleName }"></a>
+    </li>
+</ul>
+<div class="addUserDiv">
+    <input type="button" class="addUser btn btn-success" value="Нов корисник" id="addUser" />
+</div>
+<div id="component_users_grid">
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#component_users_grid").UsersGridWidget({
+            gridUrl: '@Url.Action("Grid", "UsersGrid", new { area = "Admin" })',
+            languagesLoookupUrl: '@Url.Action("GetLanguages", "Lookups", new { area = "" })',
+            resetPassword: true,
+            addRoles: true,
+        });
+        $("#component_users_grid").UsersGridWidget("load");
+
+        var model = new NS.ViewModels.UsersGridRoleFilterViewModel();
+        model.Init();
+        ko.applyBindings(model, document.getElementById("#buttonList"));
+
+        $('.role-filter-element').bind('click', function (e) {
+            $("#buttonList li").removeClass('active');
+            $(this).parent().addClass('active');
+            $(document).trigger('on-row-filter-element-click', $(this).attr('rel'));
+            e.preventDefault();
+            return false;
+        });
+        $("#buttonList li:first").addClass('active');
+    });
+
+</script>

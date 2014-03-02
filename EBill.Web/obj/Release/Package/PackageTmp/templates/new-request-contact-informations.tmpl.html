@@ -1,0 +1,48 @@
+﻿<fieldset>
+    <!--<legend><span data-bind="i18n: 'eDozvoli.Web.templates.new-request-contact-informations.InformaciiZaKontakt'">Информации за Контакт</span></legend>-->
+    <div class="control-group">
+        <label class="control-label" for="txt-contact-person" data-bind="i18n: 'eDozvoli.Web.templates.new-request-contact-informations.LiceZaKontakt'">Лице за контакт</label>
+        <div class="controls">
+            <input type="text" class="input-xlarge" id="txt-contact-person" data-bind="value: ContactPerson, valueUpdate: 'afterkeydown'">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="txt-email" data-bind="i18n: 'eDozvoli.Web.templates.new-request-contact-informations.Email'">Е-маил</label>
+        <div class="controls">
+            <input type="text" class="input-xlarge" id="txt-email" data-bind="value: Email, valueUpdate: 'afterkeydown'">
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="txt-mobile" data-bind="i18n: 'eDozvoli.Web.templates.new-request-contact-informations.Mobilen'">Мобилен</label>
+        <div class="controls">
+            <input type="text" class="input-xlarge" id="txt-mobile" data-bind="value: Mobile, valueUpdate: 'afterkeydown'">
+        <br/>
+        <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-contact-informations.MobilenFormat'">(Мобилниот број треба да е во формат +3897_______)</span>
+         </div>
+       
+    </div>
+
+
+    <div class="control-group">
+        <label class="control-label" for="optionsCheckbox" data-bind="i18n: 'eDozvoli.Web.templates.new-request-contact-informations.Izvestuvanja'">Известувања</label>
+        <div class="controls">
+            <label class="checkbox">
+                <input type="checkbox" id="optionsCheckbox" data-bind="enable: EnableSMSNotifications(), checked: SMSNotifications">
+                <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-contact-informations.Soglasnost'">Се согласувам до добивам известувања по СМС. </span>
+                <br />
+                <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-contact-informations.SoglasnostInfo'">(Цената на СМС-от изнесува 0 денари.)</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="txt-phone" data-bind="i18n: 'eDozvoli.Web.templates.new-request-contact-informations.Telefon'">Телефон</label>
+        <div class="controls">
+            <input type="text" class="input-xlarge" id="txt-phone" data-bind="value: Phone, valueUpdate: 'afterkeydown'">
+        </div>
+    </div>
+
+</fieldset>
+

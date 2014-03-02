@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EBills.Domain" namespace="EBills.Domain" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Role" table="Roles" lazy="true" >
+
+    <id name="Id"  column="RoleId">
+      <generator class="identity" />
+    </id>
+
+    <property name="RoleName" access="field.camelcase-underscore">
+      <column name="RoleName" sql-type="nvarchar" not-null="true" />
+    </property>
+
+    <bag name="Users"
+         cascade="all"
+         table="UserRoles"
+         lazy="true"
+         access="field.camelcase-underscore">
+      <key column="RoleID" ></key>
+      <many-to-many class="User">
+        <column name="UserID"></column>
+      </many-to-many>
+    </bag>
+
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,116 @@
+﻿<div class="tiles-wrap">
+    <div class="status-tile tile">
+        <span data-bind="i18n: 'eDozvoli.Web.templates.request-details.Status'">Статус:</span>
+        &nbsp;<strong data-bind="text: Request().StateTitle()"></strong>
+    </div>
+
+    <!-- ko if: !window.currentUser.isExternal() -->
+    <div class="time-elapsed-tile tile">
+        <strong data-bind=" text: DaysFromSend" class="time-value"></strong><span class="" data-bind="    i18n: 'eDozvoli.Web.templates.request-details.OdPristignuvanje'">ден/а од поднесување.</span>
+    </div>
+
+    <!-- ko if: Request().AssignedTo() !=null -->
+    <div class="officer-tile tile">
+        <!--<span data-bind="i18n: 'eDozvoli.Web.templates.request-details.Sluzbenik'">, Службеник: </span>-->
+        <strong data-bind="text: Request().AssignedTo()"></strong>
+
+        <!-- ko if: window.currentUser.isRakovoditel()  &&   Request().StateTag() != 'Archived' -->
+        <a href="javascript:void(0)" class="define-employe-request btn btn-primary btn-mini" data-bind="i18n: 'eDozvoli.Web.templates.request-details.DodeliPredmet'">Додели Предмет</a>
+        <!-- /ko -->
+    </div>
+    <!-- /ko -->
+
+    <div class="in-state-tile tile" data-bind=" css: { 'actions-accented-red': DaysInCurrentState() > 5 }">
+        <span data-bind="i18n: 'eDozvoli.Web.templates.request-details.VoStatus'">Предметот е кај вас: </span><strong data-bind="    text: DaysInCurrentState, css: { 'actions-accented-red-Days': DaysInCurrentState() > 5 }"></strong><span data-bind="    i18n: 'eDozvoli.Web.templates.request-details.Dena'">ден/а.</span>
+    </div>
+    <!-- /ko -->
+    <div class="clearfix"></div>
+</div>
+<!-- ko if: !window.currentUser.isExternal() -->
+<div>
+    <button class="print-request btn btn-primary" style="float: right;" data-bind="i18n: 'eDozvoli.Web.templates.Pecati'">Печати</button>
+</div>
+<!-- /ko -->
+<div id="container">
+    <div class="tabbable">
+        <ul class="nav nav-tabs">
+            <li class="active info-tab">
+                <a href="#tab1" data-toggle="tab" data-bind="i18n: 'eDozvoli.Web.templates.request-details.InformaciiZaBaranjeto'">Информации за Барањето</a>
+            </li>
+            <li class="documents-tab">
+                <a href="#tab2" data-toggle="tab" data-bind="i18n: 'eDozvoli.Web.templates.request-details.Dokumenti2'">Документи</a>
+            </li>
+            <!-- ko if: canViewHistory() -->
+            <li class="history-tab">
+                <a href="#tab3" data-toggle="tab" data-bind="i18n: 'eDozvoli.Web.templates.request-details.Pregledi2'">Прегледи</a>
+            </li>
+            <!-- /ko -->
+            <!-- ko if: canViewDeadlines() -->
+            <li class="notifications-tab">
+                <a href="#tab4" data-toggle="tab" data-bind="i18n: 'eDozvoli.Web.templates.request-details.Notifikacii'">Нотификации</a>
+            </li>
+            <!-- /ko -->
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+                <div class="row-fluid">
+                    <!-- ko if: canViewAction() -->
+                    <div class="span4">
+                        <div class="actions-accented" data-bind=" css: { 'actions-accented-red': DaysInCurrentState() > 5 }">
+                            <div class="page-header">
+                                <h4><span data-bind="i18n: 'eDozvoli.Web.templates.request-details.Akcija'">Акција</span></h4>
+                            </div>
+                            <div class="form-horizontal" data-bind="template: { name: 'request-details-action' }">
+                            </div>
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+                    <!-- /ko -->
+                    <div data-bind="css: { 'span8': canViewAction(), 'span12': !canViewAction() }">
+                        <div class="form-horizontal" data-bind="template: { name: 'request-details-case', data: Request }">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab2">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="page-header" style="margin-top: -10px">
+                            <h4><span data-bind="i18n: 'eDozvoli.Web.templates.request-details.Dokumenti2'">Документи</span></h4>
+                        </div>
+                        <div class="form-horizontal" data-bind="template: { name: 'request-details-documents' }">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ko if: canViewHistory() -->
+            <div class="tab-pane" id="tab3">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="page-header" style="margin-top: -10px">
+                            <h4><span data-bind="i18n: 'eDozvoli.Web.templates.request-details.Pregledi2'">Прегледи</span></h4>
+                        </div>
+                        <div class="form-horizontal" data-bind="template: { name: 'request-details-reviews' }">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /ko -->
+            <!-- ko if: canViewDeadlines() -->
+            <div class="tab-pane" id="tab4">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="page-header" style="margin-top: -10px">
+                            <h4><span data-bind="i18n: 'eDozvoli.Web.templates.request-details.Notifikacii'">Нотификации</span></h4>
+                        </div>
+                        <div class="form-horizontal" data-bind="template: { name: 'request-details-2UserNotification', data: Request2UserNotificationModel }">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /ko -->
+
+        </div>
+    </div>
+</div>

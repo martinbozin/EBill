@@ -1,0 +1,110 @@
+﻿@{
+    ViewBag.Title = Martin.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Localization.Index.cshtml.Title");
+}
+
+
+
+<div id="component_Localization_grid">
+</div>
+<script type="text/javascript">
+    $(function () {
+        var $grid = $("#component_Localization_grid");
+        $grid.Grid(
+            {
+                sortorder: 'asc',
+                sortname: 'Key',
+                rowNum: 20,
+                rowList: [10, 20, 50, 100],
+                gridUrl: '@Url.Action("Grid", "LocalizationGrid", new { area = "Zels" })',
+                colNames: ['KEY', 'Value', 'JavaScript', 'Language'],
+                colModel: [
+                    {
+                        name: 'Key',
+                        index: 'Key',
+                        sortable: true,
+                        search: true,
+                        searchoptions: {
+                            sopt: ['cn']
+                        },
+                        editable: true,
+                        editoptions: {
+                            size: 40,
+                            maxlength: 255
+                        },
+                        editrules: {
+                            required: true
+                        },
+                        width: '35%'
+                    },
+                    {
+                        name: 'Value',
+                        index: 'Value',
+                        sortable: true,
+                        search: true,
+                        searchoptions: {
+                            sopt: ['cn']
+                        },
+                        editable: true,
+                        editoptions: {
+                            size: 40,
+                            maxlength: 255
+                        },
+                        editrules: {
+                            required: true
+                        },
+                        width: '35%'
+                    },
+                    {
+                        name: 'JavaScript',
+                        index: 'JavaScript',
+                        sortable: true,
+                        search: true,
+                        editable: true,
+                        searchoptions: {
+                            sopt: ['eq'],
+                            value: ":" + languagePack['EBills.Web.Grids.Site'] + ";true:" + languagePack['EBills.Web.Grids.Da'] + ";false:" + languagePack['EBills.Web.Grids.Ne'] + ""
+                        },
+                        stype: 'select',
+                        formatter: 'checkbox',
+                        edittype: 'checkbox',
+                        editoptions: {
+                            value: "True:False",
+                            defaultValue: function () {
+                                return 'True';
+                            }
+                        },
+                        editrules: {
+                            required: true
+                        },
+                        align: 'center',
+                        width: '15%'
+                    },
+                    {
+                        name: 'Language',
+                        index: 'Language',
+                        sortable: true,
+                        search: true,
+                        searchoptions: {
+                            sopt: ['cn']
+                        },
+                        editable: true,
+                        editoptions: {
+                            size: 40,
+                            maxlength: 255
+                        },
+                        editrules: {
+                            required: true
+                        },
+                        width: '15%'
+                    }
+                ],
+                addCaption: 'Нова локализација',
+                editCaption: 'Промена на локализација',
+                hasFilterToolbar: true,
+                gridComplete: function () {
+                }
+            }
+        );
+        $grid.Grid("load");
+    });
+</script>

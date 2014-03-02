@@ -1,0 +1,66 @@
+﻿<table class="table table-bordered">
+    <tr>
+        <td>
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active info-tab">
+                        <a data-toggle="tab" data-bind="    attr: { href: '#tab1' + Request().RequestId() }, i18n: 'eDozvoli.Web.templates.public-requests.InformaciiZaBaranjeto'">Информации за барањето</a>
+                    </li>
+                    <li class="investors-tab"
+                        data-bind="click: onInvestorsTabActivate">
+                        <a href="#tab2" data-toggle="tab" data-bind="attr: { href: '#tab2' + Request().RequestId() }, i18n: 'eDozvoli.Web.templates.public-requests.Investitor'">Инвеститор/и</a>
+                    </li>
+                    <li class="documents-tab"
+                        data-bind="click: onDocumentsTabActivate">
+                        <a href="#tab3" data-toggle="tab" data-bind="    attr: { href: '#tab3' + Request().RequestId() }, i18n: 'eDozvoli.Web.templates.public-requests.Dokumenti'">Документи</a>
+                    </li>
+                    <li class="contact-info-tab">
+                        <a href="#tab4" data-toggle="tab" data-bind="attr: { href: '#tab4' + Request().RequestId() }, i18n: 'eDozvoli.Web.templates.public-requests.InforamaciiZaKontakt'">Информации за контакт</a>
+                    </li>
+                    <!-- ko if: hasRequest2UserNotifications() -->
+                    <li class="notifications-tab"
+                        data-bind="click: onNotificationsTabActivate">
+                        <a href="#tab5" data-toggle="tab" data-bind="    attr: { href: '#tab5' + Request().RequestId() }, i18n: 'eDozvoli.Web.templates.public-requests.Notifikacii'">Нотификации</a>
+                    </li>
+                    <!-- /ko -->
+                </ul>
+                <div class="tab-content" style="margin-left: 5px; margin-top: 5px">
+                    <div class="tab-pane active" data-bind="attr: { id: 'tab1' + Request().RequestId() }">
+                        <div data-bind="template: { name: 'public-request-common-info' }"></div>
+                    </div>
+                    <div class="tab-pane" data-bind="attr: { id: 'tab2' + Request().RequestId() }">
+                        <div data-bind="template: { name: 'public-request-investors' }"></div>
+                    </div>
+                    <div class="tab-pane" data-bind="attr: { id: 'tab3' + Request().RequestId() }">
+                        <div data-bind="template: { name: 'public-request-documents' }"></div>
+                    </div>
+                    <div class="tab-pane" data-bind="attr: { id: 'tab4' + Request().RequestId() }">
+                        <div data-bind="template: { name: 'public-request-contact-info' }"></div>
+                    </div>
+                    <div class="tab-pane" data-bind="attr: { id: 'tab5' + Request().RequestId() }">
+                        <div data-bind="template: { name: 'public-request-notifications' }"></div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: left">
+            <button class="view-details btn" data-bind="i18n: 'eDozvoli.Web.templates.public-requests.Detali'">Детали</button>
+            <button class="view-change btn" data-bind="enable: Request().StateTag() == 'Draft' || Request().StateTag() == 'RefillDocuments', i18n: 'eDozvoli.Web.templates.public-requests.Promeni'">Промени</button>
+            <button class="view-sent btn btn-success" data-bind="enable: Request().StateTag() == 'Draft' || Request().StateTag() == 'PaidUtility' || Request().StateTag() == 'PaidUtility' || Request().StateTag() == 'RefillDocuments', i18n: 'eDozvoli.Web.templates.public-requests.Isprati'">Потпиши и Испрати</button>
+            <!-- ko if: Request().StateTag() == 'Draft'-->
+            <button class="view-delete btn btn-danger" data-bind="enable: Request().StateTag() == 'Draft', i18n: 'eDozvoli.Web.templates.Izbrisi'">Избриши</button>
+            <!-- /ko -->
+            <!-- ko if: Request().StateTag() != 'Draft'-->
+            <button class="withdrawn-request btn btn-danger" data-bind="enable: Request().StateTag() != 'Withdrawn', i18n: 'eDozvoli.Web.templates.PovleciBaranje'">Повлечи барање</button>
+            <!-- /ko -->
+            <!-- ko if: Request().StateTag() != 'Draft'-->
+            <button class="print-request btn btn-primary" data-bind="i18n: 'eDozvoli.Web.templates.Pecati'">Печати</button>
+            <!-- /ko -->
+            <!-- ko if: Request().StateTag() == 'FinanceToUser'-->
+            <button class="view-finance btn" data-bind="enable: Request().StateTag() == 'FinanceToUser', i18n: 'eDozvoli.Web.templates.public-requests.Uplatnica'">Внеси уплата</button>
+            <!-- /ko -->
+        </td>
+    </tr>
+</table>

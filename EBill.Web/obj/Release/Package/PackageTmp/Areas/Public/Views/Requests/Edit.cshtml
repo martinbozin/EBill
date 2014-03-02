@@ -1,0 +1,16 @@
+﻿@model Guid
+
+@{
+    ViewBag.Title = Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Public.Requests.Edit.cshtml.Title");
+
+}
+<div id="edit-request-holder">
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#edit-request-holder").NewRequestWidget({
+
+        });
+        $("#edit-request-holder").NewRequestWidget("edit", '@Model');
+    });
+</script>

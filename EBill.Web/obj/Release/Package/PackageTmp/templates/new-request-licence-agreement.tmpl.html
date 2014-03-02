@@ -1,0 +1,17 @@
+﻿<fieldset>
+    <!--<legend><span data-bind="i18n: 'eDozvoli.Web.new-request-licence-agreement.Potvrda'">Потврда</span></legend>-->
+    <div class="control-group">
+        <p data-bind="i18n: 'Scripts.app.widgets.PublicRequestsWidget.js.Licence'">
+            Потврдувам дека сите податоци и доставените документи се веродостојни и одговараат на оригиналните документи кои ги имам прибавено од надлежните субјекти.
+        <p>
+    </div>
+    <div>
+        <label for="chk-agree">
+            <input id="chk-agree" type="checkbox" data-bind="checked: Agree" />
+            <span data-bind="i18n: 'eDozvoli.Web.new-request-licence-agreement.SeSoglasuvam'">Се согласувам</span>
+        </label>
+
+        <span class="validationMessage" data-bind="validationMessage: Agree"></span>
+    </div>
+
+</fieldset>

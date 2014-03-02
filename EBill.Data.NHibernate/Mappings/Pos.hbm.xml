@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EBills.Domain" namespace="EBills.Domain" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Pos" table="Poses" lazy="true" >
+    
+    <id name="Id" column="PosID">
+      <generator class="identity" />
+    </id>
+    <!--<discriminator column="Institution_Type" type="string"/>-->
+
+    <!--<discriminator column="Institution_Type" type="string"
+    formula="case when Institution_Type in (0,2,3,4) then 0 else Institution_Type end" />-->
+
+    <property name="PosName" access="field.camelcase-underscore">
+      <column name="PosName" sql-type="nvarchar" not-null="true" />
+    </property>
+
+    <!--<property name="InstitutionType" insert="true" update="false" access="field.camelcase-underscore">
+      <column name="Institution_Type" sql-type="int" />
+    </property>-->
+
+    <property name="AdditionalEmailAdresses" not-null="false">
+      <column name="AdditionalEmailAdresses" sql-type="nvarchar" not-null="false" />
+    </property>
+
+    <property name="IsActive" not-null="false" access="field.camelcase-underscore">
+      <column name="IsActive" sql-type="bit" not-null="false" />
+    </property>
+
+    <property name="PrimaryContact" not-null="false">
+      <column name="PrimaryContact" sql-type="nvarchar" not-null="false" />
+    </property>
+
+    <property name="Phone" not-null="false">
+      <column name="Phone" sql-type="nvarchar" not-null="false" />
+    </property>
+
+    <!--<many-to-one name="User"
+            class="EBills.Domain.User, EBills.Domain"
+            not-null="false"
+            cascade="save-update"
+            access="field.camelcase-underscore">
+      <column name="UserID" sql-type="int" not-null="false"></column>
+    </many-to-one>-->
+
+    <bag name="Users"
+        cascade="all"
+        table="UserPoses"
+        lazy="true"
+        access="field.camelcase-underscore">
+      <key column="PosID" ></key>
+      <many-to-many class="User">
+        <column name="UserID"></column>
+      </many-to-many>
+    </bag>
+
+  </class>
+
+</hibernate-mapping>

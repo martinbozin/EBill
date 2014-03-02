@@ -1,0 +1,14 @@
+﻿<div style="padding-bottom: 10px;">
+    <strong>Информации за Уредување на градежно земјиште: </strong>
+    <span data-bind="text: $root.Request().FreeUtilities()"></span>
+</div>
+<div>
+    <strong>Сума за Уредување на градежно земјиште: </strong>
+    <span data-bind="text: $root.Request().Utilities()"></span>
+    <span> ден.</span>
+</div>
+
+<div class="control-group">
+    <label><span data-bind="i18n: 'eDozvoli.Web.templates.request-details-fullhistory.Komentar'">Коментар</span></label>
+    <textarea data-bind="value: ActionModel().Comment"></textarea>
+</div>

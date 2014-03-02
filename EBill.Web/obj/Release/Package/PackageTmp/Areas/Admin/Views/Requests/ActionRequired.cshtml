@@ -1,0 +1,24 @@
+﻿@{
+    Layout = null;
+}
+
+
+<div id="component_action_required_grid"></div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#component_action_required_grid").RequestsGridWidget({
+            gridUrl: '@Url.Action("Grid", "ActionRequiredRequestsGrid", new { area = "Admin" })',
+            statusOptionsUrl: '@Url.Action("GetActionRequiredStates", "Lookups", new { area = "" })',
+        });
+        $("#component_action_required_grid").RequestsGridWidget("load");
+ 
+        $(document).on('on-status-changed', function (event, statusId) {
+            switch (statusId) {
+                case 4:
+                    $("#component_action_required_grid").RequestsGridWidget("reload");
+                    break;
+            }
+        });
+    });
+</script>

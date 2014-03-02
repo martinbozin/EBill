@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Public.Requests.New.cshtml.Title");
+}
+
+<div id="new-request-holder">
+
+</div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#new-request-holder").NewRequestWidget({
+
+        });
+        $("#new-request-holder").NewRequestWidget("load");
+    });
+</script>

@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = Martin.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Users.Index.cshtml.Title");
+}
+<div class="addUserDiv">
+
+    <h2 style="float: left">@ViewBag.Title</h2>
+@*    <input type="button" class="addUser btn btn-success" value="Нов корисник" id="addUser" />*@
+</div>
+<div id="component_users_grid">
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#component_users_grid").UsersGridWidget({
+            gridUrl: '@Url.Action("Grid", "UsersGrid", new { area = "SuperAdmin" })',
+            languagesLoookupUrl: '@Url.Action("GetLanguages", "Lookups", new { area = "" })',
+            posLoookupUrl: '@Url.Action("GetPoses", "Lookups", new { area = "" })',
+            resetPassword: true,
+            addRoles: true,
+        });
+        $("#component_users_grid").UsersGridWidget("load");
+    });
+</script>

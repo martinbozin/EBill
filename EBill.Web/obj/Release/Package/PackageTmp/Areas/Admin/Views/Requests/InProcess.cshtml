@@ -1,0 +1,16 @@
+﻿@{
+    Layout = null;
+}
+
+
+<div id="component_in_process_grid"></div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#component_in_process_grid").RequestsGridWidget({
+            gridUrl: '@Url.Action("Grid", "InProcessRequestsGrid", new { area = "Admin" })',
+            statusOptionsUrl: '@Url.Action("GetInProcessStates", "Lookups", new { area = "" })',
+        });
+        $("#component_in_process_grid").RequestsGridWidget("load");
+    });
+</script>

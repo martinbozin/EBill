@@ -1,0 +1,118 @@
+2013-07-17 10:25:14,793 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: INSERT INTO dbo.Users (UserName, Password, FirstName, LastName, RegistrationCode, IsActive, PreferedLanguage, Discriminator) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 'VipTopUp.Domain.User'); select SCOPE_IDENTITY()
+System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting the varchar value 'VipTopUp.Domain.User' to data type int.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:61f4edf1-9c3f-48d5-851e-ef229b0ab6c2
+2013-07-17 10:25:14,847 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Conversion failed when converting the varchar value 'VipTopUp.Domain.User' to data type int.
+2013-07-17 10:32:28,474 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:28,502 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:30,260 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:30,284 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:30,582 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:30,606 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:30,896 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:30,919 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:36,468 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:36,491 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:41,036 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:41,062 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:42,844 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:42,866 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:43,150 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:43,172 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:43,465 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:43,488 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:43,769 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:43,791 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:44,073 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:44,094 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:44,374 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:44,396 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:44,676 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:44,698 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:51,417 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:32:51,440 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:02,913 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:02,939 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:04,507 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:04,529 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:04,810 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:04,833 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:05,116 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:05,138 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:17,872 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:17,894 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:18,176 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:18,198 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:18,488 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:18,510 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:18,791 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:18,813 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:19,096 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:19,118 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:19,398 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:19,420 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:19,700 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:19,721 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:47,127 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:47,150 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:49,024 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:49,047 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:50,614 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:50,636 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:50,933 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:33:50,958 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:35:14,820 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: INSERT INTO dbo.Users (UserName, Password, FirstName, LastName, RegistrationCode, IsActive, PreferedLanguage, Discriminator) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, 'VipTopUp.Domain.User'); select SCOPE_IDENTITY()
+System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting the varchar value 'VipTopUp.Domain.User' to data type int.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:bf2247f3-ed0d-400c-84ea-05701aea6313
+2013-07-17 10:35:14,850 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Conversion failed when converting the varchar value 'VipTopUp.Domain.User' to data type int.
+2013-07-17 10:47:50,028 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:50,057 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:50,377 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:50,401 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:52,175 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:52,198 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:53,745 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:53,769 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:55,172 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:55,198 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:55,481 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:55,507 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:55,947 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:55,973 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:56,251 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:56,272 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:56,826 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:56,848 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:58,419 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:58,441 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:59,268 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:47:59,294 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:48:04,814 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:48:04,838 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:48:07,379 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.
+2013-07-17 10:48:07,402 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Thread was being aborted.

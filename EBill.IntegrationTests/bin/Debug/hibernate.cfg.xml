@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration  xmlns="urn:nhibernate-configuration-2.2" >
+  <session-factory>
+
+    <!-- Sql Connection -->
+    <property name="dialect">NHibernate.Dialect.MsSql2008Dialect</property>
+    <property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+    <property name="connection.driver_class">NHibernate.Driver.SqlClientDriver</property>
+    <!--<property name="connection.connection_string">Data Source=devsql\sql2008r2;Database=EBills;Trusted_Connection=True;Connect Timeout=60</property>-->
+    <!--<property name="connection.connection_string">Data Source=devsql\sql2008r2;Database=EBills;User ID=EBillsuser;Password=P@ssw0rd;Connect Timeout=60</property>-->
+    <property name="connection.connection_string">Data Source=MARTIN;Database=EBills;Trusted_Connection=True;Connect Timeout=60;</property>
+
+    <!-- Properties -->
+    <property name="default_schema">dbo</property>
+    <property name="cache.use_minimal_puts">true</property>
+    <property name="current_session_context_class">web</property>
+    <property name="show_sql">true</property>
+    <property name="prepare_sql">false</property>
+    <property name="generate_statistics">false</property>
+    <property name="query.substitutions">true 1, false 0</property>
+    <property name="adonet.batch_size">20</property>
+
+    <!-- HBM Mapping Files -->
+    <mapping assembly="EBills.Data.NHibernate" />
+    
+  </session-factory>
+</hibernate-configuration>

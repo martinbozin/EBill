@@ -1,0 +1,41 @@
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\obj\Debug\VipTopUp.Domain.csprojResolveAssemblyReference.cache
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\bin\Debug\VipTopUp.Domain.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\bin\Debug\VipTopUp.Domain.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\bin\Debug\Nextsense.Infrastructure.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\bin\Debug\Nextsense.ResourcesCommon.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\bin\Debug\VipTopUp.Infrastructure.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\bin\Debug\Nextsense.Common.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\bin\Debug\System.Web.Optimization.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\bin\Debug\log4net.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\bin\Debug\VipTopUp.Infrastructure.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\bin\Debug\Nextsense.ResourcesCommon.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\bin\Debug\log4net.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\obj\Debug\VipTopUp.Domain.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\obj\Debug\VipTopUp.Domain.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Domain\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Domain\bin\Debug\VipTopUp.Domain.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Domain\bin\Debug\VipTopUp.Domain.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Domain\bin\Debug\Nextsense.ResourcesCommon.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Domain\bin\Debug\VipTopUp.Infrastructure.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Domain\bin\Debug\Nextsense.Common.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Domain\bin\Debug\System.Web.Optimization.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Domain\bin\Debug\log4net.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Domain\bin\Debug\VipTopUp.Infrastructure.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Domain\bin\Debug\Nextsense.ResourcesCommon.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Domain\obj\Debug\VipTopUp.Domain.csprojResolveAssemblyReference.cache
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Domain\obj\Debug\VipTopUp.Domain.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Domain\obj\Debug\VipTopUp.Domain.pdb
+D:\Projects\Template\VipTopUp.Domain\bin\Debug\VipTopUp.Domain.dll
+D:\Projects\Template\VipTopUp.Domain\bin\Debug\VipTopUp.Domain.pdb
+D:\Projects\Template\VipTopUp.Domain\bin\Debug\Nextsense.ResourcesCommon.dll
+D:\Projects\Template\VipTopUp.Domain\bin\Debug\VipTopUp.Infrastructure.dll
+D:\Projects\Template\VipTopUp.Domain\bin\Debug\Nextsense.Common.dll
+D:\Projects\Template\VipTopUp.Domain\bin\Debug\System.Web.Optimization.dll
+D:\Projects\Template\VipTopUp.Domain\bin\Debug\log4net.dll
+D:\Projects\Template\VipTopUp.Domain\bin\Debug\VipTopUp.Infrastructure.pdb
+D:\Projects\Template\VipTopUp.Domain\bin\Debug\Nextsense.ResourcesCommon.pdb
+D:\Projects\Template\VipTopUp.Domain\obj\Debug\VipTopUp.Domain.csprojResolveAssemblyReference.cache
+D:\Projects\Template\VipTopUp.Domain\obj\Debug\VipTopUp.Domain.dll
+D:\Projects\Template\VipTopUp.Domain\obj\Debug\VipTopUp.Domain.pdb

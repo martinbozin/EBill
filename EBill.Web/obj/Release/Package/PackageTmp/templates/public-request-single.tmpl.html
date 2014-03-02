@@ -1,0 +1,50 @@
+﻿<div class="pagination-centered">
+    <h2>
+        <span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.DetaliZaBaranjeto'">Детали за барањето #</span>
+        <span data-bind="text: Request().ArchiveNumber()"></span>
+    </h2>
+    <br />
+</div>
+
+<div class="request-part">
+    <div data-bind="template: { name: 'public-request-common-info' }"></div>
+</div>
+
+<br />
+
+<div class="request-part">
+    <div data-bind="template: { name: 'public-request-investors' }"></div>
+</div>
+
+<div class="request-part">
+    <div data-bind="template: { name: 'public-request-documents' }"></div>
+</div>
+
+<div class="request-part">
+    <div data-bind="template: { name: 'public-request-contact-info' }"></div>
+</div>
+<br />
+
+<!-- ko if: Request2UserNotifications() != 0 -->
+<div class="request-part">
+    <div data-bind="template: { name: 'public-request-notifications' }"></div>
+</div>
+<br />
+<!-- /ko -->
+
+<div>
+    <button class="view-change btn" data-bind="enable: Request().StateTag() == 'Draft' || Request().StateTag() == 'RefillDocuments', i18n: 'eDozvoli.Web.templates.public-requests.Promeni'">Промени</button>
+    <button class="view-sent btn btn-success" data-bind="enable: Request().StateTag() == 'Draft' || Request().StateTag() == 'RefillDocuments' || Request().StateTag() == 'PaidUtility', i18n: 'eDozvoli.Web.templates.public-requests.Isprati'">Потпиши и Испрати</button>
+    <!-- ko if: Request().StateTag() == 'Draft'-->
+    <button class="view-delete btn btn-danger" data-bind="enable: Request().StateTag() == 'Draft', i18n: 'eDozvoli.Web.templates.Izbrisi'">Избриши</button>
+    <!-- /ko -->
+    <!-- ko if: Request().StateTag() != 'Draft' && Request().StateTag() != 'Withdrawn'-->
+    <button class="withdrawn-request btn btn-danger" data-bind="enable: Request().StateTag() == 'Redirected', i18n: 'eDozvoli.Web.templates.PovleciBaranje'">Повлечи барање</button>
+    <!-- /ko -->
+    <!-- ko if: Request().StateTag() != 'Draft'-->
+    <button class="print-request btn btn-primary" data-bind="i18n: 'eDozvoli.Web.templates.Pecati'">Печати</button>
+    <!-- /ko -->
+    <!-- ko if: Request().StateTag() == 'FinanceToUser'-->
+    <button class="view-finance btn" data-bind="enable: Request().StateTag() == 'FinanceToUser', i18n: 'eDozvoli.Web.templates.public-requests.Uplatnica'">Внеси уплата</button>
+    <!-- /ko -->
+</div>

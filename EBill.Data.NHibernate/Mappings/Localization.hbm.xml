@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EBills.Domain" namespace="EBills.Domain" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Localization" table="Localization" schema="dbo" lazy="true" >
+
+    <id name="Id" column="Id">
+      <generator class="guid" />
+    </id>
+
+    <property name="Key"  access="field.camelcase-underscore">
+      <column name="[Key]" sql-type="nvarchar" not-null="true" ></column>
+    </property>
+
+    <property name="Value"  access="field.camelcase-underscore">
+      <column name="Value" sql-type="nvarchar" not-null="true" ></column>
+    </property>
+
+    <property name="JavaScript"  access="field.camelcase-underscore">
+      <column name="JavaScript" sql-type="bit" not-null="true" ></column>
+    </property>
+
+    <property name="Language"  access="field.camelcase-underscore">
+      <column name="Language" sql-type="nvarchar" not-null="false" ></column>
+    </property>
+
+
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+﻿@model Guid
+@{
+    ViewBag.Title = Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Public.Requests.Details.cshtml.Title");
+}
+ 
+<div id="holder">
+
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#holder").PublicRequestsWidget({ templateId: 'public-request-single' });
+        $("#holder").PublicRequestsWidget("loadById", '@Model');
+    });
+</script>

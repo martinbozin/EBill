@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = Martin.ResourcesCommon.ResourceManager.GetResourceValue("Zels.ApplicationParameters.Index.cshtml.Title");
+}
+<h2>@ViewBag.Title</h2>
+<h2>Параметри</h2>
+<div id="application-parameters-holder">
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#application-parameters-holder").ApplicationParametersWidget({});
+        $("#application-parameters-holder").ApplicationParametersWidget("load");
+    });
+</script>

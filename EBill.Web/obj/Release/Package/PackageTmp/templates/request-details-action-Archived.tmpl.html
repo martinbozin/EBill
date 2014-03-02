@@ -1,0 +1,26 @@
+﻿<div class="control-group">
+    <label><span data-bind="i18n: 'eDozvoli.Web.templates.request-details-action-Archived.DodeliPredmet'">Додели предмет</span></label>
+    <table border="0" cellpadding="0" cellspacing="0" class="table table-hover table-bordered table-striped ">
+        <thead>
+            <tr>
+                <th></th>
+                <th><span data-bind="i18n: 'eDozvoli.Web.templates.request-details-action-Archived.Ime'">Име и Презиме</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: ActionModel().AllEmployers">
+            <tr>
+                <td style="text-align: left; width: 10%;">
+                    <input type="radio" name="flavorGroup" value="cherry" data-bind="value: Id, checked: $root.ActionModel().EmployeeId" />
+                </td>
+                <td style="text-align: left; width: 90%;">
+                    <span data-bind="text: FullName"></span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="control-group">
+    <label><span data-bind="i18n: 'eDozvoli.Web.templates.request-details-fullhistory.Komentar'">Коментар</span></label>
+    <textarea data-bind="value: ActionModel().Comment, valueЗачувај: 'afterkeydown'"></textarea>
+</div>

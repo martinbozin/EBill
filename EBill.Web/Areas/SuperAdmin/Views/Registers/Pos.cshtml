@@ -1,0 +1,154 @@
+﻿<h2>POS</h2>
+<div id="component_Pos_grid">
+</div>
+<script type="text/javascript">
+    $(function () {
+        var $grid = $("#component_Pos_grid");
+        $grid.Grid(
+             {
+                 sortorder: 'asc',
+                 sortname: 'PosName',
+                 rowNum: 20,
+                 rowList: [10, 20, 50, 100],
+                 gridUrl: '@Url.Action("Grid", "Pos", new { area = "SuperAdmin" })',
+                 colNames: ['POS', 'Контакт лице', 'Телефон', 'E-mail', 'Активен','Акции'],
+                 colModel: [
+                     {
+                         name: 'PosName',
+                         index: 'PosName',
+                         sortable: true,
+                         search: true,
+                         searchoptions: {
+                             sopt: ['cn']
+                         },
+                         editable: true,
+                         editoptions: {
+                             size: 40,
+                             maxlength: 255
+                         },
+                         editrules: {
+                             required: true,
+
+                         },
+                     },
+                     {
+                         name: 'PrimaryContact',
+                         index: 'PrimaryContact',
+                         sortable: true,
+                         search: true,
+                         searchoptions: {
+                             sopt: ['cn']
+                         },
+                         editable: true,
+                         editoptions: {
+                             size: 40,
+                             maxlength: 255
+                         },
+                         editrules: {
+                             required: true
+                         },
+                     },
+                     {
+                         name: 'Phone',
+                         index: 'Phone',
+                         sortable: true,
+                         search: true,
+                         editable: true,
+                         editoptions: {
+                             size: 20,
+                             maxlength: 20
+                         },
+                         editrules: {
+                             required: true
+                         },
+                     },
+                     {
+                         name: 'AdditionalEmailAdresses',
+                         index: 'AdditionalEmailAdresses',
+                         sortable: true,
+                         search: true,
+                         searchoptions: {
+                             sopt: ['cn']
+                         }, 
+                         editrules: {
+                             edithidden: false
+                             //email: true
+                         },
+                         editable: true,
+                         //align: 'left'
+                     },
+                     {
+                         name: 'IsActive',
+                         index: 'IsActive',
+                         sortable: true,
+                         search: true,
+                         editable: true,
+                         searchoptions: {
+                             sopt: ['eq'],
+                             value: ":" + "Сите" + ";true:" + "Да" + ";false:" + "Не" + ""
+                         },
+                         stype: 'select',
+                         formatter: 'checkbox',
+                         edittype: 'checkbox',
+                         editoptions: {
+                             value: "True:False",
+                             defaultValue: function () {
+                                 return 'True';
+                             }
+                         },
+                         editrules: {
+                             required: true
+                         },
+                         align: 'center'
+                     },
+                     {
+                         name: 'Actions',
+                         index: 'Actions',
+                         sortable: false,
+                         search: false,
+                         editable: false,
+                         title: false,
+                         align: 'center'
+                     }
+                 ],
+                 addCaption: "Нов PОС",
+                 editCaption: "Промени POS",
+                 hasFilterToolbar: true,
+                 windowHeightMinus: 350,
+                 gridComplete: function () {
+                     var ids = $grid.Grid("getDataIDs");
+                     for (var i = 0; i < ids.length; i++) {
+                         var rowId = ids[i];
+                         var actions = '';
+                             debugger;
+                             actions = actions + '<button type="button" data-id="' + rowId + '" class="set-PublicUsers btn btn-link">' + "PublicUsers" + '</button>';
+                             actions = actions + ' | ';
+                             actions = actions + '<button type="button" data-id="' + rowId + '" class="set-MasterAdmin btn btn-link">' + "MasterAdmin" + '</button>';
+                         $grid.Grid('setRowData', { Id: rowId, Actions: actions });
+                     }
+                     
+                     $(".set-PublicUsers", $grid).bind('click', function () {
+                         var posId = $(this).data('id');
+                         var holder = $.createWidgetHolder();
+                         $(holder).DefineUsersForPosWidget({});
+                         $(holder).DefineUsersForPosWidget("load", posId);
+                     });
+                     $(".set-MasterAdmin", $grid).bind('click', function () {
+                         var posId = $(this).data('id');
+                         var holder = $.createWidgetHolder();
+                         $(holder).DefineUsersForPosWidget({});
+                         $(holder).DefineUsersForPosWidget("load", posId);
+                     });
+
+                    
+                 }
+             }
+        );
+        $grid.Grid("load");
+
+        $(document).on("click", ".set-ext-institutions", function (e) {
+            var docTypeId = $(this).data('id');
+            //TODO
+        });
+    });
+</script>

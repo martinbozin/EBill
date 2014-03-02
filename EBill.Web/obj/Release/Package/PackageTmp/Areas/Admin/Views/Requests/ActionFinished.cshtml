@@ -1,0 +1,14 @@
+﻿@{
+    Layout = null;
+}
+
+<div id="component_finished_grid"></div>
+<script type="text/javascript">
+    $(function () {
+        $("#component_finished_grid").RequestsGridWidget({
+            gridUrl: '@Url.Action("Grid", "FinishedRequestsGrid", new { area = "Admin" })',
+            statusOptionsUrl: '@Url.Action("GetActionFinishedStates", "Lookups", new { area = "" })',
+        });
+        $("#component_finished_grid").RequestsGridWidget("load");
+    });
+</script>

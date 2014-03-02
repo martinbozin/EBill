@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Registers.Institution.cshtml.Title");
+}
+<h2>@ViewBag.Title</h2>
+<div id="Institutions_Tabs">
+    <ul>
+        <li><a href="#tabs-1">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Registers.Institution.cshtml.Tabs.Opstina")</a></li>
+        <li><a href="#tabs-2">Катастарски Општини</a></li>
+        <li><a href="#tabs-3">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Registers.Institution.cshtml.Tabs.DrugiInstitucii")</a></li>
+    </ul>
+    <div id="tabs-1">
+        @Html.Partial("Municipalities")
+    </div>
+    <div id="tabs-2">
+        @Html.Partial("CadastreMunicipalities")
+    </div>
+    <div id="tabs-3">
+        @Html.Partial("ExternalInstitutions")
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#Institutions_Tabs").tabs();
+    });
+</script>

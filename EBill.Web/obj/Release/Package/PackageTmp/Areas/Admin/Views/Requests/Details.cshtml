@@ -1,0 +1,13 @@
+﻿@model Guid
+@{
+    ViewBag.Title = Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Requests.Details.cshtml.Title");
+}
+
+<div id="request-details-holder"></div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#request-details-holder").RequestDetailsWidget({});
+        $("#request-details-holder").RequestDetailsWidget("load", '@Model');
+    });
+</script>

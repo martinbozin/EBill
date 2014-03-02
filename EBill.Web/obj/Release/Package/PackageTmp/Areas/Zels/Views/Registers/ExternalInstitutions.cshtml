@@ -1,0 +1,162 @@
+﻿<div id="component_ExternalInstitutions_grid">
+</div>
+<script type="text/javascript">
+    $(function () {
+        var $grid = $("#component_ExternalInstitutions_grid");
+        $grid.Grid(
+             {
+                 sortorder: 'asc',
+                 sortname: 'Name',
+                 rowNum: 20,
+                 rowList: [10, 20, 50, 100],
+                 gridUrl: '@Url.Action("Grid", "ExternalInstitutionGrid", new { area = "Zels" })',
+                 colNames: [
+                     languagePack['Zels.Registers.ExternalInstitutions.cshtml.Ime'],
+                     'Име на Албански',
+                     'Email',
+                     'Важи за сите општини',
+                     'Активна',
+                     ''],
+                 colModel: [
+                         {
+                             name: 'Name',
+                             index: 'Name',
+                             sortable: true,
+                             search: true,
+                             searchoptions: {
+                                 sopt: ['cn']
+                             },
+                             editable: true,
+                             editoptions: {
+                                 size: 40,
+                                 maxlength: 255
+                             },
+                             editrules: {
+                                 required: true
+                             },
+                             width: '45%',
+                         },
+                     {
+                         name: 'NameAl',
+                         index: 'NameAl',
+                         sortable: true,
+                         search: true,
+                         searchoptions: {
+                             sopt: ['cn']
+                         },
+                         editable: true,
+                         editoptions: {
+                             size: 40,
+                             maxlength: 255
+                         },
+                         editrules: {
+                             required: true,
+                             edithidden: true
+                         },
+                         hidden: true
+                     },
+                     {
+                         name: 'AdditionalEmailAdresses',
+                         index: 'AdditionalEmailAdresses',
+                         sortable: true,
+                         search: true,
+                         searchoptions: {
+                             sopt: ['cn']
+                         },
+                         editable: true,
+                         editoptions: {
+                             size: 40,
+                             maxlength: 255
+                         },
+                         width: '15%',
+                     },
+                         {
+                             name: 'AllMunicipalities',
+                             index: 'AllMunicipalities',
+                             sortable: true,
+                             search: true,
+                             editable: true,
+                             searchoptions: {
+                                 sopt: ['eq'],
+                                 value: ":" + languagePack['eDozvoli.Web.Grids.Site'] + ";true:" + languagePack['eDozvoli.Web.Grids.Da'] + ";false:" + languagePack['eDozvoli.Web.Grids.Ne'] + ""
+                             },
+                             stype: 'select',
+                             formatter: 'checkbox',
+                             edittype: 'checkbox',
+                             editoptions: {
+                                 value: "True:False",
+                                 defaultValue: function () {
+                                     return 'True';
+                                 }
+                             },
+                             editrules: {
+                                 required: true
+                             },
+                             align: 'center',
+                             width: '15%',
+                         },
+                         {
+                             name: 'IsActive',
+                             index: 'IsActive',
+                             sortable: true,
+                             search: true,
+                             editable: true,
+                             searchoptions: {
+                                 sopt: ['eq'],
+                                 value: ":" + languagePack['eDozvoli.Web.Grids.Site'] + ";true:" + languagePack['eDozvoli.Web.Grids.Da'] + ";false:" + languagePack['eDozvoli.Web.Grids.Ne'] + ""
+                             },
+                             stype: 'select',
+                             formatter: 'checkbox',
+                             edittype: 'checkbox',
+                             editoptions: {
+                                 value: "True:False",
+                                 defaultValue: function () {
+                                     return 'True';
+                                 }
+                             },
+                             editrules: {
+                                 required: true
+                             },
+                             width: '10%',
+                             align: 'center'
+                         },
+                         {
+                             name: 'Actions',
+                             index: 'Actions',
+                             sortable: false,
+                             search: false,
+                             editable: false,
+                             title: false,
+                             align: 'center',
+                             width: '15%'
+                         }
+                 ],
+                 addCaption: languagePack['Zels.Registers.ExternalInstitutions.cshtml.NovaInstitucija'],
+                 editCaption: languagePack['Zels.Registers.ExternalInstitutions.cshtml.PromenaNaInstitucija'],
+                 hasFilterToolbar: true,
+                 resizeContainer: $("#Institutions_Tabs"),
+                 windowHeightMinus: 370,
+                 gridComplete: function () {
+                     var ids = $grid.Grid("getDataIDs");
+                     for (var i = 0; i < ids.length; i++) {
+                         var rowId = ids[i];
+                         var rowData = $grid.Grid("getRowData", rowId);
+                         if (rowData.IsActive == 'True' && rowData.AllMunicipalities != 'True') {
+                             var actions = '<button type="button" data-id="' + rowId + '" class="add-edit-municipalities btn btn-link">' + languagePack['Zels.Registers.ExternalInstitutions.cshtml.DefinirajOpstini'] + '</button>';
+                             $grid.Grid('setRowData', { Id: rowId, Actions: actions });
+                         }
+                     }
+
+                     $(".add-edit-municipalities", $grid).bind('click', function () {
+                         var extInstitutionId = $(this).data('id');
+                         var holder = $.createWidgetHolder();
+                         $(holder).DefineMunicipalitiesWidget({});
+                         $(holder).DefineMunicipalitiesWidget("load", extInstitutionId);
+                     });
+
+                 }
+             }
+        );
+        $grid.Grid("load");
+    });
+</script>

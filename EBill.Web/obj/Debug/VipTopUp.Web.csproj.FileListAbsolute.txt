@@ -1,0 +1,137 @@
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\obj\Debug\VipTopUp.Web.csprojResolveAssemblyReference.cache
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\VipTopUp.Web.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\VipTopUp.Web.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\ActionMailer.Net.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\ActionMailer.Net.Mvc.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Autofac.Configuration.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Autofac.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Autofac.Integration.Mvc.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\FluentValidation.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\FluentValidation.Mvc.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Iesi.Collections.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\log4net.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Microsoft.AspNet.SignalR.Owin.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\MvcBundleConfig.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Newtonsoft.Json.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Nextsense.ResourcesCommon.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\NHibernate.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Owin.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\ServiceLocatorInitializer.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\System.Web.Mvc.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\System.Web.Optimization.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\System.Web.WebPages.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\VipTopUp.Data.NHibernate.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\VipTopUp.Domain.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\VipTopUp.Infrastructure.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\VipTopUp.Security.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\WebActivator.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\WebGrease.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Nextsense.Common.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Autofac.Extras.CommonServiceLocator.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Antlr3.Runtime.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\VipTopUp.Data.NHibernate.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\VipTopUp.Domain.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\VipTopUp.Security.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\VipTopUp.Infrastructure.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Nextsense.ResourcesCommon.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\ServiceLocatorInitializer.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\ActionMailer.Net.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\ActionMailer.Net.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\ActionMailer.Net.Mvc.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\ActionMailer.Net.Mvc.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Autofac.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\FluentValidation.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\FluentValidation.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\FluentValidation.Mvc.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Iesi.Collections.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\log4net.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Microsoft.AspNet.SignalR.Owin.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Newtonsoft.Json.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\NHibernate.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\System.Web.Mvc.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\System.Web.WebPages.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\Autofac.Extras.CommonServiceLocator.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\de\FluentValidation.resources.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\es\FluentValidation.resources.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\fr\FluentValidation.resources.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\it\FluentValidation.resources.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\nl\FluentValidation.resources.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\pl\FluentValidation.resources.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\pt\FluentValidation.resources.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\ru\FluentValidation.resources.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\sv\FluentValidation.resources.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\bin\tr\FluentValidation.resources.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\obj\Debug\VipTopUp.Web.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Web\obj\Debug\VipTopUp.Web.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\obj\Debug\VipTopUp.Web.csprojResolveAssemblyReference.cache
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\VipTopUp.Web.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\VipTopUp.Web.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\Newtonsoft.Json.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\Nextsense.ResourcesCommon.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\ServiceLocatorInitializer.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\System.Web.Mvc.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\System.Web.Optimization.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\System.Web.WebPages.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\VipTopUp.Data.NHibernate.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\VipTopUp.Domain.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\VipTopUp.Infrastructure.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\VipTopUp.Security.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\WebGrease.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\Nextsense.Common.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\Autofac.Extras.CommonServiceLocator.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\Antlr3.Runtime.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\VipTopUp.Data.NHibernate.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\VipTopUp.Domain.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\VipTopUp.Security.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\VipTopUp.Infrastructure.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\Nextsense.ResourcesCommon.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\ServiceLocatorInitializer.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\Newtonsoft.Json.xml
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\System.Web.Mvc.xml
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\System.Web.WebPages.xml
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\obj\Debug\VipTopUp.Web.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Web\obj\Debug\VipTopUp.Web.pdb
+D:\Projects\Template\VipTopUp.Web\bin\VipTopUp.Web.dll.config
+D:\Projects\Template\VipTopUp.Web\bin\VipTopUp.Web.dll
+D:\Projects\Template\VipTopUp.Web\bin\VipTopUp.Web.pdb
+D:\Projects\Template\VipTopUp.Web\bin\Newtonsoft.Json.dll
+D:\Projects\Template\VipTopUp.Web\bin\Nextsense.ResourcesCommon.dll
+D:\Projects\Template\VipTopUp.Web\bin\ServiceLocatorInitializer.dll
+D:\Projects\Template\VipTopUp.Web\bin\System.Web.Mvc.dll
+D:\Projects\Template\VipTopUp.Web\bin\System.Web.Optimization.dll
+D:\Projects\Template\VipTopUp.Web\bin\System.Web.WebPages.dll
+D:\Projects\Template\VipTopUp.Web\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Template\VipTopUp.Web\bin\VipTopUp.Data.NHibernate.dll
+D:\Projects\Template\VipTopUp.Web\bin\VipTopUp.Domain.dll
+D:\Projects\Template\VipTopUp.Web\bin\VipTopUp.Infrastructure.dll
+D:\Projects\Template\VipTopUp.Web\bin\VipTopUp.Security.dll
+D:\Projects\Template\VipTopUp.Web\bin\WebGrease.dll
+D:\Projects\Template\VipTopUp.Web\bin\Nextsense.Common.dll
+D:\Projects\Template\VipTopUp.Web\bin\Autofac.Extras.CommonServiceLocator.dll
+D:\Projects\Template\VipTopUp.Web\bin\Antlr3.Runtime.dll
+D:\Projects\Template\VipTopUp.Web\bin\VipTopUp.Data.NHibernate.pdb
+D:\Projects\Template\VipTopUp.Web\bin\VipTopUp.Domain.pdb
+D:\Projects\Template\VipTopUp.Web\bin\VipTopUp.Security.pdb
+D:\Projects\Template\VipTopUp.Web\bin\VipTopUp.Infrastructure.pdb
+D:\Projects\Template\VipTopUp.Web\bin\Nextsense.ResourcesCommon.pdb
+D:\Projects\Template\VipTopUp.Web\bin\ServiceLocatorInitializer.pdb
+D:\Projects\Template\VipTopUp.Web\bin\Newtonsoft.Json.xml
+D:\Projects\Template\VipTopUp.Web\bin\System.Web.Mvc.xml
+D:\Projects\Template\VipTopUp.Web\bin\System.Web.WebPages.xml
+D:\Projects\Template\VipTopUp.Web\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Template\VipTopUp.Web\obj\Debug\VipTopUp.Web.csprojResolveAssemblyReference.cache
+D:\Projects\Template\VipTopUp.Web\obj\Debug\VipTopUp.Web.dll
+D:\Projects\Template\VipTopUp.Web\obj\Debug\VipTopUp.Web.pdb

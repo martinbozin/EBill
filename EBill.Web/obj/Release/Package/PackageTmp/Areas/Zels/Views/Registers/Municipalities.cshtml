@@ -1,0 +1,139 @@
+﻿<div id="component_Municipalities_grid">
+</div>
+<script type="text/javascript">
+    $(function () {
+        var $grid = $("#component_Municipalities_grid");
+        $grid.Grid(
+             {
+                 sortorder: 'asc',
+                 sortname: 'Name',
+                 rowNum: 20,
+                 rowList: [10, 20, 50, 100],
+                 gridUrl: '@Url.Action("Grid", "MunicipalityGrid", new { area = "Zels" })',
+                 colNames: [
+                     languagePack['Zels.Registers.Municipalities.cshtml.Ime'],
+                     'Име на Албански',
+                     'Активна',
+                     'ИД во Катастар',
+                     ''],
+                 colModel: [
+                      {
+                          name: 'Name',
+                          index: 'Name',
+                          sortable: true,
+                          search: true,
+                          searchoptions: {
+                              sopt: ['cn']
+                          },
+                          editable: true,
+                          editoptions: {
+                              size: 40,
+                              maxlength: 255
+                          },
+                          editrules: {
+                              required: true
+                          },
+                          width: '60%'
+                      },
+                       {
+                           name: 'NameAl',
+                           index: 'NameAl',
+                           sortable: true,
+                           search: true,
+                           searchoptions: {
+                               sopt: ['cn']
+                           },
+                           editable: true,
+                           editoptions: {
+                               size: 40,
+                               maxlength: 255
+                           },
+                           editrules: {
+                               required: true,
+                               edithidden: true
+                           },
+                           hidden: true
+                       },
+                      {
+                          name: 'IsActive',
+                          index: 'IsActive',
+                          sortable: true,
+                          search: true,
+                          editable: true,
+                          searchoptions: {
+                              sopt: ['eq'],
+                              value: ":" + languagePack['eDozvoli.Web.Grids.Site'] + ";true:" + languagePack['eDozvoli.Web.Grids.Da'] + ";false:" + languagePack['eDozvoli.Web.Grids.Ne'] + ""
+                          },
+                          stype: 'select',
+                          formatter: 'checkbox',
+                          edittype: 'checkbox',
+                          editoptions: {
+                              value: "True:False",
+                              defaultValue: function () {
+                                  return 'True';
+                              }
+                          },
+                          editrules: {
+                              required: true
+                          },
+                          width: '8%',
+                          align: 'center'
+                      },
+                      {
+                          name: 'KatastarId',
+                          index: 'KatastarId',
+                          sortable: true,
+                          search: true,
+                          searchoptions: {
+                              sopt: ['cn']
+                          },
+                          editable: true,
+                          editrules: {
+                              required: true
+                          },
+                          width: '15%',
+                          align: 'center'
+                      },
+                      {
+                          name: 'Actions',
+                          index: 'Actions',
+                          sortable: false,
+                          search: false,
+                          editable: false,
+                          title: false,
+                          align: 'center',
+                          width: '15%'
+                      }
+                 ],
+                 addCaption: languagePack['Zels.Registers.Municipalities.cshtml.NovaOpstina'],
+                 editCaption: languagePack['Zels.Registers.Municipalities.cshtml.PromenaNaOpstina'],
+                 hasFilterToolbar: true,
+                 resizeContainer: $("#Institutions_Tabs"),
+                 windowHeightMinus: 370,
+                 gridComplete: function () {
+                     var ids = $grid.Grid("getDataIDs");
+                     for (var i = 0; i < ids.length; i++) {
+                         var rowId = ids[i];
+                         var rowData = $grid.Grid("getRowData", rowId);
+                         if (rowData.IsActive == 'True') {
+                             var actions = '<button type="button" data-id="' + rowId + '" class="set-ext-institutions btn btn-link">' + languagePack['Zels.Registers.Municipalities.cshtml.DefinirajInstitucii'] + '</button>';
+                             $grid.Grid('setRowData', { Id: rowId, Actions: actions });
+                         }
+                     }
+                     $(".set-ext-institutions", $grid).bind('click', function () {
+                         var institutionId = $(this).data('id');
+                         var holder = $.createWidgetHolder();
+                         $(holder).DefineExternalInsititutionsWidget({});
+                         $(holder).DefineExternalInsititutionsWidget("load", institutionId);
+                     });
+                 }
+             }
+        );
+        $grid.Grid("load");
+
+        $(document).on("click", ".set-ext-institutions", function (e) {
+            var docTypeId = $(this).data('id');
+            //TODO
+        });
+    });
+</script>

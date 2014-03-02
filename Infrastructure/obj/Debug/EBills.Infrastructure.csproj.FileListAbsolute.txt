@@ -1,0 +1,5 @@
+D:\Projects\Template\Infrastructure\bin\Debug\EBills.Infrastructure.dll
+D:\Projects\Template\Infrastructure\bin\Debug\EBills.Infrastructure.pdb
+D:\Projects\Template\Infrastructure\bin\Debug\System.Web.Optimization.dll
+D:\Projects\Template\Infrastructure\obj\Debug\EBills.Infrastructure.dll
+D:\Projects\Template\Infrastructure\obj\Debug\EBills.Infrastructure.pdb

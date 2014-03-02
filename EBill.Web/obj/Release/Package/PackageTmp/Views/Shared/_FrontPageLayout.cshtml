@@ -1,0 +1,192 @@
+﻿@using eDozvoli.Infrastructure.MVC.Notification
+@{
+    Layout = "_MainLayout.cshtml";
+}
+
+<style type="text/css">
+    body {
+        padding: 0;
+        margin: 0;
+        background: url(~/../Content/images/body-bg.jpg) #fff no-repeat;
+        background-size: cover;
+    }
+
+    div.header {
+        height: 45px;
+        background: url(~/../Content/images/header-bg.png) #467aa9 center center no-repeat;
+    }
+
+    div.welcome-screen {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 100px 12px 0 12px;
+    }
+
+    div.intro {
+        width: 480px;
+        padding: 10px 30px 15px 30px;
+        float: left;
+        margin-right: 40px;
+        background: url(~/../Content/images/blue-opaque-bg.png) top left repeat;
+    }
+
+        div.intro h2, div.intro p {
+            color: #fff;
+        }
+
+    div.login-form {
+        width: 420px;
+        float: left;
+    }
+
+        div.login-form h2 {
+            line-height: 100% !important;
+            border: 0 !important;
+            margin: 0 0 22px 0 !important;
+        }
+
+        div.login-form .form-horizontal .controls {
+            margin: 0 !important;
+        }
+
+        div.login-form .control-group {
+            margin-bottom: 15px !important;
+        }
+
+            div.login-form .control-group input {
+                height: 26px !important;
+                line-height: 26px !important;
+                padding: 4px 10px !important;
+                width: 316px !important;
+            }
+
+        div.login-form label.checkbox {
+            float: left !important;
+            width: 95px !important;
+            padding-top: 10px !important;
+        }
+
+        div.login-form input.btn-large {
+            padding: 8px 20px 10px 20px !important;
+            float: left !important;
+        }
+
+        div.login-form div.submit-area {
+            float: right;
+        }
+
+        div.login-form div.register-area {
+            clear: both;
+            float: none;
+            background: #ecf3fa;
+            padding: 12px 15px 6px 15px;
+            border-top: solid 15px #fff;
+        }
+
+            div.login-form div.register-area a {
+                display: block;
+                line-height: 100%;
+                margin-bottom: 8px;
+            }
+
+        div.login-form div.submit-area #cancelBtn {
+            margin-left: 5px;
+            margin-right: 20px;
+        }
+
+    div.clearfix {
+        clear: both;
+    }
+
+    .form-horizontal {
+        display: block;
+        max-width: 400px;
+        padding: 20px 30px 30px 30px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #dadada;
+        /*-webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;*/
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.08);
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,.08);
+        box-shadow: 0 1px 3px rgba(0,0,0,.08);
+    }
+
+        .form-horizontal .control-label {
+            width: 130px;
+        }
+
+        .form-horizontal .controls {
+            margin-left: 140px;
+        }
+
+        .form-horizontal .form-horizontal-heading {
+            border-bottom: solid 1px #ccc;
+        }
+
+        .form-horizontal .form-actions {
+            margin-top: -5px;
+        }
+
+            .form-horizontal .form-actions .checkbox {
+                position: absolute;
+                margin-left: -118px;
+                padding-top: 12px;
+                width: 80px;
+            }
+</style>
+
+<div class="header">
+    <div class="home-header-inner">
+    <a href="http://www.zels.org.mk" target="_blank" class="zels-lnk">ЗЕЛС</a>
+    <a href="http://www.mtc.gov.mk" target="_blank" class="ministerstvo-lnk">Министерство за транспорт и врски</a>
+</div>
+    </div>
+
+<div class="welcome-screen">
+    <div class="intro">
+        <h2>Добредојдовте на ИНФОРМАЦИСКИОТ СИСТЕМ Е-ОДОБРЕНИЕ ЗА ГРАДЕЊЕ.</h2>
+        <p style="text-align: justify;">Овој систем овозможува квалитетен, транспарентен и унифициран начин на постапување на сите надлежни органи и субјекти во постапката на издавање на одобрение за градење по најсовремени стандарди, во најкраток можен рок а врз основа на Вашето поднесено барање за одобрение за градење.</p>
+        <p style="text-align: justify;">На овој начин е овозможено единствено електронско водење на постапката во сите нејзини фази, започнувајќи од електронско поднесување и потпишување на потребната документација од страна на инвеститорот, електронска подготовка и донесување на актите во постапката, електронско известување и обезбедување на потребни податоци и документација од останати вклучени субјекти и електронско издавање на одобрението за градење.</p>
+        <p style="text-align: justify;">За секоја фаза во која се наоѓа Вашиот предмет, ќе бидете едновремено известени преку автоматски и независен систем на достава на електронска пошта и известување испратено преку автоматскиот сервис за кратки пораки (SMS).</p>
+        <p>Ви благодариме за довербата,</p>
+        <p>ЗЕЛС,</p>
+        <p>Министерство за транспорт и врски</p>
+        
+    </div>
+    <div class="right-home-section">
+    @RenderBody()
+
+    <div class="home-documents">
+
+    <h2 class="form-horizontal-heading">Документи</h2>
+
+    <a href="~/Documents/ПРАВИЛНИК%20ЗА%20НАЧИНОТ%20НА%20СПРОВЕДУВАЊЕ%20НА%20ПОСТАПКАТА%20ЗА%20ДОБИВАЊЕ%20НА%20ОДОБРЕНИЕ%20ЗА%20ГРАДЕЊЕ%20НА%20ЕЛЕКТРОНСКИ%20НАЧИН.pdf" target="_blank">ПРАВИЛНИК ЗА НАЧИНОТ НА СПРОВЕДУВАЊЕ НА ПОСТАПКАТА ЗА ДОБИВАЊЕ НА ОДОБРЕНИЕ ЗА ГРАДЕЊЕ НА ЕЛЕКТРОНСКИ НАЧИН (PDF, 245KB)</a>
+    <a href="~/Documents/ПРАВИЛНИК%20ЗА%20ИЗМЕНУВАЊЕ%20И%20ДОПОЛНУВАЊЕ%20НА%20ПРАВИЛНИКОТ%20ЗА%20СОДРЖИНАТА%20НА%20ПРОЕКТИТЕ%20ОЗНАЧУВАЊЕТО%20НА%20ПРОЕКТОТ%20НАЧИНОТ%20НА%20ЗAВЕРКА%20НА%20ПРОЕКТОТ.pdf" target="_blank">ПРАВИЛНИК ЗА ИЗМЕНУВАЊЕ И ДОПОЛНУВАЊЕ НА ПРАВИЛНИКОТ ЗА СОДРЖИНАТА НА ПРОЕКТИТЕ ОЗНАЧУВАЊЕТО НА ПРОЕКТОТ НАЧИНОТ НА ЗAВЕРКА НА ПРОЕКТОТ (PDF, 69KB)</a>
+    <a href="~/Documents/E-dozvoli_upatsvo%20za%20podnositeli_koregirano.pdf" target="_blank">Е-ДОЗВОЛИ УПАТСТВО ЗА ПОДНОСИТЕЛИ (PDF, 1.2MB)</a>
+    <a href="~/Documents/E-dozvoli_upatsvo%20za%20institucii.pdf" target="_blank">Е-ДОЗВОЛИ УПАТСТВО ЗА ИНСТИТУЦИИ (PDF, 820KB)</a>
+    
+        <a href="~/Documents/ПРАВИЛНИК%20ЗА%20ДОПОЛНУВАЊЕ%20НА%20ПРАВИЛНИКОТ%20ЗА%20СОДРЖИНАТА%20НА%20ПРОЕКТИТЕ%20ОЗНАЧУВАЊЕТО%20НА%20ПРОЕКТОТ%20НАЧИНОТ%20НА%20ЗАВЕРКА%20НА%20ПРОЕКТОТ.pdf" target="_blank">ПРАВИЛНИК ЗА ДОПОЛНУВАЊЕ НА ПРАВИЛНИКОТ ЗА СОДРЖИНАТА НА ПРОЕКТИТЕ, ОЗНАЧУВАЊЕТО НА ПРОЕКТОТ, НАЧИНОТ НА ЗАВЕРКА НА ПРОЕКТОТ ОД СТРАНА НА ОДГОВОРНИТЕ ЛИЦА И НАЧИНОТ НА КОРИСТЕЊЕ НА ЕЛЕКТРОНСКИТЕ ЗАПИСИ (PDF, 76KB)</a>
+
+        <a href="~/Documents/ПРАВИЛНИК%20ЗА%20ИЗМЕНУВАЊЕ%20И%20ДОПОЛНУВАЊЕ%20НА%20ПРАВИЛНИКОТ%20ЗА%20СОДРЖИНАТА%20НА%20ПРОЕКТИТЕ%20ОЗНАЧУВАЊЕТО%20НА%20ПРОЕКТОТ%20НАЧИНОТ%20НА%20ЗAВЕРКА%20НА%20ПРОЕКТОТ%20ОД%20СТРАНА%20НА%20ОДГОВОРНИТЕ%20ЛИЦА.pdf" target="_blank">ПРАВИЛНИК ЗА ИЗМЕНУВАЊЕ И ДОПОЛНУВАЊЕ НА ПРАВИЛНИКОТ ЗА СОДРЖИНАТА НА ПРОЕКТИТЕ, ОЗНАЧУВАЊЕТО НА ПРОЕКТОТ, НАЧИНОТ НА ЗAВЕРКА НА ПРОЕКТОТ ОД СТРАНА НА ОДГОВОРНИТЕ ЛИЦА И НАЧИНОТ НА КОРИСТЕЊЕ НА ЕЛЕКТРОНСКИТЕ ЗАПИСИ (PDF, 69KB)</a>
+
+        <a href="~/Documents/ПРАВИЛНИК%20ЗА%20СОДРЖИНАТА%20НА%20ПРОЕКТИТЕ%20ОЗНАЧУВАЊЕТО%20НА%20ПРОЕКТОТ%20НАЧИНОТ%20НА%20ЗАВЕРКА%20НА%20ПРОЕКТОТ%20ОД%20СТРАНА%20НА%20ОДГОВОРНИТЕ%20ЛИЦА.pdf" target="_blank">ПРАВИЛНИК ЗА СОДРЖИНАТА НА ПРОЕКТИТЕ, ОЗНАЧУВАЊЕТО НА ПРОЕКТОТ, НАЧИНОТ НА ЗАВЕРКА НА ПРОЕКТОТ ОД СТРАНА НА ОДГОВОРНИТЕ ЛИЦА И НАЧИНОТ НА КОРИСТЕЊЕ НА ЕЛЕКТРОНСКИТЕ ЗАПИСИ (PDF, 141KB)</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    
+        
+    </div>
+</div>

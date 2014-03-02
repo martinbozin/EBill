@@ -1,0 +1,27 @@
+D:\Projects\E-Dozvoli\DEV\Nextsense.ResourcesCommon\bin\Debug\Nextsense.ResourcesCommon.dll.config
+D:\Projects\E-Dozvoli\DEV\Nextsense.ResourcesCommon\bin\Debug\Nextsense.ResourcesCommon.dll
+D:\Projects\E-Dozvoli\DEV\Nextsense.ResourcesCommon\bin\Debug\Nextsense.ResourcesCommon.pdb
+D:\Projects\E-Dozvoli\DEV\Nextsense.ResourcesCommon\bin\Debug\log4net.dll
+D:\Projects\E-Dozvoli\DEV\Nextsense.ResourcesCommon\bin\Debug\log4net.xml
+D:\Projects\E-Dozvoli\DEV\Nextsense.ResourcesCommon\obj\Debug\Nextsense.ResourcesCommon.dll
+D:\Projects\E-Dozvoli\DEV\Nextsense.ResourcesCommon\obj\Debug\Nextsense.ResourcesCommon.pdb
+D:\Projects\E-Dozvoli\DEV\Nextsense.ResourcesCommon\obj\Debug\Nextsense.ResourcesCommon.csprojResolveAssemblyReference.cache
+C:\Users\martinb\Desktop\New folder\Nextsense.ResourcesCommon\bin\Debug\Nextsense.ResourcesCommon.dll.config
+C:\Users\martinb\Desktop\New folder\Nextsense.ResourcesCommon\bin\Debug\Nextsense.ResourcesCommon.dll
+C:\Users\martinb\Desktop\New folder\Nextsense.ResourcesCommon\bin\Debug\Nextsense.ResourcesCommon.pdb
+C:\Users\martinb\Desktop\New folder\Nextsense.ResourcesCommon\bin\Debug\log4net.dll
+C:\Users\martinb\Desktop\New folder\Nextsense.ResourcesCommon\bin\Debug\log4net.xml
+C:\Users\martinb\Desktop\New folder\Nextsense.ResourcesCommon\obj\Debug\Nextsense.ResourcesCommon.dll
+C:\Users\martinb\Desktop\New folder\Nextsense.ResourcesCommon\obj\Debug\Nextsense.ResourcesCommon.pdb
+C:\Users\martinb\Desktop\New folder\Nextsense.ResourcesCommon\obj\Debug\Nextsense.ResourcesCommon.csprojResolveAssemblyReference.cache
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\Nextsense.ResourcesCommon\bin\Debug\Nextsense.ResourcesCommon.dll.config
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\Nextsense.ResourcesCommon\bin\Debug\Nextsense.ResourcesCommon.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\Nextsense.ResourcesCommon\bin\Debug\Nextsense.ResourcesCommon.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\Nextsense.ResourcesCommon\obj\Debug\Nextsense.ResourcesCommon.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\Nextsense.ResourcesCommon\obj\Debug\Nextsense.ResourcesCommon.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\Nextsense.ResourcesCommon\obj\Debug\Nextsense.ResourcesCommon.csprojResolveAssemblyReference.cache
+D:\Projects\Template\Nextsense.ResourcesCommon\bin\Debug\Nextsense.ResourcesCommon.dll.config
+D:\Projects\Template\Nextsense.ResourcesCommon\bin\Debug\Nextsense.ResourcesCommon.dll
+D:\Projects\Template\Nextsense.ResourcesCommon\bin\Debug\Nextsense.ResourcesCommon.pdb
+D:\Projects\Template\Nextsense.ResourcesCommon\obj\Debug\Nextsense.ResourcesCommon.dll
+D:\Projects\Template\Nextsense.ResourcesCommon\obj\Debug\Nextsense.ResourcesCommon.pdb

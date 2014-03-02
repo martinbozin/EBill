@@ -1,0 +1,110 @@
+﻿<h3>
+    <span data-bind="i18n: 'eDozvoli.Web.templates.public-request-finance.Title'">Внесување на уплата за уредување на градежно земјиште</span>
+</h3>
+<table class="table table-bordered">
+    <tr>
+        <td>
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active info-tab"><a data-toggle="tab" data-bind="attr: { href: '#tab1' + Request().RequestId() }, i18n: 'eDozvoli.Web.templates.public-requests.InformaciiZaBaranjeto'">Информации за барањето</a></li>
+                    <li class="investors-tab"><a href="#tab2" data-toggle="tab" data-bind="attr: { href: '#tab2' + Request().RequestId() }, i18n: 'eDozvoli.Web.templates.public-requests.Investitor'">Инвеститор/и</a></li>
+                    <li class="documents-tab"><a href="#tab3" data-toggle="tab" data-bind="attr: { href: '#tab3' + Request().RequestId() }, i18n: 'eDozvoli.Web.templates.public-requests.Dokumenti'">Документи</a></li>
+                    <li class="contact-info-tab"><a href="#tab4" data-toggle="tab" data-bind="attr: { href: '#tab4' + Request().RequestId() }, i18n: 'eDozvoli.Web.templates.public-requests.InforamaciiZaKontakt'">Информации за контакт</a></li>
+                </ul>
+                <span style="margin-left: 5px; font-weight: 700;" data-bind="i18n: 'eDozvoli.Web.templates.public-requests.Baranje'">Барање #</span><span style="font-weight: 700;" data-bind="    text: Request().ArchiveNumber()"></span>
+                <br />
+                <div class="tab-content" style="margin-left: 5px; margin-top: 5px">
+                    <div class="tab-pane active" data-bind="attr: { id: 'tab1' + Request().RequestId() }">
+                        <div data-bind="template: { name: 'public-request-common-info' }"></div>
+                    </div>
+                    <div class="tab-pane" data-bind="attr: { id: 'tab2' + Request().RequestId() }">
+                        <div data-bind="template: { name: 'public-request-investors' }"></div>
+                    </div>
+                    <div class="tab-pane" data-bind="attr: { id: 'tab3' + Request().RequestId() }">
+                        <div data-bind="template: { name: 'public-request-documents' }"></div>
+                    </div>
+                    <div class="tab-pane" data-bind="attr: { id: 'tab4' + Request().RequestId() }">
+                        <div data-bind="template: { name: 'public-request-contact-info' }"></div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <th>
+            <ul id="selected-documents-containter" style="list-style-type: none; margin: 0">
+                <li>
+                    <table class="table table-bordered table-striped ">
+                        <tbody>
+                            <tr>
+                                <th style="text-align: left">
+                                    <span data-bind="i18n: 'eDozvoli.Web.templates.public-request-finance.UplatnicaZaKomunalii'">Уплатница за уплатено уредување на градежно земјиште</span>
+                                    <p style="font-style: italic; font-weight: normal" data-bind="i18n: 'eDozvoli.Web.templates.public-request-finance.DokazZaUplata'">Доказ за извршена уплата на уредување на градежно земјиште</p>
+
+                                    <button style="float: right" class="attach-document btn btn-success" data-bind="i18n: 'eDozvoli.Web.new-request-documnet-row.prikaci'">Прикачи Документи</button>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+
+                                    <div class="tab-pane active tab-pane-documents">
+                                        <!--    <button class="attach-document new-request-upload-btn btn btn-success" data-bind="i18n: 'eDozvoli.Web.new-request-documnet-row.prikaci'">Прикачи Документи</button>-->
+                                        <table class="table table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 1%">#</th>
+                                                    <th style="width: 30%" data-bind="i18n: 'eDozvoli.Web.new-request-documnet-row.document'">Документ</th>
+                                                    <th style="width: 20%" data-bind="i18n: 'eDozvoli.Web.new-request-documnet-row.komentar'">Коментар</th>
+                                                    <th style="width: 30%" data-bind="i18n: 'eDozvoli.Web.new-request-documnet-row.datum'">Датум на прикачување</th>
+                                                    <th style="width: 5%"></th>
+                                                </tr>
+                                            </thead>
+                                            <!-- ko if: RequestDocuments().UtilitiesDocuments().length > 0-->
+                                            <tbody data-bind="foreach: RequestDocuments().UtilitiesDocuments()">
+                                                <tr>
+
+                                                    <td>
+                                                        <span data-bind="text: ($index() + 1) + '.'"></span>
+                                                    </td>
+                                                    <td>
+                                                        <a data-bind="attr: { href: $data.FileDownloadUrl }, text: $data.FileName"></a>
+                                                    </td>
+                                                    <td>
+                                                        <span data-bind="text: $data.Comment"></span>
+                                                    </td>
+                                                    <td>
+                                                        <span data-bind="text: $data.Created"></span>
+                                                    </td>
+                                                    <td>
+                                                        <span data-bind="visible: $data.IsDraft, click: $root.removeDraftDocument, attr: { title: languagePack['eDozvoli.Web.templates.new-request-required-documents.OdstraniDokument'] }"
+                                                            class="btn btn-danger tipTip">
+                                                            <i class="icon-trash icon-white"></i>
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            <!-- /ko -->
+                                            <tbody data-bind="visible: RequestDocuments().UtilitiesDocuments().length == 0">
+                                                <tr>
+                                                    <td colspan="5">
+                                                        <p class="alert" data-bind="i18n: 'eDozvoli.Web.new-request-documnet-row.nema'">Нема пронајдени записи.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <button class="view-sent btn btn-success" data-bind="enable: RequestDocuments().UtilitiesDocuments().length > 0">Потпиши и Испрати</button>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
+        </th>
+    </tr>
+</table>

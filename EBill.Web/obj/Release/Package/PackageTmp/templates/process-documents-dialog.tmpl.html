@@ -1,0 +1,23 @@
+﻿<table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="width: 10px">#</th>
+            <th style="width: 100px"></th>
+            <th>Документ</th>
+        </tr>
+    </thead>
+    <tbody data-bind="foreach: DocumentsForUpload()">
+        <tr data-bind="css: { 'error': UploadFailed(), 'success': UploadSuccess() }">
+            <td>
+                <span data-bind="text: ($index() + 1) + '.'"></span>
+            </td>
+            <td>
+                <img data-bind="visible: UploadStarted()" src="images/preload.gif" />
+            </td>
+            <td>
+                <span data-bind="text: FileName()"></span>
+                <p data-bind="text: UploadFailedMessage()"></p>
+            </td>
+        </tr>
+    </tbody>
+</table>

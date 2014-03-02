@@ -1,0 +1,241 @@
+﻿@model eDozvoli.Web.ViewModels.ProfileViewModel
+@{
+    ViewBag.Title = "Профил";
+}
+
+<h2>Профил</h2>
+<div>
+    <table class="table">
+        <tr>
+            <th style="width: 15%">Емаил аддреса:
+            </th>
+            <td>
+                @Html.DisplayFor(x => x.UserName)
+            </td>
+        </tr>
+        <tr>
+            <th>Име:
+            </th>
+            <td>
+                @Html.DisplayFor(x => x.FirstName)
+            </td>
+        </tr>
+        <tr>
+            <th>Презиме:
+            </th>
+            <td>
+                @Html.DisplayFor(x => x.LastName)
+            </td>
+        </tr>
+
+        @if (!string.IsNullOrEmpty(Model.Institution))
+        {
+            <tr>
+                <th>Институција:
+                </th>
+                <td>
+                    @Html.DisplayFor(x => x.Institution)
+                </td>
+            </tr>
+        }
+
+        <tr>
+            <th>Лозинка:
+            </th>
+            <td>
+
+                @if (ViewBag.ChangePass)
+                {
+                    using (Html.BeginForm("Profile", "Account", new { id = "" }, FormMethod.Post, new { @class = "well" }))
+                    {
+                    @Html.AntiForgeryToken()
+        
+                    <h3>Промени лозинка</h3>
+        
+                    <label class="control-label" for="inputEmail">Моменталната лозинка</label>
+                    @Html.PasswordFor(x => x.Password)
+                    @Html.ValidationMessageFor(x => x.Password)
+                    <label id="errorResult1" style="color: red; display: none"></label>
+
+                    <label class="control-label" for="inputPassword">Нова лозинка</label>
+                    @Html.PasswordFor(x => x.NewPassword)
+                    @Html.ValidationMessageFor(x => x.NewPassword)
+                    <label id="errorResult" style="color: red; display: none">Лозинката мора да содржи мали, големи букви, бројки и специјални знаци</label>
+      
+                    <label class="control-label" for="inputPassword">Потвра на новата лозинка</label>
+                    @Html.PasswordFor(x => x.ConfirmPassword)
+                    @Html.ValidationMessageFor(x => x.ConfirmPassword)
+                    <label id="errorResult2" style="color: red; display: none">Лозинките треба да се совпаѓаат</label>
+        
+                    <div class="form-actions">
+                        <input type="button" value="Промени" class="btn btn-primary" id="changeConfirm" />
+                        @Html.ActionLink("Откажи", "Profile", "Account", new { area = "", }, new { @id = "cancel", @class = "btn" })
+                    </div>
+                    }
+                }
+                else
+                {
+                    @Html.ActionLink("Промени лозинка", "Profile", "Account", new { area = "", changePass = "true" }, new { @id = "changePassword", @class = "btn" })
+                }
+            </td>
+        </tr>
+
+        <tr>
+            <th>Дигитален потпис/Сертификат:
+            </th>
+            <td>
+                @if (string.IsNullOrEmpty(ViewBag.hasCertificate))
+                {
+                    @Html.HiddenFor(x => x.UserName)
+                    <div class="form-actions">
+                        <label class="control-label" for="lblCertificate">
+                            Прикачи сертификат : 
+                            <input type="button" value="Прикачи" class="btn btn-primary usercer" /></label>
+                    </div>
+                }
+                else
+                {
+                    <div class="form-actions">
+                        <div style="padding-bottom: 20px">
+                            <label class="control-label" for="lblCertificate">Сертификат е валиден до:  @ViewBag.CertificateDateUntil   @Html.ActionLink("Превземи", "CertificateDownload", "Account", new { username = Model.UserName }, null)</label>
+                        </div>
+                        <div>
+                            @Html.HiddenFor(x => x.UserName)
+                            <label class="control-label" for="lblCertificate">
+                                Пребриши сертификат: 
+                                    <input type="button" value="Прикачи" class="btn btn-primary usercer" />
+                            </label>
+                        </div>
+                    </div>
+                }
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+<script type="text/javascript">
+    $(document).on("click", ".usercer", function () {
+        getCerForUser($('#UserName').val());
+    });
+
+    var valid;
+    $(document).on("blur", '#Password', function () {
+        $('.field-validation-error').hide();
+        $('#errorResult1').hide();
+    });
+    $(document).on("blur", '#PasswordConfirm', function () {
+        $('.field-validation-error').hide();
+        $('#errorResult2').hide();
+    });
+    $(document).on("blur", '#NewPassword', function () {
+        $('.field-validation-error').hide();
+        $('#errorResult').hide();
+        $('#errorResult1').hide();
+        $('#errorResult2').hide();
+
+        var value = $("#NewPassword").val();
+
+        if (value != null && value != "") {
+            var pw = value;
+            // default options (allows any password)
+            var o = {
+                lower: 1,
+                upper: 1,
+                alpha: 1, /* lower + upper */
+                numeric: 1,
+                special: 1,
+                length: [6, Infinity],
+                custom: [ /* regexes and/or functions */],
+                badWords: [],
+                badSequenceLength: 0,
+                noQwertySequences: false,
+                noSequential: false
+            };
+
+            //for (var property in options)
+            //    o[property] = options[property];
+
+            var re = {
+                lower: /[a-z]/g,
+                upper: /[A-Z]/g,
+                alpha: /[A-Z]/gi,
+                numeric: /[0-9]/g,
+                special: /[\W_]/g
+            },
+                rule, i;
+
+            // enforce min/max length
+            if (pw.length < o.length[0] || pw.length > o.length[1])
+
+                return valid = false;
+
+            // enforce lower/upper/alpha/numeric/special rules
+            for (rule in re) {
+                if ((pw.match(re[rule]) || []).length < o[rule])
+                    return valid = false;
+            }
+
+            // enforce word ban (case insensitive)
+            for (i = 0; i < o.badWords.length; i++) {
+                if (pw.toLowerCase().indexOf(o.badWords[i].toLowerCase()) > -1)
+                    return valid = false;
+            }
+
+            // enforce the no sequential, identical characters rule
+            if (o.noSequential && /([\S\s])\1/.test(pw))
+                return valid = false;
+
+            // enforce alphanumeric/qwerty sequence ban rules
+            if (o.badSequenceLength) {
+                var lower = "abcdefghijklmnopqrstuvwxyz",
+                    upper = lower.toUpperCase(),
+                    numbers = "0123456789",
+                    qwerty = "qwertyuiopasdfghjklzxcvbnm",
+                    start = o.badSequenceLength - 1,
+                    seq = "_" + pw.slice(0, start);
+                for (i = start; i < pw.length; i++) {
+                    seq = seq.slice(1) + pw.charAt(i);
+                    if (
+                        lower.indexOf(seq) > -1 ||
+                            upper.indexOf(seq) > -1 ||
+                            numbers.indexOf(seq) > -1 ||
+                            (o.noQwertySequences && qwerty.indexOf(seq) > -1)
+                    ) {
+                        return valid = false;
+                    }
+                }
+            }
+
+            // enforce custom regex/function rules
+            for (i = 0; i < o.custom.length; i++) {
+                rule = o.custom[i];
+                if (rule instanceof RegExp) {
+                    if (!rule.test(pw))
+                        return valid = false;;
+                } else if (rule instanceof Function) {
+                    if (!rule(pw))
+                        return valid = false;
+                }
+            }
+
+            // great success!
+            return valid = true;
+        }
+        return valid = false;
+    });
+    $(document).on("click", '#changeConfirm', function () {
+        if (valid) {
+            $('.well').submit();
+        } else {
+            $('.field-validation-error').hide();
+            if ($('#Password').val() == "" || $('#Password').val() == undefined) {
+                $('#errorResult1').show();
+                $('#errorResult1').text("Лозинката е задолжителна");
+            }
+            $('#errorResult').show();
+            $('#errorResult2').show();
+        }
+    });
+
+</script>

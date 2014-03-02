@@ -1,0 +1,79 @@
+﻿@model EBills.Web.ViewModels.LoginViewModel
+@{
+    Layout = "../Shared/_FrontPageLayout.cshtml";
+    ViewBag.Title = "Најавување на системот";
+}
+
+<div class="login-form">
+
+        @using (Html.BeginForm("Login", "Account", new { id = "" }, FormMethod.Post, new { @class = "form-horizontal" }))
+        {
+            @Html.AntiForgeryToken()
+            <h3 class="form-horizontal-heading">Најава</h3>
+      
+            <div class="control-group">
+                <div class="controls">
+                    <input type="text" id="inputEmail" name="UserName" class="input-large" placeholder="Корисничко име" />
+                </div>
+            </div>
+        
+            <div class="control-group">
+                <div class="controls">
+                    <input type="password" id="inputPassword" name="Password" class="input-large password-1" placeholder="Лозинка" />
+                    <i class="ie10-class icon icon-eye-open password-toggle-1"></i>
+                </div>
+            </div>
+    
+            if (!Html.ViewData.ModelState.IsValid)
+            {
+            <div class="control-group">
+                <label class="control-label" for="inputPassword">&nbsp;</label>
+                <div class="controls">
+                    @Html.ValidationSummary()
+                </div>
+            </div>
+            }
+
+            <div class="submit-area">
+                <label class="checkbox">
+                    @Html.CheckBoxFor(x => x.RememberMe)
+                    Запомни ме
+                </label>
+                <input class="btn btn-large btn-primary" type="submit" value="Најави се" />
+            </div>
+            
+            <div class="register-area">
+
+            <a href="@Url.Action("ForgotPassword")">&raquo; Ја заборавивте лозинката?</a>
+@*            <a href="@Url.Action("Registration")">&raquo; Регистрирајте се!</a>*@
+            </div>
+        }
+    </div>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+            if ($.browser.msie) {
+                $('input[placeholder]').each(function () {
+
+                    var input = $(this);
+
+                    $(input).val(input.attr('placeholder'));
+
+                    $(input).focus(function () {
+                        if (input.val() == input.attr('placeholder')) {
+                            input.val('');
+                        }
+                    });
+
+                    $(input).blur(function () {
+                        if (input.val() == '' || input.val() == input.attr('placeholder')) {
+                            input.val(input.attr('placeholder'));
+                        }
+                    });
+                });
+            };
+       
+    });
+</script>
+
+

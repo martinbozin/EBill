@@ -1,0 +1,74 @@
+﻿@using eDozvoli.Security
+@{
+    ViewBag.Title = Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Requests.Index.cshtml.Title");
+    var customPrincpial = (CustomPrincipal)HttpContext.Current.User;
+}
+
+<div class="refreshGridDiv">
+    <input type="button" class="refreshGrid btn btn-primary" value="Освежи поглед" id="refreshGrid" />
+</div>
+
+@if (HttpContext.Current.User.IsInRole(eDozvoli.Domain.Roles.Archiver) && customPrincpial.User.Roles.Count == 1)
+{
+    <div id="requests_tabs">
+        <ul>
+            <li><a  href="@Url.Action("ActionRequired", "Requests", new { area = "Admin" })">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Requests.Index.cshtml.Akcija")</a></li>
+        </ul>
+    </div>
+}
+else if (HttpContext.Current.User.IsInRole(eDozvoli.Domain.Roles.MTVSupervisor) && customPrincpial.User.Roles.Count == 1)
+{
+    <div id="requests_tabs">
+        <ul>
+            <li><a href="@Url.Action("InProcess", "Requests", new { area = "Admin" })" style="display: none;">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Requests.Index.cshtml.VoProces")</a></li>
+        </ul>
+    </div>
+   
+}
+else if (HttpContext.Current.User.IsInRole(eDozvoli.Domain.Roles.Finansii) && customPrincpial.User.Roles.Count == 1)
+{
+    <div id="requests_tabs">
+        <ul>
+            <li><a  href="@Url.Action("ActionRequired", "Requests", new { area = "Admin" })">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Requests.Index.cshtml.Akcija")</a></li>
+            <li><a href="@Url.Action("InProcess", "Requests", new { area = "Admin" })">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Requests.Index.cshtml.VoProces")</a></li>
+        </ul>
+    </div>
+   
+}
+else
+    if (HttpContext.Current.User.IsInRole(eDozvoli.Domain.Roles.ExternalUsers))
+    {
+    <div id="requests_tabs">
+        <ul>
+            <li><a  href="@Url.Action("ActionRequired", "Requests", new { area = "Admin" })">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Requests.Index.cshtml.Akcija")</a></li>
+            <li><a href="@Url.Action("ActionFinished", "Requests", new { area = "Admin" })">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Requests.Index.cshtml.Zavrseni")</a></li>
+        </ul>
+    </div>    
+    }
+    else
+    if (HttpContext.Current.User.IsInRole(eDozvoli.Domain.Roles.Inspektor))
+    {
+    <div id="requests_tabs">
+        <ul>
+          
+            <li><a href="@Url.Action("ActionFinished", "Requests", new { area = "Admin" })">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Requests.Index.cshtml.Zavrseni")</a></li>
+        </ul>
+    </div>    
+    }
+
+    else
+    {
+    <div id="requests_tabs">
+        <ul>
+            <li><a  href="@Url.Action("ActionRequired", "Requests", new { area = "Admin" })">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Requests.Index.cshtml.Akcija")</a></li>
+            <li><a href="@Url.Action("InProcess", "Requests", new { area = "Admin" })">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Requests.Index.cshtml.VoProces")</a></li>
+            <li><a href="@Url.Action("ActionFinished", "Requests", new { area = "Admin" })">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Requests.Index.cshtml.Zavrseni")</a></li>
+        </ul>
+    </div>
+    }
+
+<script type="text/javascript">
+    $(function () {
+        $("#requests_tabs").tabs();
+    });
+</script>

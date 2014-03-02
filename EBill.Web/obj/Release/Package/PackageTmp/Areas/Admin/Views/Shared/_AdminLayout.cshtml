@@ -1,0 +1,69 @@
+﻿@using eDozvoli.Domain
+@using eDozvoli.Infrastructure.Extensions
+@using eDozvoli.Security
+@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+    var customPrincipal = (CustomPrincipal)HttpContext.Current.User;
+    var currentUser = (BackendUser)customPrincipal.User;
+    var userRoles = currentUser.Roles.Select(x => new { x.Id, x.RoleName });
+}
+
+<script type="text/javascript">
+    var currentUser = new NS.ViewModels.UserViewModel();
+    currentUser.Id('@currentUser.Id');
+    currentUser.UserName('@currentUser.UserName');
+    currentUser.FirstName('@currentUser.FirstName');
+    currentUser.LastName('@currentUser.LastName');
+    currentUser.InstitutionId('@currentUser.Institution.Id');
+    currentUser.InstitutionTag('@currentUser.Institution.Tag');
+    currentUser.Roles(@(Html.Raw(userRoles.ToJson())));
+
+    var appParams = new NS.ViewModels.ApplicationParametersViewModel();
+</script>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="@Url.Action("Index", "Home", new { area = "Admin" })">
+                @Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Shared._AdminLayout.cshtml.Title")
+            </a>
+            <div class="nav-collapse">
+                @Html.Partial("_AdminNavigation")
+                @Html.Partial("_LoginPartial")
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row-fluid">
+        @if (IsSectionDefined("Sidebar"))
+        {
+            <div class="span2">
+                <div class="well sidebar-nav">
+                    @RenderSection("Sidebar", false)
+                </div>
+            </div>
+            <div class="span10">
+                @RenderBody()
+            </div>
+        }
+        else
+        {
+            <div class="span12">
+                @RenderBody()
+            </div>
+        }
+    </div>
+    <!--/row-->
+    <hr />
+    <footer>
+        <p>© Nextsense 2013</p>
+    </footer>
+</div>
+

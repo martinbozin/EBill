@@ -1,0 +1,49 @@
+﻿@using EBills.Infrastructure.MVC.Notification
+@using EBills.Security
+
+@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+    var customPrincpial = (CustomPrincipal)HttpContext.Current.User;
+}
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            @if ((HttpContext.Current.User.IsInRole(EBills.Domain.Roles.SuperAdmin) && customPrincpial.User.Roles.Count == 1) || customPrincpial.User.Roles.Count > 1)
+            {
+                <a class="brand" href="@Url.Action("Index", "Registers", new {area = "SuperAdmin"})">
+                  Admin
+                </a>
+            }
+          
+            <div class="nav-collapse">
+                @Html.Partial("_SuperAdminNavigation")
+                @Html.Partial("_LoginPartial")
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row-fluid">
+ 
+            <div class="span12">
+                @RenderBody()
+            </div>
+    
+    </div>
+    <!--/row-->
+    <hr />
+    <footer>
+        <p>© Martin 2013</p>
+    </footer>
+</div>
+<div id="messagewrapper">
+    @Html.RenderMessages()
+</div>
+

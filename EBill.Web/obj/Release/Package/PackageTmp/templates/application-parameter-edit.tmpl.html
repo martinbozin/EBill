@@ -1,0 +1,38 @@
+﻿<div class="wrap">
+
+    <table cellpadding="0" cellspacing="0" border="0" class="table table-bordered">
+        <tbody>
+            <tr>
+                <th><span data-bind="i18n:'eDozvoli.Web.templates.application-parameter-edit.Ime'">Име</span>
+                </th>
+                <td>
+                    <span data-bind="text: ApplicationParameter().ParameterName"></span>
+                </td>
+            </tr>
+            <tr>
+                <th><span data-bind="i18n:'eDozvoli.Web.templates.application-parameter-edit.Vrednost'">Вредност</span>
+                </th>
+                <td>
+                    <!-- ko if: ApplicationParameter().ParameterType() == 'string' -->
+                    <textarea id="txt-parameter-value" data-bind="value: ApplicationParameter().ParameterValue, attr: { 'class': ApplicationParameter().ParameterType }">                        
+                    </textarea>
+                    <!-- /ko -->
+                    <!-- ko if: ApplicationParameter().ParameterType() != 'string'-->
+                    <input type="text" id="txt-parameter-value" data-bind="value: ApplicationParameter().ParameterValue, attr: { 'class': ApplicationParameter().ParameterType }" />
+                    <!-- /ko -->
+                </td>
+            </tr>
+            <tr>
+                <th><span data-bind="i18n:'eDozvoli.Web.templates.application-parameter-edit.Opis'">Опис</span></th>
+                <td>
+                    <textarea id="txt-parameter-description" data-bind="value: ApplicationParameter().ParameterDescription, attr: { 'class': ApplicationParameter().ParameterDescription} "></textarea>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="form-actions">
+        <button type="submit" id="btn-save" class="btn btn-primary" data-bind="enable: DirtyFlag.isDirty(), i18n:'eDozvoli.Web.templates.Potvrdi'">Потврди</button>
+        <button type="button" id="btn-cancel" class="btn" data-bind=" i18n:'eDozvoli.Web.templates.Otkazi'">Откажи</button>
+    </div>
+</div>

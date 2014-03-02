@@ -1,0 +1,263 @@
+﻿@{
+    ViewBag.Title = Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Registers.DocumentTypes.cshtml.Title");
+}
+<h2>@ViewBag.Title</h2>
+<div id="component_DocumentTypes_grid">
+</div>
+<script type="text/javascript">
+    $(function () {
+        var $grid = $("#component_DocumentTypes_grid");
+        $grid.Grid(
+             {
+                 sortorder: 'asc',
+                 sortname: 'Name',
+                 rowNum: 10,
+                 rowList: [10, 20, 50, 100],
+                 gridUrl: '@Url.Action("Grid", "DocumentTypeGrid", new { area = "Zels" })',
+                 colNames: [
+                     languagePack['Zels.Registers.DocumentTypes.cshtml.TipNaDokument'],
+                     'Тип на документ на Албански',
+                     languagePack['Zels.Registers.DocumentTypes.cshtml.Opis'],
+                     'Опис на Албански',
+                     'Задолжителен',
+                     'TAG',
+                     'Редослед',
+                     languagePack['Zels.Registers.DocumentTypes.cshtml.Ekstenzii'],
+                     ''],
+                 colModel: [
+                     {
+                         name: 'Name',
+                         index: 'Name',
+                         sortable: true,
+                         search: true,
+                         searchoptions: {
+                             sopt: ['cn']
+                         },
+                         editable: true,
+                         editoptions: {
+                             size: 40,
+                             maxlength: 255,
+                             rows: "2",
+                             cols: "40"
+                         },
+                         edittype: 'textarea',
+                         editrules: {
+                             required: true
+                         },
+                         align: 'justify',
+                         cellattr: function (rowId, tv, rawstring, cm, rdata) {
+                             return 'style="white-space: normal !important; padding: 5px;';
+                         },
+                         width: '27%'
+                     },
+                      {
+                          name: 'NameAl',
+                          index: 'NameAl',
+                          sortable: true,
+                          search: true,
+                          searchoptions: {
+                              sopt: ['cn']
+                          },
+                          editable: true,
+                          editoptions: {
+                              size: 40,
+                              maxlength: 255,
+                              rows: "2",
+                              cols: "40"
+                          },
+                          edittype: 'textarea',
+                          editrules: {
+                              required: true,
+                              edithidden: true
+                          },
+                          align: 'justify',
+                          cellattr: function (rowId, tv, rawstring, cm, rdata) {
+                              return 'style="white-space: normal !important; padding: 5px;';
+                          },
+                          hidden: true
+                      },
+                     {
+                         name: 'Description',
+                         index: 'Description',
+                         sortable: true,
+                         search: true,
+                         searchoptions: {
+                             sopt: ['cn']
+                         },
+                         editable: true,
+                         editoptions: {
+                             size: 40,
+                             maxlength: 255,
+                             rows: "8",
+                             cols: "35"
+                         },
+                         edittype: 'textarea',
+                         editrules: {
+                             required: true
+                         },
+                         align: 'justify',
+                         cellattr: function (rowId, tv, rawstring, cm, rdata) {
+                             return 'style="white-space: normal !important; padding: 5px;';
+                         },
+                         width: '40%'
+                     },
+                     {
+                         name: 'DescriptionAl',
+                         index: 'DescriptionAl',
+                         sortable: true,
+                         search: true,
+                         searchoptions: {
+                             sopt: ['cn']
+                         },
+                         editable: true,
+                         editoptions: {
+                             size: 40,
+                             maxlength: 255,
+                             rows: "8",
+                             cols: "35"
+                         },
+                         edittype: 'textarea',
+                         editrules: {
+                             required: true,
+                             edithidden: true
+                         },
+                         align: 'justify',
+                         cellattr: function (rowId, tv, rawstring, cm, rdata) {
+                             return 'style="white-space: normal !important; padding: 5px;';
+                         },
+                         hidden: true
+                     },
+                     {
+                         name: 'Required',
+                         index: 'Required',
+                         sortable: true,
+                         search: true,
+                         editable: true,
+                         searchoptions: {
+                             sopt: ['eq'],
+                             value: ":" + languagePack['eDozvoli.Web.Grids.Site'] + ";true:" + languagePack['eDozvoli.Web.Grids.Da'] + ";false:" + languagePack['eDozvoli.Web.Grids.Ne'] + ""
+                         },
+                         stype: 'select',
+                         formatter: 'checkbox',
+                         edittype: 'checkbox',
+                         editoptions: {
+                             value: "True:False",
+                             defaultValue: function () {
+                                 return 'True';
+                             }
+                         },
+                         editrules: {
+                             required: true
+                         },
+                         width: '8%',
+                         align: 'center'
+                     },
+                     {
+                         name: 'Tag',
+                         index: 'Tag',
+                         sortable: true,
+                         search: true,
+                         searchoptions: {
+                             sopt: ['cn']
+                         },
+                         editable: true,
+                         editoptions: {
+                             size: 40,
+                             maxlength: 255,
+                             rows: "2",
+                             cols: "40"
+                         },
+                         edittype: 'text',
+                         editrules: {
+                             required: true
+                         },
+                         width: '10%'
+                     },
+                      {
+                          name: 'DocumentOrder',
+                          index: 'DocumentOrder',
+                          sortable: true,
+                          search: true,
+                          searchoptions: {
+                              sopt: ['cn']
+                          },
+                          editable: true,
+                          editoptions: {
+                              size: 40,
+                              maxlength: 255,
+                              rows: "2",
+                              cols: "40"
+                          },
+                          formatter: 'integer',
+                          edittype: 'text',
+                          width: '10%'
+                      },
+                      {
+                          name: 'AllowedExtensions',
+                          index: 'AllowedExtensions',
+                          sortable: true,
+                          search: true,
+                          searchoptions: {
+                              sopt: ['cn']
+                          },
+                          editable: true,
+                          editoptions: {
+                              size: 40,
+                              maxlength: 255,
+                              rows: "4",
+                              cols: "40"
+                          },
+                          edittype: 'textarea',
+                          editrules: {
+                              required: false
+                          },
+                          align: 'justify',
+                          cellattr: function (rowId, tv, rawstring, cm, rdata) {
+                              return 'style="white-space: normal !important; padding: 5px;';
+                          },
+                          width: '10%'
+                      },
+
+         {
+             name: 'Actions',
+             index: 'Actions',
+             sortable: false,
+             search: false,
+             editable: false,
+             title: false,
+             align: 'center',
+             width: '10%'
+         }
+                 ],
+
+                 addCaption: languagePack['Zels.Registers.DocumentTypes.cshtml.NovTipNaDokument'],
+                 editCaption: languagePack['Zels.Registers.DocumentTypes.cshtml.PromenaNaTipNaDokument'],
+                 hasFilterToolbar: true,
+                 windowHeightMinus: 330,
+                 gridComplete: function () {
+                     var ids = $grid.Grid("getDataIDs");
+                     for (var i = 0; i < ids.length; i++) {
+                         var rowId = ids[i];
+                         var actions = '<button type="button" data-id="' + rowId + '" class="add-attributes btn btn-link">' + languagePack['Zels.Registers.DocumentTypes.cshtml.Atributi'] + '</button>';
+                         $grid.Grid('setRowData', { Id: rowId, Actions: actions });
+                     }
+
+
+                     $(".add-attributes", $grid).bind('click', function () {
+                         var documentTypeId = $(this).data('id');
+                         var holder = $.createWidgetHolder();
+                         $(holder).DocumentTypeAttributesWidget({});
+                         $(holder).DocumentTypeAttributesWidget("load", documentTypeId);
+                     });
+                 },
+                 afterShowForm: function (formid) {
+                     $('#tr_AllowedExtensions').after('<tr>' +
+                         '<td colspan="2" class="alert"><b>' + languagePack['Zels.Registers.DocumentTypes.cshtml.Poraka'] + '</b></td>' +
+                         '</tr>');
+                 }
+             }
+        );
+        $grid.Grid("load");
+
+    });
+</script>

@@ -1,0 +1,12 @@
+D:\Projects\E-Dozvoli\DEV\Infrastructure\bin\Debug\eDozvoli.Infrastructure.dll
+D:\Projects\E-Dozvoli\DEV\Infrastructure\bin\Debug\eDozvoli.Infrastructure.pdb
+D:\Projects\E-Dozvoli\DEV\Infrastructure\bin\Debug\log4net.dll
+D:\Projects\E-Dozvoli\DEV\Infrastructure\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Projects\E-Dozvoli\DEV\Infrastructure\bin\Debug\Nextsense.Common.dll
+D:\Projects\E-Dozvoli\DEV\Infrastructure\bin\Debug\log4net.xml
+D:\Projects\E-Dozvoli\DEV\Infrastructure\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Projects\E-Dozvoli\DEV\Infrastructure\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Projects\E-Dozvoli\DEV\Infrastructure\obj\Debug\eDozvoli.Infrastructure.dll
+D:\Projects\E-Dozvoli\DEV\Infrastructure\obj\Debug\eDozvoli.Infrastructure.pdb
+D:\Projects\E-Dozvoli\DEV\Infrastructure\obj\Debug\eDozvoli.Infrastructure.csprojResolveAssemblyReference.cache
+D:\Projects\E-Dozvoli\DEV\Infrastructure\bin\Debug\System.Web.Optimization.dll

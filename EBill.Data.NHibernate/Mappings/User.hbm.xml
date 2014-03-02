@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EBills.Domain" namespace="EBills.Domain" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="User" table="Users" lazy="false" >
+
+    <id name="Id" column="UserID">
+      <generator class="identity" />
+    </id>
+
+
+    <property name="FirstName" access="field.camelcase-underscore">
+      <column name="FirstName" sql-type="nvarchar" not-null="true" />
+    </property>
+
+    <property name="LastName" access="field.camelcase-underscore">
+      <column name="LastName" sql-type="nvarchar" not-null="true" />
+    </property>
+    
+    <property name="UserName" access="field.camelcase-underscore">
+      <column name="UserName" sql-type="nvarchar" not-null="true" />
+    </property>
+
+    <property name="Password" access="field.camelcase-underscore">
+      <column name="Password" sql-type="nvarchar" not-null="true" />
+    </property>
+
+
+    <property name="IsActive" column="IsActive" />
+ 
+    <property name="RegistrationCode" not-null="false">
+      <column name="RegistrationCode" sql-type="nvarchar" not-null="false" />
+    </property>
+ 
+
+    <bag name="Roles"
+       cascade="save-update"
+       table="UserRoles"
+       lazy="true"
+       access="field.camelcase-underscore">
+      <key column="UserID"></key>
+      <many-to-many class="Role">
+        <column name="RoleID"></column>
+      </many-to-many>
+    </bag>
+
+
+    <many-to-one name="PreferedLanguage"
+                 class="EBills.Domain.Language, EBills.Domain"
+                 not-null="true"
+                 access="field.camelcase-underscore">
+      <column name="PreferedLanguage" sql-type="int" not-null="true">
+      </column>
+    </many-to-one>
+ 
+  </class>
+</hibernate-mapping>

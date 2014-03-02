@@ -1,0 +1,26 @@
+﻿<div class="control-group">
+    <span data-bind="i18n: 'eDozvoli.Web.templates.request-details-action-Finance.OslobodenOdPlakjanje'">Ослободен од Уредување на градежно земјиште:</span>
+    <input type="checkbox" data-bind="checked: ActionModel().IsFreeFromUtilities, click: ActionModel().IsFreeFromUtilitiesAction()" />
+</div>
+<div class="control-group">
+    <span data-bind="i18n: 'eDozvoli.Web.templates.request-details-action-Finance.IznosZaPlakjanje'">Внесете износ за Уредување на градежно земјиште:</span>
+    <input id="txt-Utilities" class="autonumeric" type="text" data-bind="value: ActionModel().Utilities" />
+    <span data-bind="i18n: 'eDozvoli.Web.templates.request-details-action-Finance.Denari'">ден.</span>
+</div>
+
+<div class="file-upload-wrap">
+    <div data-bind="template: { name: 'workflow/workflow-document-actions', data: $root.WorkflowModel }">
+    </div>
+</div>
+<!-- ko if: $root.canUploadDocument($data) -->
+<div class="file-upload-wrap">
+    <span class="upload-text"><strong>Прикачете документ кој е електронски потпишан или скениран:&nbsp;&nbsp;</strong></span>
+    <a href="javascript:void(0)" class="request-upload-document btn btn-primary"
+        data-bind="i18n: 'eDozvoli.Web.templates.workflow.workflow-document-actions.PrikaciDokument'">Прикачи документ</a>
+
+</div>
+<!-- /ko -->
+<div class="control-group">
+    <label><span data-bind="i18n: 'eDozvoli.Web.templates.request-details-fullhistory.Komentar'">Коментар</span></label>
+    <textarea data-bind="value: ActionModel().Comment"></textarea>
+</div>

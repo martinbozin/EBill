@@ -1,0 +1,47 @@
+﻿<div class="wrap">
+    <table>
+        <tr>
+            <th style="width: 18%; padding: 5px; text-align: left; vertical-align: top"><span data-bind="i18n: 'eDozvoli.Web.new-request-attach-document.TipNaDokument'">Тип на документ:</span></th>
+            <td>
+                <strong data-bind="text: DocumentType().DocumentTypeName"></strong>
+                <p style="font-style: italic; font-weight: normal" data-bind="text: DocumentType().DocumentTypeDescription"></p>
+            </td>
+        </tr>
+        <tr>
+            <th style="width: 18%; padding: 5px; text-align: left; vertical-align: top"><span data-bind="i18n: 'eDozvoli.Web.new-request-define-attributes.DopolnitelenOpis'">Дополнителен опис:</span></th>
+            <td>
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th style="width: 1%">#</th>
+                            <th style="width: 24%">
+                                <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-required-documents.Atributi'">Атрибути</span>
+                            </th>
+                            <th style="width: 75%">
+                                <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-required-documents.Vrednosti'">Вредности</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="foreach: Attributes">
+                        <tr>
+                            <td><span data-bind="text: ($index() + 1) + '.'"></span></td>
+                            <td><span data-bind="text: DocumentTypeAttributeName"></span>
+                            </td>
+                            <td colspan="2">
+                                <textarea style="width: 90%; height: 40px"
+                                    data-bind="value: Value, attr: { rel: TypeOfAttribute }" />
+                                <p style="font-style: italic; font-weight: normal"
+                                    data-bind="visible: DocumentTypeAttributeDescription() != null, text: DocumentTypeAttributeDescription ">
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="form-actions">
+        <button type="submit" id="btn-save" class="btn btn-primary" data-bind="i18n: 'eDozvoli.Web.templates.Zacuvaj'">Зачувај</button>
+        <button type="button" id="btn-cancel" class="btn" data-bind="i18n: 'eDozvoli.Web.templates.Otkazi'">Откажи</button>
+    </div>
+</div>

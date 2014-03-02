@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Home.Index.cshtml.Title");
+}
+
+<div id="reportTabs">
+    <ul>
+        <li><a href="#tabs-1">По датум</a></li>
+        <li><a href="#tabs-2">По рок</a></li>
+    </ul>
+    <div id="tabs-1">
+        <span style="margin-right: 10px; padding-left: 25px; vertical-align: top; padding-top: 5px; display: inline-block;" data-bind=" i18n: 'eDozvoli.Web.templates.public-requests-list.DatumOd'">Датум од:
+        </span>
+        <input class="input-small" type="text" id="txtFromDate" name="txtFromDate" />
+        <span style="margin-right: 10px; padding-left: 5px; vertical-align: top; padding-top: 5px; display: inline-block;" data-bind=" i18n: 'eDozvoli.Web.templates.public-requests-list.Do'">до:
+        </span>
+        <input class="input-small" type="text" id="txtToDate" name="txtToDate" style="margin-left: 5px" />
+        <div id="kpi_grid"></div>
+    </div>
+    <div id="tabs-2">
+        <div id="kpi_grid2"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#txtFromDate").datepicker({
+            maxDate: 0,
+            changeMonth: true,
+            changeYear: true,
+            onSelect: function (dateText, inst) {
+                $('#txtToDate').datepicker('option', 'minDate', dateText);
+            },
+            onClose: function () {
+                $("#kpi_grid").KpiGridWidget("reloadWithParams", $('#txtFromDate').val(), $('#txtToDate').val());
+            }
+        });
+        $("#txtToDate").datepicker({
+            maxDate: 0,
+            changeMonth: true,
+            changeYear: true,
+            onSelect: function (dateText, inst) {
+                $('#txtFromDate').datepicker('option', 'maxDate', dateText);
+            },
+            onClose: function () {
+                $("#kpi_grid").KpiGridWidget("reloadWithParams", $('#txtFromDate').val(), $('#txtToDate').val());
+            }
+        });
+        $("#kpi_grid").KpiGridWidget({
+            gridUrl: '@Url.Action("Grid", "KpiGrid", new { area = "Admin" })',
+            statusOptionsUrl: '@Url.Action("GetKpiStates", "Lookups", new { area = "" })',
+        });
+        $("#kpi_grid").KpiGridWidget("load");
+        $("#kpi_grid2").KpiGridWidget({
+            gridUrl: '@Url.Action("Grid", "KpiGrid2", new { area = "Admin" })',
+             statusOptionsUrl: '@Url.Action("GetKpiStates", "Lookups", new { area = "" })',
+         });
+        $("#kpi_grid2").KpiGridWidget("load");
+        $("#reportTabs").tabs();
+    });
+</script>

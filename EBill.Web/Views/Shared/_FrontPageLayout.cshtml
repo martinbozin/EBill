@@ -1,0 +1,149 @@
+﻿@using EBills.Infrastructure.MVC.Notification
+@{
+    Layout = "_MainLayout.cshtml";
+}
+
+<style type="text/css">
+    body {
+        padding: 0;
+        margin: 0;
+ 
+        background-size: cover;
+    }
+
+    div.header {
+        height: 45px;
+ 
+    }
+
+    div.welcome-screen {
+        width: 500px;
+        margin: 0 auto;
+        padding: 100px 12px 0 12px;
+    }
+
+    div.intro {
+        width: 480px;
+        padding: 10px 30px 15px 30px;
+        float: left;
+        margin-right: 40px;
+ 
+    }
+
+        div.intro h2, div.intro p {
+            color: #fff;
+        }
+
+    div.login-form {
+        width: 420px;
+        float: left;
+    }
+
+        div.login-form h2 {
+            line-height: 100% !important;
+            border: 0 !important;
+            margin: 0 0 22px 0 !important;
+        }
+
+        div.login-form .form-horizontal .controls {
+            margin: 0 !important;
+        }
+
+        div.login-form .control-group {
+            margin-bottom: 15px !important;
+        }
+
+            div.login-form .control-group input {
+                height: 26px !important;
+                line-height: 26px !important;
+                padding: 4px 10px !important;
+                width: 316px !important;
+            }
+
+        div.login-form label.checkbox {
+            float: left !important;
+            width: 95px !important;
+            padding-top: 10px !important;
+        }
+
+        div.login-form input.btn-large {
+            padding: 8px 20px 10px 20px !important;
+            float: left !important;
+        }
+
+        div.login-form div.submit-area {
+            float: right;
+        }
+
+        div.login-form div.register-area {
+            clear: both;
+            float: none;
+            background: #ecf3fa;
+            padding: 12px 15px 6px 15px;
+            border-top: solid 15px #fff;
+        }
+
+            div.login-form div.register-area a {
+                display: block;
+                line-height: 100%;
+                margin-bottom: 8px;
+            }
+
+        div.login-form div.submit-area #cancelBtn {
+            margin-left: 5px;
+            margin-right: 20px;
+        }
+
+    div.clearfix {
+        clear: both;
+    }
+
+    .form-horizontal {
+        display: block;
+        max-width: 400px;
+        padding: 20px 30px 30px 30px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #dadada;
+        /*-webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;*/
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.08);
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,.08);
+        box-shadow: 0 1px 3px rgba(0,0,0,.08);
+    }
+
+        .form-horizontal .control-label {
+            width: 130px;
+        }
+
+        .form-horizontal .controls {
+            margin-left: 140px;
+        }
+
+        .form-horizontal .form-horizontal-heading {
+            border-bottom: solid 1px #ccc;
+        }
+
+        .form-horizontal .form-actions {
+            margin-top: -5px;
+        }
+
+            .form-horizontal .form-actions .checkbox {
+                position: absolute;
+                margin-left: -118px;
+                padding-top: 12px;
+                width: 80px;
+            }
+</style>
+
+<div class="header">
+     
+</div>
+
+<div class="welcome-screen">
+ 
+    <div class="right-home-section">
+        @RenderBody()
+    </div>
+</div>

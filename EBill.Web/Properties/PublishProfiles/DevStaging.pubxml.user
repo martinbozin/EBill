@@ -1,0 +1,1854 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <File Include="Areas/Admin/Views/Cadastre/Index.cshtml">
+      <publishTime>06/24/2013 13:43:22</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Home/Index.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Kpi/Index.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Requests/ActionFinished.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Requests/ActionRequired.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Requests/Details.cshtml">
+      <publishTime>06/18/2013 16:56:40</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Requests/Index.cshtml">
+      <publishTime>07/04/2013 15:44:55</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Requests/InProcess.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Shared/_AdminLayout.cshtml">
+      <publishTime>06/03/2013 09:28:24</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Shared/_AdminNavigation.cshtml">
+      <publishTime>06/12/2013 09:52:11</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Users/Index.cshtml">
+      <publishTime>05/30/2013 16:49:52</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Web.config">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/_ViewStart.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Public/Views/Home/Index.cshtml">
+      <publishTime>07/01/2013 13:49:57</publishTime>
+    </File>
+    <File Include="Areas/Public/Views/Requests/Details.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Public/Views/Requests/Edit.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Public/Views/Requests/Finance.cshtml">
+      <publishTime>05/29/2013 11:53:05</publishTime>
+    </File>
+    <File Include="Areas/Public/Views/Requests/Index.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Public/Views/Requests/New.cshtml">
+      <publishTime>06/20/2013 09:19:44</publishTime>
+    </File>
+    <File Include="Areas/Public/Views/Shared/_PublicLayout.cshtml">
+      <publishTime>06/03/2013 09:28:24</publishTime>
+    </File>
+    <File Include="Areas/Public/Views/Shared/_PublicNavigation.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Public/Views/Web.config">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Public/Views/_ViewStart.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/ApplicationParameters/Index.cshtml">
+      <publishTime>05/30/2013 16:49:52</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/Home/Index.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/Kpi/Index.cshtml">
+      <publishTime>06/20/2013 09:19:44</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/Localization/Index.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/Registers/CadastreMunicipalities.cshtml">
+      <publishTime>06/04/2013 16:23:58</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/Registers/DocumentTypes.cshtml">
+      <publishTime>07/01/2013 12:52:54</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/Registers/ExternalInstitutions.cshtml">
+      <publishTime>06/03/2013 09:28:24</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/Registers/Index.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/Registers/Institutions.cshtml">
+      <publishTime>06/04/2013 16:23:58</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/Registers/Municipalities.cshtml">
+      <publishTime>06/04/2013 16:23:58</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/Registers/RequestTypes.cshtml">
+      <publishTime>05/30/2013 16:49:53</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/Shared/_RegistersMenu.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/Shared/_ZelsAdminLayout.cshtml">
+      <publishTime>06/12/2013 09:52:11</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/Shared/_ZelsAdminNavigation.cshtml">
+      <publishTime>06/12/2013 09:52:11</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/Users/Index.cshtml">
+      <publishTime>05/30/2013 16:49:53</publishTime>
+    </File>
+    <File Include="Areas/Zels/Views/_ViewStart.cshtml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Areas/Zels/Web.config">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="autofac.config">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="bin/ActionMailer.Net.dll">
+      <publishTime>06/20/2013 12:12:57</publishTime>
+    </File>
+    <File Include="bin/ActionMailer.Net.Mvc.dll">
+      <publishTime>06/20/2013 12:12:57</publishTime>
+    </File>
+    <File Include="bin/ActionMailer.Net.Mvc.pdb">
+      <publishTime>06/20/2013 12:12:57</publishTime>
+    </File>
+    <File Include="bin/ActionMailer.Net.pdb">
+      <publishTime>06/20/2013 12:12:57</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>06/20/2013 12:13:00</publishTime>
+    </File>
+    <File Include="bin/Aspose.Words.dll">
+      <publishTime>05/28/2013 15:44:05</publishTime>
+    </File>
+    <File Include="bin/Autofac.Configuration.dll">
+      <publishTime>06/20/2013 12:12:57</publishTime>
+    </File>
+    <File Include="bin/Autofac.dll">
+      <publishTime>06/20/2013 12:12:57</publishTime>
+    </File>
+    <File Include="bin/Autofac.Extras.CommonServiceLocator.dll">
+      <publishTime>05/28/2013 15:44:08</publishTime>
+    </File>
+    <File Include="bin/Autofac.Extras.CommonServiceLocator.pdb">
+      <publishTime>05/28/2013 15:44:08</publishTime>
+    </File>
+    <File Include="bin/Autofac.Integration.Mvc.dll">
+      <publishTime>06/20/2013 12:12:57</publishTime>
+    </File>
+    <File Include="bin/de/FluentValidation.resources.dll">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/eDozvoli.Data.NHibernate.dll">
+      <publishTime>07/05/2013 15:31:26</publishTime>
+    </File>
+    <File Include="bin/eDozvoli.Data.NHibernate.pdb">
+      <publishTime>07/05/2013 15:31:26</publishTime>
+    </File>
+    <File Include="bin/eDozvoli.Data.Sharepoint.dll">
+      <publishTime>07/05/2013 15:31:26</publishTime>
+    </File>
+    <File Include="bin/eDozvoli.Data.Sharepoint.pdb">
+      <publishTime>07/05/2013 15:31:26</publishTime>
+    </File>
+    <File Include="bin/eDozvoli.DocumentGenerator.dll">
+      <publishTime>07/05/2013 15:31:27</publishTime>
+    </File>
+    <File Include="bin/eDozvoli.DocumentGenerator.pdb">
+      <publishTime>07/05/2013 15:31:27</publishTime>
+    </File>
+    <File Include="bin/eDozvoli.Domain.dll">
+      <publishTime>07/05/2013 15:31:25</publishTime>
+    </File>
+    <File Include="bin/eDozvoli.Domain.pdb">
+      <publishTime>07/05/2013 15:31:25</publishTime>
+    </File>
+    <File Include="bin/eDozvoli.Infrastructure.dll">
+      <publishTime>07/05/2013 15:31:24</publishTime>
+    </File>
+    <File Include="bin/eDozvoli.Infrastructure.pdb">
+      <publishTime>07/05/2013 15:31:24</publishTime>
+    </File>
+    <File Include="bin/eDozvoli.Security.dll">
+      <publishTime>07/05/2013 15:31:26</publishTime>
+    </File>
+    <File Include="bin/eDozvoli.Security.pdb">
+      <publishTime>07/05/2013 15:31:26</publishTime>
+    </File>
+    <File Include="bin/eDozvoli.Web.dll">
+      <publishTime>07/05/2013 16:41:49</publishTime>
+    </File>
+    <File Include="bin/eDozvoli.Web.pdb">
+      <publishTime>07/05/2013 16:41:49</publishTime>
+    </File>
+    <File Include="bin/es/FluentValidation.resources.dll">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/FluentValidation.dll">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/FluentValidation.Mvc.dll">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/FluentValidation.Mvc.pdb">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/FluentValidation.pdb">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/fr/FluentValidation.resources.dll">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/Iesi.Collections.dll">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/it/FluentValidation.resources.dll">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>06/20/2013 12:12:59</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.dll">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Practices.ServiceLocation.pdb">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/MvcBundleConfig.dll">
+      <publishTime>06/20/2013 12:12:59</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/20/2013 12:13:00</publishTime>
+    </File>
+    <File Include="bin/Nextsense.Common.dll">
+      <publishTime>06/20/2013 12:13:00</publishTime>
+    </File>
+    <File Include="bin/Nextsense.Domain.dll">
+      <publishTime>07/04/2013 16:25:40</publishTime>
+    </File>
+    <File Include="bin/Nextsense.Domain.pdb">
+      <publishTime>07/04/2013 16:25:40</publishTime>
+    </File>
+    <File Include="bin/Nextsense.Infrastructure.dll">
+      <publishTime>07/04/2013 16:25:40</publishTime>
+    </File>
+    <File Include="bin/Nextsense.Infrastructure.pdb">
+      <publishTime>07/04/2013 16:25:40</publishTime>
+    </File>
+    <File Include="bin/Nextsense.ResourcesCommon.dll">
+      <publishTime>07/04/2013 16:25:40</publishTime>
+    </File>
+    <File Include="bin/Nextsense.ResourcesCommon.pdb">
+      <publishTime>07/04/2013 16:25:40</publishTime>
+    </File>
+    <File Include="bin/Nextsense.Workflow.dll">
+      <publishTime>07/04/2013 16:25:41</publishTime>
+    </File>
+    <File Include="bin/Nextsense.Workflow.pdb">
+      <publishTime>07/04/2013 16:25:41</publishTime>
+    </File>
+    <File Include="bin/NHibernate.dll">
+      <publishTime>06/20/2013 12:13:00</publishTime>
+    </File>
+    <File Include="bin/nl/FluentValidation.resources.dll">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/pl/FluentValidation.resources.dll">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/pt/FluentValidation.resources.dll">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/ru/FluentValidation.resources.dll">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/ServiceLocatorInitializer.dll">
+      <publishTime>07/05/2013 15:31:27</publishTime>
+    </File>
+    <File Include="bin/ServiceLocatorInitializer.pdb">
+      <publishTime>07/05/2013 15:31:27</publishTime>
+    </File>
+    <File Include="bin/SmsSender.dll">
+      <publishTime>07/04/2013 16:25:41</publishTime>
+    </File>
+    <File Include="bin/SmsSender.pdb">
+      <publishTime>07/04/2013 16:25:41</publishTime>
+    </File>
+    <File Include="bin/sv/FluentValidation.resources.dll">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>07/10/2012 21:51:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>06/20/2013 12:12:59</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>07/10/2012 13:03:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>07/10/2012 13:03:34</publishTime>
+    </File>
+    <File Include="bin/tr/FluentValidation.resources.dll">
+      <publishTime>06/20/2013 12:12:58</publishTime>
+    </File>
+    <File Include="bin/WebActivator.dll">
+      <publishTime>06/20/2013 12:13:00</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>06/20/2013 12:13:00</publishTime>
+    </File>
+    <File Include="Bundles.config">
+      <publishTime>06/12/2013 15:55:52</publishTime>
+    </File>
+    <File Include="Content/bootstrap-responsive.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/bootstrap-responsive.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>06/17/2013 08:59:20</publishTime>
+    </File>
+    <File Include="Content/chosen-sprite.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/chosen.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/attach-document-btn-ico.png">
+      <publishTime>05/30/2013 22:30:36</publishTime>
+    </File>
+    <File Include="Content/images/blue-opaque-bg.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/body-bg.jpg">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/calendar-tile-ico.png">
+      <publishTime>05/31/2013 11:30:58</publishTime>
+    </File>
+    <File Include="Content/images/certificate-tab-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/change-btn-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/construction-large-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/contact-info-tab-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/contact-person-large-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/create-new-request-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/deadlines-tab-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/define-attributes-btn-ico.png">
+      <publishTime>05/30/2013 22:30:36</publishTime>
+    </File>
+    <File Include="Content/images/delete-btn-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/details-btn-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/details-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/documents-tab-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/expand-down-arrow.png">
+      <publishTime>05/31/2013 15:04:45</publishTime>
+    </File>
+    <File Include="Content/images/fail.gif">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/glyphicons-halflings-white.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/glyphicons-halflings.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/header-bg.png">
+      <publishTime>06/06/2013 15:26:39</publishTime>
+    </File>
+    <File Include="Content/images/history-tab-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/hourglass-tile-ico.png">
+      <publishTime>05/31/2013 11:30:58</publishTime>
+    </File>
+    <File Include="Content/images/info-tab-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/investors-tab-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/logo.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/notifications-tab-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/officer-tile-ico.png">
+      <publishTime>05/31/2013 11:30:58</publishTime>
+    </File>
+    <File Include="Content/images/ok.gif">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/pdf-ico.png">
+      <publishTime>06/04/2013 18:58:32</publishTime>
+    </File>
+    <File Include="Content/images/print-btn-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/refresh-btn-ico.png">
+      <publishTime>05/30/2013 22:30:36</publishTime>
+    </File>
+    <File Include="Content/images/send-btn-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/sign-btn-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/images/warn.gif">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/jquery.jqGrid/ellipsis-xbl.xml">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/jquery.jqGrid/ui.jqgrid.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>07/04/2013 15:44:55</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery-ui.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.accordion.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.all.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.autocomplete.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.base.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.button.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.core.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.datepicker.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.dialog.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.menu.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.progressbar.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.resizable.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.selectable.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.slider.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.spinner.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.tabs.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.theme.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery.ui.tooltip.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery-ui.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.accordion.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.autocomplete.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.button.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.core.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.datepicker.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.dialog.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.menu.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.progressbar.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.resizable.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.selectable.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.slider.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.spinner.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.tabs.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.theme.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Content/themes/base/minified/jquery.ui.tooltip.min.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Documents/ALB E-dozvoli_upatsvo za podnositeli.pdf">
+      <publishTime>06/13/2013 15:35:29</publishTime>
+    </File>
+    <File Include="Documents/E-dozvoli_upatsvo za institucii.pdf">
+      <publishTime>06/05/2013 21:53:03</publishTime>
+    </File>
+    <File Include="Documents/E-dozvoli_upatsvo za podnositeli_koregirano.pdf">
+      <publishTime>06/04/2013 18:58:32</publishTime>
+    </File>
+    <File Include="Documents/ПРАВИЛНИК ЗА ДОПОЛНУВАЊЕ НА ПРАВИЛНИКОТ ЗА СОДРЖИНАТА НА ПРОЕКТИТЕ ОЗНАЧУВАЊЕТО НА ПРОЕКТОТ НАЧИНОТ НА ЗАВЕРКА НА ПРОЕКТОТ.pdf">
+      <publishTime>06/07/2013 09:20:37</publishTime>
+    </File>
+    <File Include="Documents/ПРАВИЛНИК ЗА ИЗМЕНУВАЊЕ И ДОПОЛНУВАЊЕ НА ПРАВИЛНИКОТ ЗА НАЧИНОТ НА СПРОВЕДУВАЊЕ НА ПОСТАПКАТА ЗА ДОБИВАЊЕ НА ОДОБРЕНИЕ ЗА ГРАДЕЊЕ НА ЕЛЕКТРОНСКИ НАЧИН.pdf">
+      <publishTime>07/02/2013 11:11:12</publishTime>
+    </File>
+    <File Include="Documents/ПРАВИЛНИК ЗА ИЗМЕНУВАЊЕ И ДОПОЛНУВАЊЕ НА ПРАВИЛНИКОТ ЗА СОДРЖИНАТА НА ПРОЕКТИТЕ ОЗНАЧУВАЊЕТО НА ПРОЕКТОТ НАЧИНОТ НА ЗAВЕРКА НА ПРОЕКТОТ ОД СТРАНА НА ОДГОВОРНИТЕ ЛИЦА.pdf">
+      <publishTime>06/07/2013 09:20:37</publishTime>
+    </File>
+    <File Include="Documents/ПРАВИЛНИК ЗА ИЗМЕНУВАЊЕ И ДОПОЛНУВАЊЕ НА ПРАВИЛНИКОТ ЗА СОДРЖИНАТА НА ПРОЕКТИТЕ ОЗНАЧУВАЊЕТО НА ПРОЕКТОТ НАЧИНОТ НА ЗAВЕРКА НА ПРОЕКТОТ.pdf">
+      <publishTime>06/04/2013 18:58:32</publishTime>
+    </File>
+    <File Include="Documents/ПРАВИЛНИК ЗА НАЧИНОТ НА СПРОВЕДУВАЊЕ НА ПОСТАПКАТА ЗА ДОБИВАЊЕ НА ОДОБРЕНИЕ ЗА ГРАДЕЊЕ НА ЕЛЕКТРОНСКИ НАЧИН.pdf">
+      <publishTime>06/04/2013 18:58:32</publishTime>
+    </File>
+    <File Include="Documents/ПРАВИЛНИК ЗА СОДРЖИНАТА НА ПРОЕКТИТЕ ОЗНАЧУВАЊЕТО НА ПРОЕКТОТ НАЧИНОТ НА ЗАВЕРКА НА ПРОЕКТОТ ОД СТРАНА НА ОДГОВОРНИТЕ ЛИЦА.pdf">
+      <publishTime>06/07/2013 09:20:37</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/accent.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/ajax-loader.gif">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/bullet.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/captcha.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/create-new-request-ico.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/delete.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/edit.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/generate.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/generate_disabled.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/heroAccent.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/mail-logo.png">
+      <publishTime>05/31/2013 09:41:30</publishTime>
+    </File>
+    <File Include="Images/odobri.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/odobri_disabled.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/orderedList0.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/orderedList1.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/orderedList2.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/orderedList3.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/orderedList4.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/orderedList5.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/orderedList6.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/orderedList7.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/orderedList8.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/orderedList9.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/otkazi_proces.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/otkazi_proces_disabled.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/preload.gif">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/refresh.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/vrati.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/vrati_disabled.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/zavrsi.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Images/zavrsi_disabled.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Lib/nssigner.jar">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Lib/sgson-2.2.2.jar">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/ajaxfileupload.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/repository/applications-parameters.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/repository/cadastre.js">
+      <publishTime>07/02/2013 15:29:57</publishTime>
+    </File>
+    <File Include="Scripts/app/repository/documents-attributes.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/repository/external-institutions.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/repository/lookups.js">
+      <publishTime>06/17/2013 08:59:20</publishTime>
+    </File>
+    <File Include="Scripts/app/repository/municipality.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/repository/public-requests.js">
+      <publishTime>06/20/2013 09:19:44</publishTime>
+    </File>
+    <File Include="Scripts/app/repository/request-types.js">
+      <publishTime>06/05/2013 22:02:29</publishTime>
+    </File>
+    <File Include="Scripts/app/repository/requests.js">
+      <publishTime>06/28/2013 10:12:18</publishTime>
+    </File>
+    <File Include="Scripts/app/repository/roles.js">
+      <publishTime>06/07/2013 11:57:22</publishTime>
+    </File>
+    <File Include="Scripts/app/repository/users.js">
+      <publishTime>07/03/2013 12:17:17</publishTime>
+    </File>
+    <File Include="Scripts/app/repository/workflow.js">
+      <publishTime>06/20/2013 12:16:53</publishTime>
+    </File>
+    <File Include="Scripts/app/signer/deployJava.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/signer/JavaCheckerWidget.js">
+      <publishTime>06/05/2013 12:59:12</publishTime>
+    </File>
+    <File Include="Scripts/app/signer/SelectCertificateWidget.js">
+      <publishTime>07/02/2013 16:35:47</publishTime>
+    </File>
+    <File Include="Scripts/app/signer/signer.js">
+      <publishTime>06/05/2013 17:06:22</publishTime>
+    </File>
+    <File Include="Scripts/app/signer/signRequest.js">
+      <publishTime>07/02/2013 11:11:12</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/ApplicationParametersHistoryViewModel.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/ApplicationParametersViewModel.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/CadastreViewModel.js">
+      <publishTime>06/28/2013 15:04:09</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/DefineExternalInsititutionsViewModel.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/DefineMunicipalitiesViewModel.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/DefineRequiredDocumentsViewModel.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/DocumentTypeAttributesViewModel.js">
+      <publishTime>06/04/2013 16:23:58</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/ForgotPasswordConfirmationViewModel.js">
+      <publishTime>06/24/2013 10:32:28</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/ForgotPasswordViewModel.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/Models.js">
+      <publishTime>07/01/2013 09:25:59</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/NewRequestViewModel.js">
+      <publishTime>07/04/2013 09:23:31</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/PublicRequestsViewModel.js">
+      <publishTime>06/07/2013 09:20:37</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/RegistrationConfirmationViewModel.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/RegistrationViewModel.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/RequestDetailsViewModel.js">
+      <publishTime>06/28/2013 13:52:16</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/RequestFullHistoryViewModel.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/RequestUploadDocumentViewModel.js">
+      <publishTime>06/17/2013 08:59:20</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/ResetPasswordViewModel.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/SetRolesViewModel.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/UsersGridRoleFilterViewModel.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/viewmodels/Workflow.js">
+      <publishTime>07/04/2013 11:39:16</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/ApplicationParametersEditWidget.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/ApplicationParametersHistoryWidget.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/ApplicationParametersWidget.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/AttachDocumentWidget.js">
+      <publishTime>06/07/2013 09:20:37</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/CadastreWidget.js">
+      <publishTime>07/02/2013 15:29:57</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/DefineEmployeeForRequestWidget.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/DefineExternalInsititutionsWidget.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/DefineMunicipalitiesWidget.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/DefineRequiredDocumentsWidget.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/DocumentTypeAttributesWidget.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/ForgotPasswordConfirmationWidget.js">
+      <publishTime>07/03/2013 11:08:40</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/ForgotPasswordWidget.js">
+      <publishTime>07/03/2013 11:08:40</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/KpiGridWidget.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/KpiGridWidget2.js">
+      <publishTime>06/20/2013 09:19:44</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/NewRequestAttachDocumentWidget.js">
+      <publishTime>06/07/2013 09:20:37</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/NewRequestDefineAttributesWidget.js">
+      <publishTime>06/07/2013 09:20:37</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/NewRequestWidget.js">
+      <publishTime>07/02/2013 15:29:57</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/paginate_table.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/PublicRequestsWidget.js">
+      <publishTime>06/12/2013 16:47:44</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/RegistrationConfirmationWidget.js">
+      <publishTime>07/03/2013 11:37:29</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/RegistrationWidget.js">
+      <publishTime>07/05/2013 15:34:54</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/RequestDetailsWidget.js">
+      <publishTime>06/20/2013 12:16:53</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/RequestFullHistoryWidget.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/RequestsGridWidget.js">
+      <publishTime>06/17/2013 08:59:20</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/RequestUploadDocumentWidget.js">
+      <publishTime>06/17/2013 08:59:20</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/RequestUploadFinanceWidget.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/ResetPasswordWidget.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/SetRolesWidget.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/UsersGridWidget.js">
+      <publishTime>06/07/2013 11:57:22</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/WidgetHelpers.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/app/widgets/_WidgetTemplate.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/chosen.jquery.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/chosen.jquery.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/framework/ko.extensions.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/framework/notification.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/framework/ns.config.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/framework/ns.controls.ajaxlogin.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/framework/ns.controls.js">
+      <publishTime>07/03/2013 11:35:46</publishTime>
+    </File>
+    <File Include="Scripts/framework/ns.utils.js">
+      <publishTime>07/02/2013 16:35:47</publishTime>
+    </File>
+    <File Include="Scripts/framework/ns.validators.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/infuser-amd.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/infuser-amd.min.gz.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/infuser-amd.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/infuser.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/infuser.min.gz.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/infuser.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jqGrid/Grid.js">
+      <publishTime>05/30/2013 16:49:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.8.3.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.8.3.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-file-uploader/canvas-to-blob.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-file-uploader/css/jquery.fileupload-ui-noscript.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-file-uploader/css/jquery.fileupload-ui.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-file-uploader/css/style.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-file-uploader/img/loading.gif">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-file-uploader/img/progressbar.gif">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-file-uploader/jquery.fileupload-fp.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-file-uploader/jquery.fileupload-ui.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-file-uploader/jquery.fileupload.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-file-uploader/jquery.iframe-transport.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-file-uploader/jquery.ui.widget.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-file-uploader/load-image.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-file-uploader/main.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-file-uploader/tmpl.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.9.2.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.9.2.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/images/ui-bg_glass_75_ffffff_1x400.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/images/ui-bg_inset-soft_95_fef1ec_1x100.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/images/ui-icons_222222_256x240.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/images/ui-icons_454545_256x240.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/images/ui-icons_888888_256x240.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/images/ui-icons_f6cf3b_256x240.png">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/jquery-ui-1.9.2.custom.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/css/jquery.ui.1.9.2.ie.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/jQuery-UI-Date-Range-Picker/css/ui.daterangepicker.css">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/jQuery-UI-Date-Range-Picker/index.html">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/jQuery-UI-Date-Range-Picker/js/date.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/jQuery-UI-Date-Range-Picker/js/daterangepicker.jQuery.compressed.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/jQuery-UI-Date-Range-Picker/js/daterangepicker.jQuery.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/jQuery-UI-FileInput/css/enhanced.css">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/jQuery-UI-FileInput/images/icon-generic.gif">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/jQuery-UI-FileInput/images/icon-image.gif">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/jQuery-UI-FileInput/images/icon-media.gif">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/jQuery-UI-FileInput/images/icon-zip.gif">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/jQuery-UI-FileInput/js/enhance.min.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/jQuery-UI-FileInput/js/fileinput.jquery.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/wijmo/jquery.bgiframe-2.1.3-pre.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/wijmo/jquery.mousewheel.min.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/wijmo/jquery.wijmo-open.1.5.0.css">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-bootstrap/third-party/wijmo/jquery.wijmo-open.1.5.0.min.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery.blockUI.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery.blockUI.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery.jqGrid.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery.jqGrid.src.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.2.1.debug.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/knockout-2.2.1.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/knockout.mapping-latest.debug.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/knockout.mapping-latest.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/knockout.validation.debug.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/knockout.validation.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/koExternalTemplateEngine-amd.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/koExternalTemplateEngine-amd.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/koExternalTemplateEngine.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/koExternalTemplateEngine.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/koExternalTemplateEngine_all.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/koExternalTemplateEngine_all.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/localization/jqGrid/grid.locale-mk.js">
+      <publishTime>06/06/2013 15:26:39</publishTime>
+    </File>
+    <File Include="Scripts/localization/jqGrid/grid.locale-sq.js">
+      <publishTime>06/06/2013 15:26:39</publishTime>
+    </File>
+    <File Include="Scripts/localization/jqueryui/jquery.ui.datepicker-mk.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/localization/jqueryui/jquery.ui.datepicker-sq.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/localization/ko.validation/mk-MK.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/localization/ko.validation/sq-SQ.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/password_unmask.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/plugins/autoNumeric-1.7.4.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/bootstrap-transfer/css/bootstrap-transfer.css">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/bootstrap-transfer/img/bootstrap-transfer-default-bg.gif">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/bootstrap-transfer/img/bootstrap-transfer-nav-bg.gif">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/bootstrap-transfer/img/bootstrap-transfer-selector-add.gif">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/bootstrap-transfer/img/bootstrap-transfer-selector-addall.gif">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/bootstrap-transfer/img/bootstrap-transfer-selector-remove.gif">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/bootstrap-transfer/img/bootstrap-transfer-selector-removeall.gif">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/bootstrap-transfer/img/glyphicons-halflings.png">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/bootstrap-transfer/js/bootstrap-transfer.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/date.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery-cookie/jquery.cookie.js">
+      <publishTime>06/06/2013 16:03:51</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery-cookie/README.md">
+      <publishTime>06/06/2013 16:03:51</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.ba-hashchange.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.ba-hashchange.min.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.ba-resize.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.blockUI.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.cyrillic.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.filedownload.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.latin.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.livequery.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.masonry.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.masonry.min.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.multiselect/jquery.multiselect.css">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.multiselect/jquery.multiselect.filter.css">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.multiselect/jquery.multiselect.filter.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.multiselect/jquery.multiselect.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.numeric.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.table.navigation.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.tipTip.min.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/jquery.tmpl.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/json2.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/modernizr-1.7.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/modernizr-1.7.min.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/tooltip/jquery.tipTip.minified.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/tooltip/jquery.tipTip.minified.min.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/tooltip/tipTip.css">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/tooltip/tipTip.min.css">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/bootstrap/css/bootstrap-responsive.css">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/bootstrap/css/bootstrap-responsive.min.css">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/bootstrap/css/bootstrap.css">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/bootstrap/css/bootstrap.min.css">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/bootstrap/img/glyphicons-halflings-white.png">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/bootstrap/img/glyphicons-halflings.png">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/bootstrap/js/bootstrap.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/bootstrap/js/bootstrap.min.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/examples/basic-custombuttons.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/examples/basic-custombuttonsfirstlast.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/examples/basic-disabletabclick.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/examples/basic-finishbutton.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/examples/basic-formvalidation.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/examples/basic-inverse.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/examples/basic-pills.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/examples/basic-progressbar.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/examples/basic-tabsleft.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/examples/basic.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/examples/multiple.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/index.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/jquery.bootstrap.wizard.js">
+      <publishTime>07/02/2013 15:29:57</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/prettify.css">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/prettify.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/twitter-bootstrap-wizard/README.md">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/plugins/ui.achtung-min.js">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Scripts/TrafficCop-amd.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/TrafficCop-amd.min.gz.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/TrafficCop-amd.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/TrafficCop.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/TrafficCop.min.gz.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Scripts/TrafficCop.min.js">
+      <publishTime>05/28/2013 15:44:06</publishTime>
+    </File>
+    <File Include="Services/Cadastre.asmx">
+      <publishTime>06/18/2013 15:02:43</publishTime>
+    </File>
+    <File Include="templates/application-parameter-edit.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/application-parameter-history.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/application-parameters.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/attach-document.tmpl.html">
+      <publishTime>06/07/2013 09:20:37</publishTime>
+    </File>
+    <File Include="templates/cadastre.tmpl.html">
+      <publishTime>07/04/2013 15:44:55</publishTime>
+    </File>
+    <File Include="templates/define-employe-request.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/define-external-institutions.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/define-municipalities.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/define-required-documents.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/document-type-attributes.tmpl.html">
+      <publishTime>06/04/2013 16:23:58</publishTime>
+    </File>
+    <File Include="templates/forgot-password-confirmation.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/forgot-password.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/new-request-additional-documents.tmpl.html">
+      <publishTime>05/30/2013 22:30:36</publishTime>
+    </File>
+    <File Include="templates/new-request-attach-document.tmpl.html">
+      <publishTime>06/07/2013 09:20:37</publishTime>
+    </File>
+    <File Include="templates/new-request-common-informations.tmpl.html">
+      <publishTime>07/01/2013 09:25:59</publishTime>
+    </File>
+    <File Include="templates/new-request-contact-informations.tmpl.html">
+      <publishTime>06/03/2013 11:55:12</publishTime>
+    </File>
+    <File Include="templates/new-request-define-attributes.tmpl.html">
+      <publishTime>06/07/2013 09:20:37</publishTime>
+    </File>
+    <File Include="templates/new-request-document-row.tmpl.html">
+      <publishTime>06/07/2013 09:20:37</publishTime>
+    </File>
+    <File Include="templates/new-request-licence-agreement.tmpl.html">
+      <publishTime>06/07/2013 09:20:37</publishTime>
+    </File>
+    <File Include="templates/new-request-required-documents.tmpl.html">
+      <publishTime>05/30/2013 22:30:36</publishTime>
+    </File>
+    <File Include="templates/new-request.tmpl.html">
+      <publishTime>05/30/2013 22:30:36</publishTime>
+    </File>
+    <File Include="templates/process-documents-dialog.tmpl.html">
+      <publishTime>05/28/2013 16:07:58</publishTime>
+    </File>
+    <File Include="templates/public-request-common-info.tmpl.html">
+      <publishTime>06/06/2013 15:26:39</publishTime>
+    </File>
+    <File Include="templates/public-request-contact-info.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/public-request-details.tmpl.html">
+      <publishTime>06/27/2013 09:25:43</publishTime>
+    </File>
+    <File Include="templates/public-request-document-row.tmpl.html">
+      <publishTime>06/12/2013 09:52:11</publishTime>
+    </File>
+    <File Include="templates/public-request-documents.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/public-request-finance.tmpl.html">
+      <publishTime>06/17/2013 09:29:35</publishTime>
+    </File>
+    <File Include="templates/public-request-investors.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/public-request-notifications.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/public-request-single.tmpl.html">
+      <publishTime>06/27/2013 09:25:43</publishTime>
+    </File>
+    <File Include="templates/public-requests-list.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/registration-confirmation.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/registration-start.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/request-details-2UserNotification.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/request-details-action-Appeal.tmpl.html">
+      <publishTime>07/04/2013 15:44:55</publishTime>
+    </File>
+    <File Include="templates/request-details-action-Approved.tmpl.html">
+      <publishTime>07/04/2013 15:44:55</publishTime>
+    </File>
+    <File Include="templates/request-details-action-Archived.tmpl.html">
+      <publishTime>07/04/2013 15:44:55</publishTime>
+    </File>
+    <File Include="templates/request-details-action-AssignedTo.tmpl.html">
+      <publishTime>06/17/2013 09:29:35</publishTime>
+    </File>
+    <File Include="templates/request-details-action-AssignedToController.tmpl.html">
+      <publishTime>06/17/2013 09:29:35</publishTime>
+    </File>
+    <File Include="templates/request-details-action-AssignedToHead.tmpl.html">
+      <publishTime>06/17/2013 09:29:35</publishTime>
+    </File>
+    <File Include="templates/request-details-action-Canceled.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/request-details-action-CanceledMajorApprove.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/request-details-action-ControllorApprove.tmpl.html">
+      <publishTime>06/17/2013 09:29:35</publishTime>
+    </File>
+    <File Include="templates/request-details-action-Finance.tmpl.html">
+      <publishTime>06/17/2013 09:29:35</publishTime>
+    </File>
+    <File Include="templates/request-details-action-Finance2.tmpl.html">
+      <publishTime>07/03/2013 10:47:27</publishTime>
+    </File>
+    <File Include="templates/request-details-action-FinanceMajorApprove.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/request-details-action-FinanceToControllor.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/request-details-action-FinanceToUser.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/request-details-action-HeadApprove.tmpl.html">
+      <publishTime>06/17/2013 09:29:35</publishTime>
+    </File>
+    <File Include="templates/request-details-action-Institutions.tmpl.html">
+      <publishTime>06/24/2013 14:19:55</publishTime>
+    </File>
+    <File Include="templates/request-details-action-InstitutionToController.tmpl.html">
+      <publishTime>06/24/2013 14:19:55</publishTime>
+    </File>
+    <File Include="templates/request-details-action-InstitutionToHead.tmpl.html">
+      <publishTime>06/28/2013 13:52:16</publishTime>
+    </File>
+    <File Include="templates/request-details-action-MajorApproveRequest.tmpl.html">
+      <publishTime>06/11/2013 11:45:24</publishTime>
+    </File>
+    <File Include="templates/request-details-action-OfficerApprove.tmpl.html">
+      <publishTime>06/17/2013 09:29:35</publishTime>
+    </File>
+    <File Include="templates/request-details-action-OfficerSelectInstitution.tmpl.html">
+      <publishTime>06/26/2013 09:30:50</publishTime>
+    </File>
+    <File Include="templates/request-details-action-Redirected.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/request-details-action-RefillDocuments.tmpl.html">
+      <publishTime>07/04/2013 15:44:55</publishTime>
+    </File>
+    <File Include="templates/request-details-action-RefillInstitutionDocuments.tmpl.html">
+      <publishTime>07/04/2013 15:44:55</publishTime>
+    </File>
+    <File Include="templates/request-details-action-Sended.tmpl.html">
+      <publishTime>06/07/2013 10:09:07</publishTime>
+    </File>
+    <File Include="templates/request-details-action-Withdrawn.tmpl.html">
+      <publishTime>06/17/2013 09:29:35</publishTime>
+    </File>
+    <File Include="templates/request-details-action-WithdrawnApprove.tmpl.html">
+      <publishTime>07/04/2013 15:44:55</publishTime>
+    </File>
+    <File Include="templates/request-details-action.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/request-details-case.tmpl.html">
+      <publishTime>07/04/2013 15:44:55</publishTime>
+    </File>
+    <File Include="templates/request-details-deadlines.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/request-details-documents.tmpl.html">
+      <publishTime>06/17/2013 09:29:35</publishTime>
+    </File>
+    <File Include="templates/request-details-fullhistory.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/request-details-history.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/request-details-reviews.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/request-details-upload-documents.tmpl.html">
+      <publishTime>07/03/2013 10:47:27</publishTime>
+    </File>
+    <File Include="templates/request-details.tmpl.html">
+      <publishTime>06/19/2013 21:07:34</publishTime>
+    </File>
+    <File Include="templates/request-upload-document.tmpl.html">
+      <publishTime>07/04/2013 15:44:55</publishTime>
+    </File>
+    <File Include="templates/reset-password.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/set-roles.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/signer/java-check-dialog.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/signer/select-certificate.tmpl.html">
+      <publishTime>06/12/2013 09:52:11</publishTime>
+    </File>
+    <File Include="templates/workflow/workflow-actions.tmpl.html">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="templates/workflow/workflow-document-actions.tmpl.html">
+      <publishTime>07/04/2013 15:44:55</publishTime>
+    </File>
+    <File Include="Views/Account/Confirmation.cshtml">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Views/Account/ConfirmInformation.cshtml">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPassword.cshtml">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Views/Account/ForgotPasswordConfirmation.cshtml">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>07/03/2013 11:04:46</publishTime>
+    </File>
+    <File Include="Views/Account/Profile.cshtml">
+      <publishTime>06/17/2013 08:59:20</publishTime>
+    </File>
+    <File Include="Views/Account/Registration.cshtml">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Views/Errors/NotFound.cshtml">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Views/Errors/Unauthorized.cshtml">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Views/Errors/Unknown.cshtml">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Views/Mail/EmailToEmployerForRequest.html.cshtml">
+      <publishTime>06/03/2013 14:06:51</publishTime>
+    </File>
+    <File Include="Views/Mail/ResetPasswordConfirmation.html.cshtml">
+      <publishTime>05/30/2013 22:30:36</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToApplicantForApproveRequest.html.cshtml">
+      <publishTime>06/03/2013 14:44:11</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToApplicantForArchivedRequest.html.cshtml">
+      <publishTime>06/17/2013 08:59:20</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToApplicantForRejectionRequest.html.cshtml">
+      <publishTime>06/03/2013 14:44:11</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToApplicantForRework.html.cshtml">
+      <publishTime>06/03/2013 14:06:23</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToApplicantForUtilities.html.cshtml">
+      <publishTime>05/30/2013 19:57:14</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToApplicantForWithdrawnRequest.html.cshtml">
+      <publishTime>06/06/2013 13:23:22</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToArhiver.html.cshtml">
+      <publishTime>06/17/2013 08:59:20</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToController.html.cshtml">
+      <publishTime>06/03/2013 14:05:57</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToFinanceForUtilities.html.cshtml">
+      <publishTime>06/17/2013 08:59:20</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToFinancer.html.cshtml">
+      <publishTime>06/17/2013 08:59:20</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToHead.html.cshtml">
+      <publishTime>06/03/2013 14:44:11</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToHeadAfterRefilDocuments.html.cshtml">
+      <publishTime>06/17/2013 08:59:20</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToInstitution.html.cshtml">
+      <publishTime>06/03/2013 14:07:48</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToInstitutionForNotResponse.html.cshtml">
+      <publishTime>06/03/2013 14:08:33</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToMajor.html.cshtml">
+      <publishTime>06/03/2013 14:09:09</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToOfficer.html.cshtml">
+      <publishTime>06/03/2013 14:09:09</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToOfficerForAssignRequest.html.cshtml">
+      <publishTime>06/03/2013 14:09:30</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToOfficerForWithdrawnRequest.html.cshtml">
+      <publishTime>05/28/2013 15:44:08</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToOfficerOnLastReply.html.cshtml">
+      <publishTime>05/28/2013 15:44:08</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToOtherInstitutionForNewRequest.html.cshtml">
+      <publishTime>06/03/2013 14:10:33</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToRakovoditelForWithdrawnRequest.html.cshtml">
+      <publishTime>06/06/2013 11:08:24</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToUserAfterSentRequest.html.cshtml">
+      <publishTime>06/17/2013 08:59:20</publishTime>
+    </File>
+    <File Include="Views/Mail/SendEmailToUserForResentRequestToOtherInstitution.html.cshtml">
+      <publishTime>05/30/2013 20:11:34</publishTime>
+    </File>
+    <File Include="Views/Mail/SendRegistrationConfirmationEmailToUser.html.cshtml">
+      <publishTime>06/03/2013 14:45:43</publishTime>
+    </File>
+    <File Include="Views/Mail/SendWelcomeEmailToUser.html.cshtml">
+      <publishTime>06/03/2013 14:19:34</publishTime>
+    </File>
+    <File Include="Views/Mail/SentForgotPasswordInformation.html.cshtml">
+      <publishTime>06/07/2013 13:50:41</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>05/28/2013 15:44:08</publishTime>
+    </File>
+    <File Include="Views/Shared/_ MailLayout.cshtml">
+      <publishTime>05/30/2013 22:30:36</publishTime>
+    </File>
+    <File Include="Views/Shared/_FrontPageLayout.cshtml">
+      <publishTime>07/02/2013 11:11:41</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>05/28/2013 15:44:08</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>07/04/2013 15:44:55</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartialPublic.cshtml">
+      <publishTime>05/28/2013 15:44:08</publishTime>
+    </File>
+    <File Include="Views/Shared/_MainLayout.cshtml">
+      <publishTime>06/13/2013 15:35:29</publishTime>
+    </File>
+    <File Include="Views/Shared/_MainNavigation.cshtml">
+      <publishTime>05/28/2013 15:44:08</publishTime>
+    </File>
+    <File Include="Views/Shared/_SidebarNavigation.cshtml">
+      <publishTime>05/28/2013 15:44:08</publishTime>
+    </File>
+    <File Include="Views/UpgradeBrowser/Index.cshtml">
+      <publishTime>06/06/2013 15:26:39</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>05/28/2013 15:44:07</publishTime>
+    </File>
+    <File Include="Web References/mk.gov.katastar.www/ATRparceli.datasource">
+      <publishTime>06/18/2013 14:56:38</publishTime>
+    </File>
+    <File Include="Web References/mk.gov.katastar.www/dzgr.datasource">
+      <publishTime>06/18/2013 14:56:38</publishTime>
+    </File>
+    <File Include="Web References/mk.gov.katastar.www/dzgr2.datasource">
+      <publishTime>06/18/2013 14:56:36</publishTime>
+    </File>
+    <File Include="Web References/mk.gov.katastar.www/katopstini.datasource">
+      <publishTime>06/18/2013 14:56:39</publishTime>
+    </File>
+    <File Include="Web References/mk.gov.katastar.www/opstini.datasource">
+      <publishTime>06/18/2013 14:56:36</publishTime>
+    </File>
+    <File Include="Web References/mk.gov.katastar.www/Reference.map">
+      <publishTime>06/18/2013 14:56:27</publishTime>
+    </File>
+    <File Include="Web References/mk.gov.katastar.www/SERCICE987654321.disco">
+      <publishTime>06/18/2013 14:56:27</publishTime>
+    </File>
+    <File Include="Web References/mk.gov.katastar.www/SERCICE987654321.wsdl">
+      <publishTime>06/18/2013 14:56:27</publishTime>
+    </File>
+    <File Include="Web References/mk.gov.katastar.www/sops_zapisi.datasource">
+      <publishTime>06/18/2013 14:56:37</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/05/2013 16:41:50</publishTime>
+    </File>
+    <File Include="_app_offline.htm">
+      <publishTime>06/20/2013 12:12:57</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

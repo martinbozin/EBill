@@ -1,0 +1,42 @@
+﻿<ul id="primary" class="nav">
+    <li class="active">
+        <a href="@Url.Action("Index", "Home", new { area = "Admin" })">
+            @Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("_AdminNavigation.Pocetna")
+        </a>
+    </li>
+
+    @if (User.IsInRole(eDozvoli.Domain.Roles.MunicipalityAdministrator))
+    {
+        <li>
+            <a href="@Url.Action("Index", "Users", new { area = "Admin" })">
+                @Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("_AdminNavigation.Pocetna.Korisnici")
+            </a>
+        </li>
+    }
+
+    @if (
+        User.IsInRole(eDozvoli.Domain.Roles.Rakovoditel) ||
+        User.IsInRole(eDozvoli.Domain.Roles.Gradonacalnik)
+        )
+    {
+        <li>
+            <a href="@Url.Action("Index", "Kpi", new { area = "Admin" })">
+                @Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("_AdminNavigation.Pocetna.Kpi")
+            </a>
+        </li>
+    }
+</ul>
+
+<script type="text/javascript">
+    $(function () {
+        var mainLinks = $('ul#primary li a');
+        mainLinks.each(function () {
+            var loc = location.pathname.replace(baseUrl, '');
+            var current = $(this).attr('href').replace(baseUrl, '');
+            if (loc.indexOf(current) == 0) {
+                $('ul#primary li').removeClass("active");
+                $(this).parent().addClass('active');
+            }
+        });
+    });
+</script>

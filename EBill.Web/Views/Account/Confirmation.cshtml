@@ -1,0 +1,15 @@
+﻿@model EBills.Web.ViewModels.RegistrationConfirmationViewModel
+@{
+    ViewBag.Title = "Потврда за регистрација"; 
+    Layout = "../Shared/_FrontPageLayout.cshtml";
+}
+
+<div id="registration-confirmation-holder">   
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#registration-confirmation-holder").RegistrationConfirmationWidget({});
+        $("#registration-confirmation-holder").RegistrationConfirmationWidget("load");
+    });
+</script>

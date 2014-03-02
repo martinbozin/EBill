@@ -1,0 +1,18 @@
+﻿<div>
+    <p>
+        Предметот е повлечен од самиот барател.
+    </p>
+    <br />
+</div>
+
+<div class="file-upload-wrap">
+    <div data-bind="template: { name: 'workflow/workflow-document-actions', data: $root.WorkflowModel }">
+    </div>
+</div>
+
+<br />
+<div class="control-group">
+    <label><span data-bind="i18n: 'eDozvoli.Web.templates.request-details-fullhistory.Komentar'">Коментар</span></label>
+    <textarea data-bind="value: ActionModel().Comment"></textarea>
+</div>
+

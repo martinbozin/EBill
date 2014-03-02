@@ -1,0 +1,77 @@
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\ServiceLocatorInitializer.dll
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\ServiceLocatorInitializer.pdb
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Autofac.Configuration.dll
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Autofac.dll
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Autofac.Extras.CommonServiceLocator.dll
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\eDozvoli.Data.NHibernate.dll
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Nextsense.Infrastructure.dll
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\eDozvoli.Domain.dll
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Nextsense.Workflow.dll
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\NHibernate.dll
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Nextsense.Domain.dll
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\log4net.dll
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\eDozvoli.Security.dll
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Nextsense.ResourcesCommon.dll
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\eDozvoli.Data.NHibernate.pdb
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Autofac.xml
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Autofac.Extras.CommonServiceLocator.pdb
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\eDozvoli.Domain.pdb
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Nextsense.Workflow.pdb
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\NHibernate.xml
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Nextsense.Domain.pdb
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\log4net.xml
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\eDozvoli.Security.pdb
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Nextsense.ResourcesCommon.pdb
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\obj\Debug\ServiceLocatorInitializer.csprojResolveAssemblyReference.cache
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\obj\Debug\ServiceLocatorInitializer.dll
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\obj\Debug\ServiceLocatorInitializer.pdb
+D:\Projects\E-Dozvoli\DEV\ServiceLocatorInitializer\bin\Debug\Nextsense.Infrastructure.pdb
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\ServiceLocatorInitializer.dll
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\ServiceLocatorInitializer.pdb
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\Autofac.Configuration.dll
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\Autofac.dll
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\Autofac.Extras.CommonServiceLocator.dll
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\VipTopUp.Data.NHibernate.dll
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\Nextsense.Infrastructure.dll
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\VipTopUp.Domain.dll
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\NHibernate.dll
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\log4net.dll
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\VipTopUp.Data.NHibernate.pdb
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\Autofac.xml
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\Autofac.Extras.CommonServiceLocator.pdb
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\VipTopUp.Domain.pdb
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\NHibernate.xml
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\bin\Debug\log4net.xml
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\obj\Debug\ServiceLocatorInitializer.csprojResolveAssemblyReference.cache
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\obj\Debug\ServiceLocatorInitializer.dll
+C:\Users\martinb\Desktop\New folder\ServiceLocatorInitializer\obj\Debug\ServiceLocatorInitializer.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\ServiceLocatorInitializer\bin\Debug\ServiceLocatorInitializer.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\ServiceLocatorInitializer\bin\Debug\ServiceLocatorInitializer.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\ServiceLocatorInitializer\bin\Debug\VipTopUp.Data.NHibernate.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\ServiceLocatorInitializer\bin\Debug\Nextsense.Infrastructure.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\ServiceLocatorInitializer\bin\Debug\VipTopUp.Domain.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\ServiceLocatorInitializer\bin\Debug\NHibernate.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\ServiceLocatorInitializer\bin\Debug\log4net.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\ServiceLocatorInitializer\bin\Debug\VipTopUp.Data.NHibernate.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\ServiceLocatorInitializer\bin\Debug\VipTopUp.Domain.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\ServiceLocatorInitializer\obj\Debug\ServiceLocatorInitializer.csprojResolveAssemblyReference.cache
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\ServiceLocatorInitializer\obj\Debug\ServiceLocatorInitializer.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\ServiceLocatorInitializer\obj\Debug\ServiceLocatorInitializer.pdb
+D:\Projects\Template\ServiceLocatorInitializer\bin\Debug\ServiceLocatorInitializer.dll
+D:\Projects\Template\ServiceLocatorInitializer\bin\Debug\ServiceLocatorInitializer.pdb
+D:\Projects\Template\ServiceLocatorInitializer\bin\Debug\EBills.Data.NHibernate.dll
+D:\Projects\Template\ServiceLocatorInitializer\bin\Debug\Nextsense.Infrastructure.dll
+D:\Projects\Template\ServiceLocatorInitializer\bin\Debug\EBills.Domain.dll
+D:\Projects\Template\ServiceLocatorInitializer\bin\Debug\NHibernate.dll
+D:\Projects\Template\ServiceLocatorInitializer\bin\Debug\log4net.dll
+D:\Projects\Template\ServiceLocatorInitializer\bin\Debug\EBills.Data.NHibernate.pdb
+D:\Projects\Template\ServiceLocatorInitializer\bin\Debug\EBills.Domain.pdb
+D:\Projects\Template\ServiceLocatorInitializer\obj\Debug\ServiceLocatorInitializer.csprojResolveAssemblyReference.cache
+D:\Projects\Template\ServiceLocatorInitializer\obj\Debug\ServiceLocatorInitializer.dll
+D:\Projects\Template\ServiceLocatorInitializer\obj\Debug\ServiceLocatorInitializer.pdb

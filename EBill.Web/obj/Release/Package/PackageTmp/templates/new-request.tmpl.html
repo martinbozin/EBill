@@ -1,0 +1,52 @@
+﻿<div class="page-header">
+    <!-- ko if: !IsInEditMode() -->
+    <h2><span data-bind="i18n: 'eDozvoli.Web.templates.new-request.NovoBaranje'">Ново Барање</span></h2>
+    <!-- /ko -->
+    <!-- ko if: IsInEditMode() -->
+    <h2><span data-bind="i18n: 'eDozvoli.Web.templates.new-request.PromenaNaBaranje'">Промена на Барање</span></h2>
+    <!-- /ko -->
+</div>
+<div id="wrap" style="width: 1000px">
+    <div id="rootwizard" class="tabbable tabs-left">
+        <ul class="vertical-tabbbed-nav">
+            <li class="info-tab"><a href="#tab1" data-toggle="tab" data-bind="i18n: 'eDozvoli.Web.templates.new-request.InformaciiZaBaranjeto'">Информации за барањето</a></li>
+            <li class="contact-info-tab"><a href="#tab2" data-toggle="tab" data-bind="i18n: 'eDozvoli.Web.templates.new-request.InformaciiZaKontakt'">Информации за контакт</a></li>
+            <li class="necessary-documents-tab documents-tab"><a href="#tab3" data-toggle="tab" data-bind="i18n: 'eDozvoli.Web.templates.new-request.PotrebniDokumenti'">Потребни документи</a></li>
+            <li class="necessary-documents-tab documents-tab"><a href="#tab4" data-toggle="tab" data-bind="i18n: 'eDozvoli.Web.templates.new-request.DopolnitelniDokumenti'">Дополнителна документација</a></li>
+            <li class="certificate-tab"><a href="#tab5" data-toggle="tab" data-bind="i18n: 'eDozvoli.Web.templates.new-request.Potvrda'">Потврда</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane" id="tab1">
+                <div class="form-horizontal" data-bind="template: { name: 'new-request-common-informations' }">
+                </div>
+            </div>
+            <div class="tab-pane" id="tab2">
+                <div class="form-horizontal" data-bind="template: { name: 'new-request-contact-informations' }">
+                </div>
+            </div>
+            <div class="tab-pane" id="tab3">
+                <div class="form-horizontal" data-bind="template: { name: 'new-request-required-documents' }">
+                </div>
+            </div>
+            <div class="tab-pane" id="tab4">
+                <div class="form-horizontal" data-bind="template: { name: 'new-request-additional-documents' }">
+                </div>
+            </div>
+            <div class="tab-pane" id="tab5">
+                <div class="form-horizontal" data-bind="template: { name: 'new-request-licence-agreement' }">
+                </div>
+            </div>
+            <ul class="pager wizard form-actions">
+                <li class="next" style="float: right">
+                    <input type="button" class="btn btn-primary" value="Next" data-bind="value: languagePack['eDozvoli.Web.templates.Sleden']" />
+                </li>
+                <li class="next finish" style="display: none; float: right;">
+                    <input type="button" class="btn btn-primary" value="Finish" data-bind="value: languagePack['eDozvoli.Web.templates.Zavrsi']" />
+                </li>
+                <li class="previous" style="float: right; padding-right: 4px;">
+                    <input type="button" class="btn" value="Previous" data-bind="visible: showPreviuosButton, click: prevButtonClick, value: languagePack['eDozvoli.Web.templates.Prethoden']" />
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

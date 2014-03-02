@@ -1,0 +1,30 @@
+﻿<ul id="primary" class="nav">
+    @*<li class="active"><a href="@Url.Action("Index", "Home", new { area = "Zels" })">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Shared._ZelsAdminLayout.cshtml.Pocetna")</a></li>*@
+    <li>
+        <a href="@Url.Action("Index", "Users")">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Shared._ZelsAdminNavigation.cshtml.Korisnici")</a>
+    </li>
+    <li>
+        <a href="@Url.Action("Institutions", "Registers")" rel="Institutions" title="@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Shared._RegistersMenu.cshtml.Institucii")">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Shared._RegistersMenu.cshtml.Institucii")</a>
+    </li>
+    <li>
+        <a href="@Url.Action("DocumentTypes", "Registers")" rel="DocumentTypes" title="@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Shared._RegistersMenu.cshtml.TipNaDokumenti")">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Shared._RegistersMenu.cshtml.TipNaDokumenti")</a>
+    </li>
+    <li>
+        <a href="@Url.Action("RequestTypes", "Registers")" rel="RequestTypes" title="@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Shared._RegistersMenu.cshtml.TipNaBaranja")">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Shared._RegistersMenu.cshtml.TipNaBaranja")</a>
+    </li>
+    <li><a href="@Url.Action("Index", "ApplicationParameters")">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Shared._ZelsAdminNavigation.cshtml.Parametri")</a></li>
+</ul>
+
+<script type="text/javascript">
+    $(function () {
+        var mainLinks = $('ul#primary > li a');
+        mainLinks.each(function () {
+            var loc = location.pathname.replace(baseUrl, '');
+            var current = $(this).attr('href').replace(baseUrl, '');
+            if (loc.indexOf(current) == 0) {
+                $('ul#primary li').removeClass("active");
+                $(this).parent().addClass('active');
+            }
+        });
+    });
+</script>

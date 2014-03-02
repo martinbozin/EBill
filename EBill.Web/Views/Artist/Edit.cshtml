@@ -1,0 +1,32 @@
+﻿@model eDozvoli.Web.ViewModels.ArtistViewModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Artist</legend>
+        @Html.DisplayFor(x=>x.ArtistId)
+        @Html.EditorFor(model => model.ArtistId)
+        @Html.DisplayFor(f=>f.Name)
+        @Html.EditorFor(f=>f.Name)
+     @* @Html.ActionLink("Edit", "Artist", new { id=item.ID })*@
+    @*    @Html.ActionLink("Editiraj","Edit",new {artist = Model})*@
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@*@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}*@

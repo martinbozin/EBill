@@ -1,0 +1,93 @@
+﻿@using System.Configuration
+@using EBills.Infrastructure.MVC
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @{
+        //Ova mora vaka oti IE ne pocituva base tag ako ne e kompleten sose http i slicno
+        var baseUrl = Request.Url.Scheme + Uri.SchemeDelimiter + Request.Url.Host + Url.Content("~");
+        string resVersion = string.Format("v={0}", ConfigurationManager.AppSettings["StaticResourcesFQDNVersion"]);
+        var langKey = Martin.ResourcesCommon.ResourceManager.GetResourceValue("LanguageKey");
+        if (string.IsNullOrEmpty(langKey))
+        {
+            langKey = "MK";
+        }
+    }
+    <meta charset="utf-8" />
+    <base href="@baseUrl" />
+    <script type="text/javascript">
+        var baseUrl = '@baseUrl';
+    </script>
+    <title> @ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STYLES-->
+    <style type="text/css">
+        body {
+            padding-top: 40px;
+        }
+    </style>
+    <link href="@Html.Raw(Url.Content(string.Format("{1}{0}?{2}", "content/bootstrap.css", baseUrl, resVersion)))" rel="stylesheet" />
+    <link href="@Html.Raw(Url.Content(string.Format("{1}{0}?{2}", "content/bootstrap-responsive.css", baseUrl, resVersion)))" rel="stylesheet" />
+    <link href="@Html.Raw(Url.Content(string.Format("{1}{0}?{2}", "Scripts/jquery-ui-bootstrap/css/jquery-ui-1.9.2.custom.css", baseUrl, resVersion)))" rel="stylesheet" />
+    <link href="@Html.Raw(Url.Content(string.Format("{1}{0}?{2}", "content/jquery.jqGrid/ui.jqgrid.css", baseUrl, resVersion)))" rel="stylesheet"/>
+    <link href="@Html.Raw(Url.Content(string.Format("{1}{0}?{2}", "content/chosen.css", baseUrl, resVersion)))" rel="stylesheet"/>
+    <link href="@Html.Raw(Url.Content(string.Format("{1}{0}?{2}", "Scripts/plugins/bootstrap-transfer/css/bootstrap-transfer.css", baseUrl, resVersion)))" rel="stylesheet" />
+    <link href="@Html.Raw(Url.Content(string.Format("{1}{0}?{2}", "Scripts/plugins/jquery.multiselect/jquery.multiselect.css", baseUrl, resVersion)))" rel="stylesheet" />
+    <link href="@Html.Raw(Url.Content(string.Format("{1}{0}?{2}", "Scripts/plugins/jquery.multiselect/jquery.multiselect.filter.css", baseUrl, resVersion)))" rel="stylesheet" />
+    <link href="@Html.Raw(Url.Content(string.Format("{1}{0}?{2}", "Scripts/plugins/toolTip/tipTip.css", baseUrl, resVersion)))" rel="stylesheet" />
+    <link href="@Html.Raw(Url.Content(string.Format("{1}{0}?{2}", "content/site.css", baseUrl, resVersion)))" rel="stylesheet" />
+    <!--[if IE]>
+    <link href="@Html.Raw(Url.Content(string.Format("{1}{0}?{2}", "content/ie.css", baseUrl, resVersion)))" rel="stylesheet" />
+    <link href="@Html.Raw(Url.Content(string.Format("{1}{0}?{2}", "Scripts/jquery-ui-bootstrap/css/jquery.ui.1.9.2.ie.css", baseUrl, resVersion)))" rel="stylesheet" />
+    <![endif]-->
+
+    @*  @if (HttpContext.Current.IsDebuggingEnabled)
+    {
+        @Styles.Render("~/css/bootstrap")
+        @Styles.Render("~/css/jqueryui")
+        @Styles.Render("~/css/controls")
+        @Styles.Render("~/css/shared")
+        @Styles.Render("~/css/ie")
+    }
+    else
+    {
+        <link  href ="@Html.Raw(Url.Content(string.Format("{0}?{1}", "css/bootstrap", resVersion)))"  rel="stylesheet" />
+        <link  href ="@Html.Raw(Url.Content(string.Format("{0}?{1}", "css/jqueryui", resVersion)))"  rel="stylesheet" />
+        <link  href ="@Html.Raw(Url.Content(string.Format("{0}?{1}", "css/controls", resVersion)))"  rel="stylesheet" />
+        <link  href ="@Html.Raw(Url.Content(string.Format("{0}?{1}", "css/shared", resVersion)))"  rel="stylesheet" />
+        <!--[if IE]>
+        <link  href ="@Html.Raw(Url.Content(string.Format("{0}?{1}", "css/ie", resVersion)))"  rel="stylesheet" ></link>
+        <![endif]-->
+    }*@
+    <!-- PLUGINS-->
+    <script src="@Html.Raw(Url.Content(string.Format("{0}?{1}", "Home/Localization", resVersion)))" type="text/javascript"></script>
+    @if (HttpContext.Current.IsDebuggingEnabled)
+    {
+        @Html.MyScriptRender("~/js/jquery", resVersion)
+        @Html.MyScriptRender("~/js/jqueryui", resVersion)
+        @Html.MyScriptRender("~/js/knockout", resVersion)
+        @Html.MyScriptRender("~/js/plugins-core", resVersion)
+        @Html.MyScriptRender(string.Format("~/js/localizations-{0}", langKey), resVersion)
+        @Html.MyScriptRender("~/js/jqgrid", resVersion)
+        @Html.MyScriptRender("~/js/app", resVersion)
+       // @Html.MyScriptRender("~/js/signer", resVersion)
+    }
+    else
+    {
+        <script src="@Html.Raw(Url.Content(string.Format("{0}?{1}", "js/jquery", resVersion)))" type="text/javascript"></script>
+        <script src="@Html.Raw(Url.Content(string.Format("{0}?{1}", "js/jqueryui", resVersion)))" type="text/javascript"></script>
+        <script src="@Html.Raw(Url.Content(string.Format("{0}?{1}", "js/knockout", resVersion)))" type="text/javascript"></script>
+        <script src="@Html.Raw(Url.Content(string.Format("{0}?{1}", "js/plugins-core", resVersion)))" type="text/javascript"></script>
+        <script src="@Html.Raw(Url.Content(string.Format("{0}-{1}?{2}", "js/localizations", langKey, resVersion)))" type="text/javascript"></script>
+        <script src="@Html.Raw(Url.Content(string.Format("{0}?{1}", "js/jqgrid", resVersion)))" type="text/javascript"></script>
+        <script src="@Html.Raw(Url.Content(string.Format("{0}?{1}", "js/app", resVersion)))" type="text/javascript"></script>@*
+        <script src="@Html.Raw(Url.Content(string.Format("{0}?{1}", "js/signer", resVersion)))" type="text/javascript"></script>*@
+    }
+ 
+</head>
+<body>
+    @RenderBody()
+</body>
+</html>

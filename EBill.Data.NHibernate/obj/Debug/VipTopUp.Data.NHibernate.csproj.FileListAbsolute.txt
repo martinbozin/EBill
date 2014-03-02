@@ -1,0 +1,49 @@
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\VipTopUp.Data.NHibernate.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\VipTopUp.Data.NHibernate.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\Autofac.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\log4net.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\Nextsense.Infrastructure.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\NHibernate.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\VipTopUp.Domain.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\VipTopUp.Infrastructure.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\VipTopUp.Security.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\Nextsense.Common.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\System.Web.Optimization.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\VipTopUp.Domain.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\VipTopUp.Security.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\VipTopUp.Infrastructure.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\Autofac.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\log4net.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\bin\Debug\NHibernate.xml
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\obj\Debug\VipTopUp.Data.NHibernate.csprojResolveAssemblyReference.cache
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\obj\Debug\VipTopUp.Data.NHibernate.dll
+C:\Users\martinb\Desktop\New folder\eDozvoli.Data.NHibernate\obj\Debug\VipTopUp.Data.NHibernate.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Data.NHibernate\obj\Debug\VipTopUp.Data.NHibernate.csprojResolveAssemblyReference.cache
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Data.NHibernate.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Data.NHibernate.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Domain.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Infrastructure.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Security.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Data.NHibernate\bin\Debug\Nextsense.Common.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Data.NHibernate\bin\Debug\System.Web.Optimization.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Domain.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Security.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Infrastructure.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Data.NHibernate\obj\Debug\VipTopUp.Data.NHibernate.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\VipTopUp.Data.NHibernate\obj\Debug\VipTopUp.Data.NHibernate.pdb
+D:\Projects\Template\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Data.NHibernate.dll
+D:\Projects\Template\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Data.NHibernate.pdb
+D:\Projects\Template\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Domain.dll
+D:\Projects\Template\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Infrastructure.dll
+D:\Projects\Template\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Security.dll
+D:\Projects\Template\VipTopUp.Data.NHibernate\bin\Debug\Nextsense.Common.dll
+D:\Projects\Template\VipTopUp.Data.NHibernate\bin\Debug\System.Web.Optimization.dll
+D:\Projects\Template\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Domain.pdb
+D:\Projects\Template\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Security.pdb
+D:\Projects\Template\VipTopUp.Data.NHibernate\bin\Debug\VipTopUp.Infrastructure.pdb
+D:\Projects\Template\VipTopUp.Data.NHibernate\obj\Debug\VipTopUp.Data.NHibernate.csprojResolveAssemblyReference.cache
+D:\Projects\Template\VipTopUp.Data.NHibernate\obj\Debug\VipTopUp.Data.NHibernate.dll
+D:\Projects\Template\VipTopUp.Data.NHibernate\obj\Debug\VipTopUp.Data.NHibernate.pdb

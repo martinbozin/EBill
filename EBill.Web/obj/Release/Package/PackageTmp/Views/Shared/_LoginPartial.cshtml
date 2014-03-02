@@ -1,0 +1,34 @@
+﻿@using Nextsense.ResourcesCommon.Data
+@using Nextsense.ResourcesCommon.Domain
+@if (Request.IsAuthenticated)
+{
+    <div class="btn-group pull-right">
+        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">@User.Identity.Name
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="@Url.Action("Profile", "Account", new { area = "" })">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("_LoginPartial.cshtml.Profil")</a></li>
+
+            @{
+                ResourcesCommonDataProvider rcdataprovider = new ResourcesCommonDataProvider();
+                List<Language> languages = rcdataprovider.GetAllEnabledLanguages();
+            }
+
+            @if (languages.Count > 1)
+            {
+                <li class="dropdown-submenu pull-left">
+                    <a tabindex="-1">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("_LoginPartial.cshtml.Jazik")</a>
+                    <ul class="dropdown-menu">
+                            @foreach (Language lang in languages)
+                            {
+                                <li><a tabindex="-1" href="@Url.Action("OnLanguageSelectorClick", "LanguageSelector", new { area = "", Language = lang.ShortTitle })">@lang.Title</a></li>
+                            }
+                    </ul>
+                </li>
+            }
+            <li class="divider"></li>
+            <li><a href="@Url.Action("Logout", "Account", new { area = "" })">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("_LoginPartial.cshtml.OdjaviSe")</a></li>
+        </ul>
+    </div>
+    <p class="navbar-text pull-right">@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("_LoginPartial.cshtml.NajaveniSteKako")&nbsp;</p>
+}

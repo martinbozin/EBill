@@ -1,0 +1,100 @@
+﻿<table class="table table-bordered table-striped new-request-table-holder">
+    <tbody>
+        <tr>
+            <th style="width: 90%" class="document-upload-header">
+                <span data-bind="text: ($index() + 1)"></span>.
+                <span data-bind="text: DocumentTypeName"></span>
+                <p style="font-style: italic; font-weight: normal" data-bind="text: DocumentTypeDescription"></p>
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div class="tabbable">
+                    <ul class="nav nav-tabs">
+                        <li class="documents-tab active" data-bind="attr: { rel: $data.DocumentTypeId() }">
+                            <a><span data-bind="i18n: 'eDozvoli.Web.templates.new-request-required-documents.Documenti'">Документи</span></a>
+                        </li>
+                        <li class="history-tab attributes_tab" data-bind="visible: $data.Attributes().length > 0, attr: { rel: $data.DocumentTypeId() }">
+                            <a><span data-bind="i18n: 'eDozvoli.Web.templates.new-request-required-documents.Atributi'">Дополнителен опис</span></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active tab-pane-documents" data-bind="attr: { rel: $data.DocumentTypeId() }">
+                            <button class="attach-document new-request-upload-btn btn btn-success" data-bind="i18n: 'eDozvoli.Web.new-request-documnet-row.prikaci'">Прикачи Документи</button>
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 1%">#</th>
+                                        <th style="width: 30%" data-bind="i18n: 'eDozvoli.Web.new-request-documnet-row.document'">Документ</th>
+                                        <th style="width: 20%" data-bind="i18n: 'eDozvoli.Web.new-request-documnet-row.komentar'">Коментар</th>
+                                        <th style="width: 30%" data-bind="i18n: 'eDozvoli.Web.new-request-documnet-row.datum'">Датум на прикачување</th>
+                                        <th style="width: 5%"></th>
+                                    </tr>
+                                </thead>
+                                <tbody data-bind="foreach: $root.GetDocumentsForType($data.DocumentTypeId())">
+                                    <tr>
+                                        <td><span data-bind="text: ($index() + 1) + '.'"></span></td>
+                                        <td>
+                                            <a data-bind="attr: { href: $data.FileDownloadUrl }, text: $data.FileName"></a>
+                                        </td>
+                                        <td>
+                                            <span data-bind="text: $data.Comment"></span>
+                                        </td>
+                                        <td>
+                                            <span data-bind="text: $data.Created"></span>
+                                        </td>
+                                        <td>
+                                            <span data-bind="visible: $data.IsDraft, click: $root.removeDraftDocument, attr: { title: languagePack['eDozvoli.Web.templates.new-request-required-documents.OdstraniDokument'] }"
+                                                class="btn btn-danger tipTip">
+                                                <i class="icon-trash icon-white"></i>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tbody data-bind="visible: $root.GetDocumentsForType($data.DocumentTypeId()).length == 0">
+                                    <tr>
+                                        <td colspan="5">
+                                            <p class="alert" data-bind="i18n: 'eDozvoli.Web.new-request-documnet-row.nema'">Нема пронајдени записи.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane tab-pane-attributes" data-bind="attr: { rel: $data.DocumentTypeId() }">
+                            <button class="define-attributes new-request-upload-btn btn btn-success" data-bind="i18n: 'eDozvoli.Web.templates.new-request-required-documents.DefinirajVrednosti'">Дефинирај вредности</button>
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 1%">#</th>
+                                        <th style="width: 20%">
+                                            <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-required-documents.Atributi'">Атрибути</span>
+                                        </th>
+                                        <th width="74%">
+                                            <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-required-documents.Vrednosti'">Вредности</span>
+                                        </th>
+                                        <th width="5%"></th>
+                                    </tr>
+                                </thead>
+                                <tbody data-bind="foreach: $root.GetAttributesForType($data.DocumentTypeId())">
+                                    <tr>
+                                        <td><span data-bind="text: ($index() + 1) + '.'"></span></td>
+                                        <td><span data-bind="text: DocumentTypeAttributeName"></span>
+                                        </td>
+                                        <td colspan="2">
+                                            <textarea disabled="disabled"
+                                                style="width: 90%; height: 40px"
+                                                data-bind="value: Value, attr: { rel: TypeOfAttribute }" />
+                                            <p style="font-style: italic; font-weight: normal"
+                                                data-bind="visible: DocumentTypeAttributeDescription() != null, text: DocumentTypeAttributeDescription ">
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

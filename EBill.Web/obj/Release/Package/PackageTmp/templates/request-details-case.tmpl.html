@@ -1,0 +1,179 @@
+﻿<div class="popover-title">
+    <h4><span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.InforamaciiZaKontakt'">Информации за контакт</span></h4>
+</div>
+<div class="case-block contact-person-case-block">
+    <div class="case-block-row">
+        <label data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.LiceZaKontakt'">Лице за контакт:</label>
+        <span data-bind="text: ContactPerson"></span>
+        <div class="clear-fix"></div>
+    </div>
+    <div class="case-block-row">
+        <label data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Mobilen'">Мобилен:</label>
+        <span data-bind="text: Mobile"></span>
+        <label data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Telefon'">Телефон:</label>
+        <span data-bind="text: Phone"></span>
+        <div class="clear-fix"></div>
+    </div>
+    <div class="case-block-row">
+
+        <label for="optionsCheckbox" data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Izvestuvanja'">Известувања</label>
+        <input type="checkbox" id="optionsCheckbox" data-bind="checked: SMS" disabled="disabled" class="chk-box">
+        <span data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Izjava'">Се согласувам до добивам известувања по СМС.</span>
+        <div class="clear-fix"></div>
+
+    </div>
+    <div class="case-block-row">
+        <label data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Email'">Е-маил:</label>
+        <span data-bind="text: Email"></span>
+        <div class="clear-fix"></div>
+    </div>
+</div>
+
+
+<h2 class="case-block-title">
+    <label data-bind="i18n: 'eDozvoli.Web.templates.public-requests.TipNaBaranje'">Барање за:</label>
+    <span data-bind="text: RequestTypeName"></span>
+</h2>
+
+<div class="case-block construction-case-block">
+    <div class="case-block-row">
+        <label data-bind="i18n: 'eDozvoli.Web.templates.public-requests.BrojNaUplata'">Број во уписна книга:</label>
+        <span data-bind="text: ArchiveNumber"></span>
+        <div class="clear-fix"></div>
+    </div>
+    <div class="case-block-row">
+        <label data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.VidNaGradba'">Вид на градба</label>
+        <span data-bind="text: ConstructionDescription"></span>
+
+        <label data-bind="i18n: 'eDozvoli.Web.templates.public-requests.AdresaNaObject'">Адреса на објектот / Делница со стационажа</label>
+        <span data-bind="text: ConstructionAddress"></span>
+        <div class="clear-fix"></div>
+    </div>
+    <div class="case-block-row">
+        <label data-bind="i18n: 'eDozvoli.Web.templates.public-requests.DatumNaKreiranje'">Датум на креирање:</label>
+        <span data-bind="text: Created"></span>
+
+        <label data-bind="i18n: 'eDozvoli.Web.templates.public-requests.DatumNaPoslednaPromena'">Датум на последна измена:</label>
+        <span data-bind="text: Modified"></span>
+
+        <div class="clear-fix"></div>
+    </div>
+    <div class="case-block-row">
+        <label data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.TipNaGradba'">Тип на градба</label>
+
+        <div class="radio-btn-full-row">
+            <input type="radio" name="Radio1" id="Radio1" value="1" data-bind="checked: ConstructionTypeId()" disabled="disabled" class="rdio-btn">
+            <span data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Tip1'">Тип 1</span>
+            <div class="clear-fix"></div>
+        </div>
+        <div class="radio-btn-full-row">
+            <input type="radio" name="Radio1" id="Radio2" value="2" data-bind="checked: ConstructionTypeId()" disabled="disabled" class="rdio-btn">
+            <span data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Tip2'">Тип 2</span>
+            <div class="clear-fix"></div>
+        </div>
+        <div class="radio-btn-full-row">
+            <input type="radio" name="Radio1" id="Radio3" value="3" data-bind="checked: ConstructionTypeId()" disabled="disabled" class="rdio-btn">
+            <span data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Tip3'">Градби во надлежност на Град Скопје</span>
+            <div class="clear-fix"></div>
+        </div>
+        <div class="radio-btn-full-row">
+            <input type="radio" name="Radio1" id="Radio4" value="4" data-bind="checked: ConstructionTypeId()" disabled="disabled" class="rdio-btn">
+            <span data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Tip4'">Градби во надлежност ДТИРЗ</span>
+            <div class="clear-fix"></div>
+        </div>
+        <div class="clear-fix"></div>
+    </div>
+
+    <div class="case-block-tbl-simulation" style="padding: 0">
+        <div class="case-block-row">
+            <table class="table table-bordered table-condensed">
+                <tr>
+                    <td style="width: 30%; background: #eee;">
+                        <span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.Opstina'">Општина:</span>
+                    </td>
+                    <td>
+                        <div data-bind="foreach: $parent.RequestMunicipalities()">
+                            <span style="padding-right: 0px" data-bind="text: MunicipalityName() + ','"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background: #eee; border-top: solid 1px #ddd;">
+                        <span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.katOpstina'">Катастарски Општини и Парецели</span>
+                    </td>
+                    <td style="border-top: solid 1px #ddd;">
+                        <span style="padding-right: 0px" data-bind="i18n: 'eDozvoli.Web.templates.public-requests.pogled'">За да ги прегледате сите катастарски општини и парцели кликнете</span>
+                        <button class="show-cadastre-municipalities btn btn-link" data-bind="i18n: 'eDozvoli.Web.templates.public-requests.ovde'">овде.</button>
+                        <div data-bind="foreach: $parent.RequestMunicipalities" style="display: none">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <td style="background: #7ca8cf;" colspan="3">
+                                            <span style="padding-right: 0px; color: #fff;">Општина:</span>
+                                            <span style="color: #fff;" data-bind="text: MunicipalityName()"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="width: 10px">#</th>
+                                        <th>Катастарска општина</th>
+                                        <th>Катастарска парцела</th>
+                                    </tr>
+                                </thead>
+                                <tbody data-bind="foreach: CadastreMunicipalities">
+                                    <tr>
+                                        <td>
+                                            <span data-bind="text: ($index() + 1) + '.'"></span>
+                                        </td>
+                                        <td>
+                                            <span data-bind="text: CadastreMunicipalityName"></span>
+                                        </td>
+                                        <td>
+                                            <span data-bind="text: CadastreParcel"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+</div>
+
+<h2 class="case-block-title">
+    <label data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Investitori'">Инвеститори</label>
+ 
+</h2>
+<div class="case-block investors-case-block">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th><span data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Ime'">Име</span></th>
+                <th><span data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Adresa'">Адреса</span></th>
+            </tr>
+        </thead>
+        <!-- ko if:  $root.RequestInvestors().length > 0 -->
+        <tbody data-bind="foreach: $root.RequestInvestors">
+            <tr>
+                <td><span data-bind="text: ($index() + 1)"></span></td>
+                <td><span data-bind="text: InvestorName"></span></td>
+                <td><span data-bind="text: Address"></span></td>
+            </tr>
+        </tbody>
+        <!-- /ko -->
+        <!-- ko if: $root.RequestInvestors().length == 0 -->
+        <tbody>
+            <tr>
+                <td colspan="4">
+                    <div class="alert">
+                        <strong><span data-bind="i18n: 'eDozvoli.Web.templates.request-details-fullhistory.NemaZapisi'">Нема пронајдени записи!</span></strong>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+        <!-- /ko -->
+    </table>
+</div>

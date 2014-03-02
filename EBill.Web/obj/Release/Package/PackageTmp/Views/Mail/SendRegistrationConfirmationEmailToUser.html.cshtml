@@ -1,0 +1,14 @@
+﻿@model eDozvoli.Web.ViewModels.RegistrationViewModel
+@{
+    Layout = "../Shared/_ MailLayout.cshtml";
+    var protocol = Model.Protocol;
+    var url = Model.ApplicationtRootUrl;
+}
+
+Добредојде,<strong>@Model.FullName</strong> Вашиот код за конфирмација на регистрацијата е <strong>@Model.RegistrationCode</strong>
+<br />
+За да ја потврдите вашата регистрација притиснете го следниот линк 
+@Html.ActionLink("Потврди", "Confirmation", "Account", protocol, url, "_blank", null, null)
+<br />
+Ви Благодариме.
+

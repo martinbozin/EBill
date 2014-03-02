@@ -1,0 +1,12 @@
+D:\Projects\Template\Nextsense.ResourcesCommon\bin\Debug\Martin.ResourcesCommon.dll.config
+D:\Projects\Template\Nextsense.ResourcesCommon\bin\Debug\Martin.ResourcesCommon.dll
+D:\Projects\Template\Nextsense.ResourcesCommon\bin\Debug\Martin.ResourcesCommon.pdb
+D:\Projects\Template\Nextsense.ResourcesCommon\obj\Debug\Martin.ResourcesCommon.csprojResolveAssemblyReference.cache
+D:\Projects\Template\Nextsense.ResourcesCommon\obj\Debug\Martin.ResourcesCommon.dll
+D:\Projects\Template\Nextsense.ResourcesCommon\obj\Debug\Martin.ResourcesCommon.pdb
+D:\Projects\Template\Martin.ResourcesCommon\bin\Debug\Martin.ResourcesCommon.dll.config
+D:\Projects\Template\Martin.ResourcesCommon\bin\Debug\Martin.ResourcesCommon.dll
+D:\Projects\Template\Martin.ResourcesCommon\bin\Debug\Martin.ResourcesCommon.pdb
+D:\Projects\Template\Martin.ResourcesCommon\obj\Debug\Martin.ResourcesCommon.csprojResolveAssemblyReference.cache
+D:\Projects\Template\Martin.ResourcesCommon\obj\Debug\Martin.ResourcesCommon.dll
+D:\Projects\Template\Martin.ResourcesCommon\obj\Debug\Martin.ResourcesCommon.pdb

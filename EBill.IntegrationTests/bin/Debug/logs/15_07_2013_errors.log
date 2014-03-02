@@ -1,0 +1,170 @@
+2013-07-15 15:33:12,235 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Cfg.Configuration [(null)] - An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+NHibernate.MappingException: An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+2013-07-15 15:33:44,031 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Cfg.Configuration [(null)] - An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+NHibernate.MappingException: An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+2013-07-15 15:39:45,933 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Cfg.Configuration [(null)] - An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+NHibernate.MappingException: An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+2013-07-15 15:53:49,084 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Cfg.Configuration [(null)] - An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+NHibernate.MappingException: An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+2013-07-15 15:55:57,062 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Cfg.Configuration [(null)] - An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+NHibernate.MappingException: An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+2013-07-15 16:07:26,034 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Cfg.Configuration [(null)] - An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+NHibernate.MappingException: An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+2013-07-15 16:08:27,572 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Cfg.Configuration [(null)] - An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+NHibernate.MappingException: An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+2013-07-15 16:10:32,274 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Cfg.Configuration [(null)] - An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+NHibernate.MappingException: An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+2013-07-15 16:11:35,939 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Cfg.Configuration [(null)] - An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+NHibernate.MappingException: An association from the table Users refers to an unmapped class: eDozvoli.Domain.Pos
+2013-07-15 16:31:05,230 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Cfg.Configuration [(null)] - Could not compile the mapping document: VipTopUpi.Data.NHibernate.Mappings.Pos.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: VipTopUpi.Data.NHibernate.Mappings.Pos.hbm.xml ---> NHibernate.MappingException: Problem trying to set property type by reflection ---> NHibernate.MappingException: class VipTopUp.Domain.Pos, VipTopUp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null not found while looking for property: PosID ---> NHibernate.PropertyNotFoundException: Could not find a getter for property 'PosID' in class 'VipTopUp.Domain.Pos'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   at NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   at NHibernate.Cfg.XmlHbmBinding.ClassIdBinder.CreateIdentifierProperty(HbmId idSchema, PersistentClass rootClass, SimpleValue id)
+   at NHibernate.Cfg.XmlHbmBinding.ClassIdBinder.BindId(HbmId idSchema, PersistentClass rootClass, Table table)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+2013-07-15 16:31:05,335 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Cfg.Configuration [(null)] - Problem parsing configuration
+NHibernate.MappingException: Could not compile the mapping document: VipTopUpi.Data.NHibernate.Mappings.Pos.hbm.xml ---> NHibernate.MappingException: Problem trying to set property type by reflection ---> NHibernate.MappingException: class VipTopUp.Domain.Pos, VipTopUp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null not found while looking for property: PosID ---> NHibernate.PropertyNotFoundException: Could not find a getter for property 'PosID' in class 'VipTopUp.Domain.Pos'
+   at NHibernate.Properties.BasicPropertyAccessor.GetGetter(Type type, String propertyName)
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(String className, String name, String accessorName)
+   at NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Mapping.SimpleValue.SetTypeUsingReflection(String className, String propertyName, String accesorName)
+   at NHibernate.Cfg.XmlHbmBinding.ClassIdBinder.CreateIdentifierProperty(HbmId idSchema, PersistentClass rootClass, SimpleValue id)
+   at NHibernate.Cfg.XmlHbmBinding.ClassIdBinder.BindId(HbmId idSchema, PersistentClass rootClass, Table table)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   at NHibernate.Cfg.Configuration.AddInputStream(Stream xmlInputStream, String name)
+   at NHibernate.Cfg.Configuration.AddResource(String path, Assembly assembly)
+   at NHibernate.Cfg.Configuration.AddAssembly(Assembly assembly)
+   at NHibernate.Cfg.Configuration.AddAssembly(String assemblyName)
+   at NHibernate.Cfg.Configuration.DoConfigure(ISessionFactoryConfiguration factoryConfiguration)
+   at NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+2013-07-15 18:36:40,228 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Cfg.Configuration [(null)] - Could not compile the mapping document: VipTopUpi.Data.NHibernate.Mappings.User.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: VipTopUpi.Data.NHibernate.Mappings.User.hbm.xml ---> NHibernate.PropertyNotFoundException: Could not find property nor field '_pos' in class 'VipTopUp.Domain.User'
+   at NHibernate.Properties.FieldAccessor.GetField(Type type, String fieldName, Type originalType)
+   at NHibernate.Properties.FieldAccessor.GetField(Type type, String fieldName, Type originalType)
+   at NHibernate.Properties.FieldAccessor.GetGetter(Type theClass, String propertyName)
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(Type theClass, String name, String access)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollection(ICollectionPropertiesMapping collectionMapping, Collection model, String className, String path, Type containingType, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.CreateBag(HbmBag bagMapping, String prefix, String path, PersistentClass owner, Type containingType, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, Table table, IDictionary`2 inheritedMetas, Action`1 modifier, Action`1 addToModelAction)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas, Action`1 modifier)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+2013-07-15 18:36:40,427 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Cfg.Configuration [(null)] - Problem parsing configuration
+NHibernate.MappingException: Could not compile the mapping document: VipTopUpi.Data.NHibernate.Mappings.User.hbm.xml ---> NHibernate.PropertyNotFoundException: Could not find property nor field '_pos' in class 'VipTopUp.Domain.User'
+   at NHibernate.Properties.FieldAccessor.GetField(Type type, String fieldName, Type originalType)
+   at NHibernate.Properties.FieldAccessor.GetField(Type type, String fieldName, Type originalType)
+   at NHibernate.Properties.FieldAccessor.GetGetter(Type theClass, String propertyName)
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(Type theClass, String name, String access)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollection(ICollectionPropertiesMapping collectionMapping, Collection model, String className, String path, Type containingType, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.CreateBag(HbmBag bagMapping, String prefix, String path, PersistentClass owner, Type containingType, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, Table table, IDictionary`2 inheritedMetas, Action`1 modifier, Action`1 addToModelAction)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas, Action`1 modifier)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   at NHibernate.Cfg.Configuration.AddInputStream(Stream xmlInputStream, String name)
+   at NHibernate.Cfg.Configuration.AddResource(String path, Assembly assembly)
+   at NHibernate.Cfg.Configuration.AddAssembly(Assembly assembly)
+   at NHibernate.Cfg.Configuration.AddAssembly(String assemblyName)
+   at NHibernate.Cfg.Configuration.DoConfigure(ISessionFactoryConfiguration factoryConfiguration)
+   at NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+2013-07-15 18:37:53,643 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Cfg.Configuration [(null)] - Could not compile the mapping document: VipTopUpi.Data.NHibernate.Mappings.User.hbm.xml
+NHibernate.MappingException: Could not compile the mapping document: VipTopUpi.Data.NHibernate.Mappings.User.hbm.xml ---> NHibernate.PropertyNotFoundException: Could not find property nor field '_pos' in class 'VipTopUp.Domain.User'
+   at NHibernate.Properties.FieldAccessor.GetField(Type type, String fieldName, Type originalType)
+   at NHibernate.Properties.FieldAccessor.GetField(Type type, String fieldName, Type originalType)
+   at NHibernate.Properties.FieldAccessor.GetGetter(Type theClass, String propertyName)
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(Type theClass, String name, String access)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollection(ICollectionPropertiesMapping collectionMapping, Collection model, String className, String path, Type containingType, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.CreateBag(HbmBag bagMapping, String prefix, String path, PersistentClass owner, Type containingType, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, Table table, IDictionary`2 inheritedMetas, Action`1 modifier, Action`1 addToModelAction)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas, Action`1 modifier)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+2013-07-15 18:37:53,737 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Cfg.Configuration [(null)] - Problem parsing configuration
+NHibernate.MappingException: Could not compile the mapping document: VipTopUpi.Data.NHibernate.Mappings.User.hbm.xml ---> NHibernate.PropertyNotFoundException: Could not find property nor field '_pos' in class 'VipTopUp.Domain.User'
+   at NHibernate.Properties.FieldAccessor.GetField(Type type, String fieldName, Type originalType)
+   at NHibernate.Properties.FieldAccessor.GetField(Type type, String fieldName, Type originalType)
+   at NHibernate.Properties.FieldAccessor.GetGetter(Type theClass, String propertyName)
+   at NHibernate.Util.ReflectHelper.ReflectedPropertyClass(Type theClass, String name, String access)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.BindCollection(ICollectionPropertiesMapping collectionMapping, Collection model, String className, String path, Type containingType, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.CollectionBinder.CreateBag(HbmBag bagMapping, String prefix, String path, PersistentClass owner, Type containingType, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, Table table, IDictionary`2 inheritedMetas, Action`1 modifier, Action`1 addToModelAction)
+   at NHibernate.Cfg.XmlHbmBinding.PropertiesBinder.Bind(IEnumerable`1 properties, IDictionary`2 inheritedMetas, Action`1 modifier)
+   at NHibernate.Cfg.XmlHbmBinding.RootClassBinder.Bind(HbmClass classSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.AddEntitiesMappings(HbmMapping mappingSchema, IDictionary`2 inheritedMetas)
+   at NHibernate.Cfg.XmlHbmBinding.MappingRootBinder.Bind(HbmMapping mappingSchema)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   --- End of inner exception stack trace ---
+   at NHibernate.Cfg.Configuration.LogAndThrow(Exception exception)
+   at NHibernate.Cfg.Configuration.AddDeserializedMapping(HbmMapping mappingDocument, String documentFileName)
+   at NHibernate.Cfg.Configuration.AddInputStream(Stream xmlInputStream, String name)
+   at NHibernate.Cfg.Configuration.AddResource(String path, Assembly assembly)
+   at NHibernate.Cfg.Configuration.AddAssembly(Assembly assembly)
+   at NHibernate.Cfg.Configuration.AddAssembly(String assemblyName)
+   at NHibernate.Cfg.Configuration.DoConfigure(ISessionFactoryConfiguration factoryConfiguration)
+   at NHibernate.Cfg.Configuration.Configure(XmlReader textReader)
+2013-07-15 19:07:32,334 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: INSERT INTO dbo.Pos (Name, AdditionalEmailAdresses, IsActive, PrimaryContact, Phone, UserID) VALUES (@p0, @p1, @p2, @p3, @p4, @p5); select SCOPE_IDENTITY()
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'dbo.Pos'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:57c11fd1-da4a-4c4c-a0d8-13773e2bdaaf
+2013-07-15 19:07:32,349 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Invalid object name 'dbo.Pos'.
+2013-07-15 19:24:26,204 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.AdoNet.AbstractBatcher [(null)] - Could not execute query: INSERT INTO dbo.Users (UserName, Password, FirstName, LastName, RegistrationCode, MasterDealer, MasterDealerCode, IsActive, PreferedLanguage, Discriminator) VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, 'VipTopUp.Domain.User'); select SCOPE_IDENTITY()
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'PreferedLanguage', table 'VipTopUp.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   at NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+ClientConnectionId:89bc88a4-5195-4c3c-9e94-eb17e2b944dc
+2013-07-15 19:24:26,220 [CurrentAppDomainHost.ExecuteNodes] ERROR NHibernate.Util.ADOExceptionReporter [(null)] - Cannot insert the value NULL into column 'PreferedLanguage', table 'VipTopUp.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.

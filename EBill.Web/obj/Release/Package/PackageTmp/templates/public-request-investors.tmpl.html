@@ -1,0 +1,30 @@
+﻿<div class="popover-title">
+    <h4><span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.Investitor'">Инвеститор/и</span></h4>
+</div>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th style="width: 10px">#</th>
+            <th><span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.Ime'">Име</span></th>
+            <th><span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.Adresa'">Адреса</span></th>
+        </tr>
+    </thead>
+    <!-- ko if: RequestInvestors().length > 0 -->
+    <tbody data-bind="foreach: RequestInvestors()">
+        <tr>
+            <td><span data-bind="text: ($index() + 1)"></span>.</td>
+            <td><span data-bind="text: InvestorName"></span></td>
+            <td><span data-bind="text: Address"></span></td>
+        </tr>
+    </tbody>
+    <!-- /ko -->
+    <!-- ko if: RequestInvestors().length == 0 -->
+    <tbody>
+        <tr>
+            <td colspan="4">
+                <p class="alert" data-bind="i18n: 'eDozvoli.Web.templates.public-requests.NemaZapisi'">Нема пронајдени записи.</p>
+            </td>
+        </tr>
+    </tbody>
+    <!-- /ko -->
+</table>

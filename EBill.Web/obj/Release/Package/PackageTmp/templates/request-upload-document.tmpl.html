@@ -1,0 +1,23 @@
+﻿<div class="wrap">
+    <div>
+        <span data-bind="text: FileName"></span>
+    </div><br/>
+
+    <div>
+        <span data-bind="i18n: 'eDozvoli.Web.templates.Prikaci'">Прикачи</span>
+        <input type="file" id="fileUpload" name="fileUpload" class="fileUploader" data-bind="value: FilePath" />
+    </div>
+    <br/>
+         <div>
+        <span>Информации за документот:</span><br/>
+       <textarea id="Comment" name="Comment" data-bind="value: Comment" style="width: 450px;height: 100px"></textarea>
+    </div>
+    
+    <label id="error"></label>
+
+    <div class="form-actions">
+        <button type="submit" id="btn-save" class="btn btn-primary" data-bind="enable: enableUploadButton(), i18n: 'eDozvoli.Web.templates.Prikaci'">Прикачи</button>
+        <button type="button" id="btn-cancel" class="btn" data-bind="i18n: 'eDozvoli.Web.templates.Otkazi'">Откажи</button>
+    </div>
+
+</div>

@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Public.Requests.Index.cshtml.Title");
+}
+
+<div class="page-header">
+    <h3>@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Public.Requests.Index.cshtml.ListaNaBaranja")</h3>
+    <div class="create-new-request">
+    <a href="@Url.Action("New", "Requests", new { area = "Public" })" class="btn btn-success">
+        <i class="icon-plus icon-white"></i>@Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Public.Requests.Index.cshtml.KreirajBaranje")
+    </a>
+</div>
+</div>
+
+
+
+<div id="public-request-holder">
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#public-request-holder").PublicRequestsWidget({});
+        $("#public-request-holder").PublicRequestsWidget("load");
+    });
+</script>

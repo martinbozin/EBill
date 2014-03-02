@@ -1,0 +1,95 @@
+﻿<h2 class="case-block-title">
+    <label data-bind="i18n: 'eDozvoli.Web.templates.public-requests.TipNaBaranje'">Барање за:</label>
+    <span data-bind="text: Request().RequestTypeName"></span>,
+   
+    <label data-bind="i18n: 'eDozvoli.Web.templates.public-requests.Status'">Статус:</label>
+    <span data-bind="text: Request().StateTitle"></span>
+</h2>
+
+<div class="case-block construction-case-block">
+    <div class="case-block-row">
+        <label data-bind="i18n: 'eDozvoli.Web.templates.public-requests.BrojNaUplata'">Број во уписна книга:</label>
+        <span data-bind="text: Request().ArchiveNumber"></span>
+        <div class="clear-fix"></div>
+    </div>
+    <div class="case-block-row">
+        <label data-bind="i18n: 'eDozvoli.Web.templates.public-requests.TipNaGradba'">Категорија</label>
+        <span data-bind="text: Request().ConstructionTypeName"></span>
+        <div class="clear-fix"></div>
+    </div>
+    <div class="case-block-row">
+        <label data-bind="i18n: 'eDozvoli.Web.templates.public-requests.VidNaGradba'">Вид на градба</label>
+        <span data-bind="text: Request().ConstructionDescription"></span>
+
+        <label data-bind="i18n: 'eDozvoli.Web.templates.public-requests.AdresaNaObject'">Адреса на објектот / Делница со стационажа</label>
+        <span data-bind="text: Request().ConstructionAddress"></span>
+
+        <div class="clear-fix"></div>
+    </div>
+    <div class="case-block-row">
+        <label data-bind="i18n: 'eDozvoli.Web.templates.public-requests.DatumNaKreiranje'">Датум на креирање:</label>
+        <span data-bind="text: Request().Created"></span>
+
+        <label data-bind="i18n: 'eDozvoli.Web.templates.public-requests.DatumNaPoslednaPromena'">Датум на последна измена:</label>
+        <span data-bind="text: Request().Modified"></span>
+
+        <div class="clear-fix"></div>
+    </div>
+
+    <div class="case-block-tbl-simulation">
+        <div class="case-block-row">
+            <table class="table table-bordered table-condensed">
+                <tr>
+                    <td style="width: 25%; background: #eee;">
+                        <span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.Opstina'">Општина:</span>
+                    </td>
+                    <td>
+                        <div data-bind="foreach: RequestMunicipalities">
+                            <span style="padding-right: 0px" data-bind="text: MunicipalityName() + ','"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background: #eee; border-top: solid 1px #ddd;">
+                        <span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.OpstinaIParcela'">Катастарски Општини и Парецели</span>
+                    </td>
+                    <td style="border-top: solid 1px #ddd;">
+                        <span style="padding-right: 0px" data-bind="i18n: 'eDozvoli.Web.templates.public-requests.pogled'">За да ги прегледате сите катастарски општини и парцели кликнете</span>
+                        <button class="show-cadastre-municipalities btn btn-link" data-bind="i18n: 'eDozvoli.Web.templates.public-requests.Tuka'">тука</button>
+                        <div data-bind="foreach: RequestMunicipalities" style="display: none; clear: both">
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <td style="background: #7ca8cf;" colspan="3">
+                                            <span style="padding-right: 0px; color: #fff;" data-bind="i18n: 'eDozvoli.Web.templates.public-requests.Opstina'">Општина:</span>
+                                            <span style="color: #fff;" data-bind="text: MunicipalityName()"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="width: 10px">#</th>
+                                        <th><span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.KatastarskaOpstina'">Катастарска општина</span></th>
+                                        <th><span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.KatastarskaParcela'">Катастарска парцела</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody data-bind="foreach: CadastreMunicipalities">
+                                    <tr>
+                                        <td>
+                                            <span data-bind="text: ($index() + 1) + '.'"></span>
+                                        </td>
+                                        <td>
+                                            <span data-bind="text: CadastreMunicipalityName"></span>
+                                        </td>
+                                        <td>
+                                            <span data-bind="text: CadastreParcel"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+</div>

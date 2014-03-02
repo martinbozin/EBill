@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="EBills.Domain" namespace="EBills.Domain" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Language" table="Languages" schema="dbo" lazy="true" >
+
+    <id name="Id">
+      <generator class="assigned" />
+    </id>
+
+    <property name="ShortTitle" access="field.camelcase-underscore">
+      <column name="ShortTitle" sql-type="nvarchar" not-null="true" />
+    </property>
+
+    <property name="Title" access="field.camelcase-underscore">
+      <column name="Title" sql-type="nvarchar" not-null="true" />
+    </property>
+
+    <property name="CultureId" access="field.camelcase-underscore">
+      <column name="CultureID" sql-type="int" not-null="true" />
+    </property>
+
+    <property name="GapiLang" access="field.camelcase-underscore">
+      <column name="GapiLang" sql-type="nvarchar" not-null="true" />
+    </property>
+
+    <property name="Enabled" access="field.camelcase-underscore">
+      <column name="Enabled" sql-type="bit" not-null="true" />
+    </property>
+
+    <property name="Default" access="field.camelcase-underscore">
+      <column name="[Default]" sql-type="bit" not-null="true" />
+    </property>
+
+    <property name="ContentEnabled" access="field.camelcase-underscore">
+      <column name="ContentEnabled" sql-type="bit" not-null="true" />
+    </property>
+
+  </class>
+</hibernate-mapping>

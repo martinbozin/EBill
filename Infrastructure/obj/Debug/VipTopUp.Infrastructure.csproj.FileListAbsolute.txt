@@ -1,0 +1,24 @@
+C:\Users\martinb\Desktop\New folder\Infrastructure\bin\Debug\VipTopUp.Infrastructure.dll
+C:\Users\martinb\Desktop\New folder\Infrastructure\bin\Debug\VipTopUp.Infrastructure.pdb
+C:\Users\martinb\Desktop\New folder\Infrastructure\bin\Debug\log4net.dll
+C:\Users\martinb\Desktop\New folder\Infrastructure\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\martinb\Desktop\New folder\Infrastructure\bin\Debug\Nextsense.Common.dll
+C:\Users\martinb\Desktop\New folder\Infrastructure\bin\Debug\System.Web.Optimization.dll
+C:\Users\martinb\Desktop\New folder\Infrastructure\bin\Debug\log4net.xml
+C:\Users\martinb\Desktop\New folder\Infrastructure\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\martinb\Desktop\New folder\Infrastructure\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\martinb\Desktop\New folder\Infrastructure\obj\Debug\VipTopUp.Infrastructure.dll
+C:\Users\martinb\Desktop\New folder\Infrastructure\obj\Debug\VipTopUp.Infrastructure.pdb
+C:\Users\martinb\Desktop\New folder\Infrastructure\obj\Debug\VipTopUp.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\Infrastructure\bin\Debug\VipTopUp.Infrastructure.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\Infrastructure\bin\Debug\VipTopUp.Infrastructure.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\Infrastructure\bin\Debug\System.Web.Optimization.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\Infrastructure\obj\Debug\VipTopUp.Infrastructure.dll
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\Infrastructure\obj\Debug\VipTopUp.Infrastructure.pdb
+C:\Users\martinb\Desktop\VipTopUp\VipTopUp\Infrastructure\obj\Debug\VipTopUp.Infrastructure.csprojResolveAssemblyReference.cache
+D:\Projects\Template\Infrastructure\bin\Debug\VipTopUp.Infrastructure.dll
+D:\Projects\Template\Infrastructure\bin\Debug\VipTopUp.Infrastructure.pdb
+D:\Projects\Template\Infrastructure\bin\Debug\System.Web.Optimization.dll
+D:\Projects\Template\Infrastructure\obj\Debug\VipTopUp.Infrastructure.csprojResolveAssemblyReference.cache
+D:\Projects\Template\Infrastructure\obj\Debug\VipTopUp.Infrastructure.dll
+D:\Projects\Template\Infrastructure\obj\Debug\VipTopUp.Infrastructure.pdb

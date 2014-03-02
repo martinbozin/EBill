@@ -1,0 +1,8 @@
+﻿<fieldset>
+    <!--<legend><span data-bind="i18n: 'eDozvoli.Web.templates.new-request-required-documents.PotrebniDokumenti'">Потребна Документација</span></legend>-->
+    <ul id="selected-documents-containter" data-bind="foreach: RequestTypeDetails().RequiredDocuments" style="list-style-type: none; margin: 0">
+        <li>
+            <div data-bind="template: { name: 'new-request-document-row' }"></div>
+        </li>
+    </ul>
+</fieldset>

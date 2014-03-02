@@ -1,0 +1,61 @@
+﻿<div class="wrap">
+    <table>
+        <tr>
+            <th style="width: 18%; padding: 5px; text-align: left; vertical-align: top"><span data-bind="i18n: 'eDozvoli.Web.new-request-attach-document.TipNaDokument'">Тип на документ:</span></th>
+            <td>
+                <strong data-bind="text: DocumentType().DocumentTypeName"></strong>
+                <p style="font-style: italic; font-weight: normal" data-bind="text: DocumentType().DocumentTypeDescription"></p>
+            </td>
+        </tr>
+        <tr>
+            <th style="padding: 5px; text-align: left; vertical-align: top">
+                <span data-bind="i18n: 'eDozvoli.Web.new-request-attach-document.Dokumenti'">Документ/и:</span>
+            </th>
+            <td>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th><span data-bind="i18n: 'eDozvoli.Web.templates.new-request-required-documents.Document'">Документ</span></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="foreach: Documents">
+                        <tr data-bind="css: { 'error': UploadFailed(), 'success': UploadSuccess() }">
+                            <td>
+                                <span data-bind="text: ($index() + 1) + '.'"></span>
+                            </td>
+                            <td>
+                                <span data-bind="text: FileName"></span>
+                                <p data-bind="text: UploadFailedMessage"></p>
+                            </td>
+                            <td>
+                                <span class="btn btn-danger remove_fields tipTip"
+                                    data-bind="visible: canRemoveDocument, click: $root.removeDocument, attr: { title: languagePack['eDozvoli.Web.templates.new-request-required-documents.OdstraniDokument'] }">
+                                    <i class="icon-trash icon-white"></i>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="add-document" type="button" class="btn btn-success" data-bind="i18n: 'eDozvoli.Web.templates.new-request-required-documents.IzberiDokument'">Изберете документ</button>
+                <!--  <p style="font-weight: bold" data-bind="visible: DocumentType().AllowedExtensions() != null">
+                    Дозволени формати: (<span data-bind="    text: DocumentType().AllowedExtensions()"></span>)
+                </p>-->
+            </td>
+        </tr>
+        <tr>
+            <th style="padding: 5px; text-align: left; vertical-align: top" data-bind="i18n: 'eDozvoli.Web.templates.new-request-required-documents.Komentar'">Коментар:</th>
+            <td>
+                <textarea style="width: 100%; height: 100px;" data-bind="value: Comment"></textarea>
+            </td>
+        </tr>
+    </table>
+    <div class="form-actions">
+        <button type="submit" id="btn-save" class="btn btn-primary" data-bind="enable: canSubmitDocuments(), i18n: 'eDozvoli.Web.templates.Prikaci'">Прикачи</button>
+        <button type="button" id="btn-cancel" class="btn" data-bind="i18n: 'eDozvoli.Web.templates.Otkazi'">Откажи</button>
+    </div>
+</div>
+<div id="process-documents-dialog" style="display: none"
+    data-bind="template: { name: 'process-documents-dialog' }">
+</div>

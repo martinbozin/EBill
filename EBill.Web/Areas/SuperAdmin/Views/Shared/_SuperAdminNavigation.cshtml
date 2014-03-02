@@ -1,0 +1,36 @@
+﻿@using EBills.Security
+
+@{
+    var customPrincpial = (CustomPrincipal)HttpContext.Current.User;
+}
+
+<ul id="primary" class="nav">
+    @*<li class="active"><a href="@Url.Action("Index", "Home", new { area = "Zels" })">@Martin.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Shared._ZelsAdminLayout.cshtml.Pocetna")</a></li>*@
+    @if ((HttpContext.Current.User.IsInRole(EBills.Domain.Roles.SuperAdmin) && customPrincpial.User.Roles.Count == 1) || customPrincpial.User.Roles.Count > 1)
+    {
+        <li>
+            <a href="@Url.Action("Index", "Registers")">Корисници</a>
+        </li>
+         @*<li><a href="@Url.Action("Pos", "Registers")">POS</a></li>*@
+        <li><a href="@Url.Action("Index", "ApplicationParameters")">Параметри</a></li>
+    }
+    <li>
+      @*  <a href="@Url.Action("Index", "Kpi", new { area = "Zels" })">
+            @Martin.ResourcesCommon.ResourceManager.GetResourceValue("_AdminNavigation.Pocetna.Kpi")
+        </a>*@
+    </li>
+</ul>
+
+<script type="text/javascript">
+    $(function () {
+        var mainLinks = $('ul#primary > li a');
+        mainLinks.each(function () {
+            var loc = location.pathname.replace(baseUrl, '');
+            var current = $(this).attr('href').replace(baseUrl, '');
+            if (loc.indexOf(current) == 0) {
+                $('ul#primary li').removeClass("active");
+                $(this).parent().addClass('active');
+            }
+        });
+    });
+</script>

@@ -1,0 +1,30 @@
+﻿<div class="popover-title">
+    <h4><span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.InforamaciiZaKontakt'">Информации за контакт</span></h4>
+</div>
+<div class="case-block contact-person-case-block">
+    <div class="case-block-row">
+        <label for="input01" data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.LiceZaKontakt'">Лице за контакт:</label>
+        <span data-bind="text: Request().ContactPerson"></span>
+        <div class="clear-fix"></div>
+    </div>
+    <div class="case-block-row">
+        <label for="input01" data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Mobilen'">Мобилен:</label>
+        <span data-bind="text: Request().Mobile"></span>
+        <label for="input01" data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Telefon'">Телефон:</label>
+        <span data-bind="text: Request().Phone"></span>
+        <div class="clear-fix"></div>
+    </div>
+    <div class="case-block-row">
+
+        <label for="optionsCheckbox" data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Izvestuvanja'">Известувања</label>
+        <input type="checkbox" id="optionsCheckbox" data-bind="checked: Request().SMS" disabled="disabled" class="chk-box">
+        <span data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Izjava'">Се согласувам до добивам известувања по СМС.</span>
+        <div class="clear-fix"></div>
+
+    </div>
+    <div class="case-block-row">
+        <label for="input01" data-bind="i18n: 'eDozvoli.Web.templates.request-details-case.tmpl.Email'">Е-маил:</label>
+        <span data-bind="text: Request().Email"></span>
+        <div class="clear-fix"></div>
+    </div>
+</div>

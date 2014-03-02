@@ -1,0 +1,48 @@
+﻿<!-- ko if: existToolbar()-->
+<span style="margin-right: 10px; padding-left: 25px; vertical-align: top; padding-top: 5px; display: inline-block;" data-bind=" i18n: 'eDozvoli.Web.templates.public-requests-list.DatumOd'">Датум од:
+</span>
+<input class="input-small" type="text" id="txtFromDate" name="txtFromDate" data-bind="value: fromDate" style="margin-left: 5px" />
+<span style="margin-right: 10px; padding-left: 5px; vertical-align: top; padding-top: 5px; display: inline-block;" data-bind=" i18n: 'eDozvoli.Web.templates.public-requests-list.Do'">до:
+</span>
+<input class="input-small" type="text" id="txtToDate" name="txtToDate" data-bind="value: toDate" style="margin-left: 5px" />
+<button class="btn" style="margin-bottom: 10px; margin-left: 10px" data-bind="click: SearchDate, i18n: 'eDozvoli.Web.templates.public-requests-list.Prebaraj'">Пребарај</button>
+<!-- /ko -->
+
+<ul style="list-style-type: none;">
+    <!-- ko if: Requests().length == 0 -->
+    <li>
+        <div class="alert alert-block">
+            <span data-bind="i18n: 'eDozvoli.Web.templates.public-requests.NemaZapisi'">Нема пронајдени записи.</span>
+        </div>
+    </li>
+    <!-- /ko -->
+
+    <!-- ko if: Requests().length > 0  -->
+    <li data-bind="foreach: Requests">
+        <div data-bind="template: { name: 'public-request-details' }">
+        </div>
+    </li>
+    <!-- /ko -->
+</ul>
+
+<!-- ko if: totalPages() > 1 -->
+<div class="pagination pagination-centered">
+    <ul data-bind="foreach: allPages">
+        <!-- ko if: ($index() + 1) ==  1 -->
+        <li data-bind="css: { 'disabled': 1 == $parent.currentPage() }">
+            <a href="#" data-bind="click: $parent.prevPage"><<</a>
+        </li>
+        <!-- /ko -->
+        <li data-bind="css: { 'active': ($index() + 1) == $parent.currentPage() }">
+            <a href="#" data-bind="click: $parent.loadPage">
+                <span data-bind="text: ($index() + 1)"></span>
+            </a>
+        </li>
+        <!-- ko if: ($index() + 1) ==   $parent.allPages().length  -->
+        <li data-bind="css: { 'disabled': $parent.allPages().length == $parent.currentPage() }">
+            <a href="#" data-bind="click: $parent.nextPage">>></a>
+        </li>
+        <!-- /ko -->
+    </ul>
+</div>
+<!-- /ko -->

@@ -1,0 +1,13 @@
+﻿@model Guid
+@{
+    ViewBag.Title = "Finance";
+}
+ 
+<div id="holder">
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#holder").PublicRequestsWidget({ templateId: 'public-request-finance' });
+        $("#holder").PublicRequestsWidget("loadById", '@Model');
+    });
+</script>

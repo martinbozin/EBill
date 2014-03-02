@@ -1,0 +1,12 @@
+﻿<table>
+    <tbody>
+        <tr data-bind="foreach: AvailableTransitions()">
+            <!-- ko !if: HideIfDisabled -->
+            <td>
+                <!--<input class="btn" type="button" data-bind="attr: { value: Title, title: Description }, enable: Enabled, click: onClick" />-->
+                <img style="cursor: pointer; padding-right: 15px;" data-bind="attr: { title: Description, alt: Description, src: Enabled() ? ImageUrl : DisabledImageUrl }, enable: Enabled, click: onClick" />
+            </td>
+            <!-- /ko -->
+        </tr>
+    </tbody>
+</table>

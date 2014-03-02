@@ -1,0 +1,182 @@
+﻿<fieldset>
+    <!--<legend><span data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.InformaciiZaBaranjeto'">Информации за Барањето</span></legend>-->
+    <div class="control-group">
+        <label class="control-label" for="ddl-request-type" data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.TipNaBaranje'">Тип на барање</label>
+        <div class="controls">
+            <select id="ddl-request-type" class="input-xlarge" data-bind="options: AvailableRequestTypes(),
+    optionsText: 'Text',
+    optionsValue: 'Value',
+    value: RequestTypeId">
+            </select>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.TipNaGradba'">Тип на градба</label>
+        <div class="controls">
+            <label class="radio control-list">
+                <input type="radio" name="ConstructionType" id="type1" value="1" data-bind="checked: ConstructionTypeId">
+                <span id="tooltip1" style="display: block" data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.Tip1'">Категорија 1</span>
+            </label>
+            <label class="radio control-list">
+                <input type="radio" name="ConstructionType" id="type2" value="2" data-bind="checked: ConstructionTypeId">
+                <span id="tooltip2" style="display: block" data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.Tip2'">Категорија 2</span>
+            </label>
+            <label class="radio control-list">
+                <input type="radio" name="ConstructionType" id="type3" value="3" data-bind="checked: ConstructionTypeId">
+                <span style="display: block" data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.Tip3'">Градби во надлежност на Град Скопје</span>
+            </label>
+            <label class="radio control-list">
+                <input type="radio" name="ConstructionType" id="type4" value="4" data-bind="checked: ConstructionTypeId">
+                <span style="display: block" data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.Tip4'">Градби во надлежност на ДТИРЗ</span>
+            </label>
+            <p class="help-block" style="font-style: italic">
+                <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.InfoZaGradba'">Информации за градба од </span>
+                <span style="color: #005580" id="tooltip1Dialog1" data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.InfoZaGradbaPrva'">Прва</span>
+                <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.InfoZaGradbaI'">и </span>
+                <span style="color: #005580" id="tooltip1Dialog2" data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.InfoZaGradbaVtora'">Втора</span>
+                <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.Kategorija'">категорија</span>
+            </p>
+        </div>
+
+        <div id="dialogTip1" style="display: none;" data-bind="attr: { title: languagePack['Scripts.app.viewmodels.NewRequestViewModel.js.tooltip1Title'] }">
+            <!--title="Информации за градба од Прва категорија"-->
+            <span style="display: block" data-bind="i18n: 'Scripts.app.viewmodels.NewRequestViewModel.js.tooltip1'"></span>
+        </div>
+        <div id="dialogTip2" style="display: none;" data-bind="attr: { title: languagePack['Scripts.app.viewmodels.NewRequestViewModel.js.tooltip2Title'] }">
+            <!--title="Информации за градба од Втора категорија"-->
+            <span style="display: block" data-bind="i18n: 'Scripts.app.viewmodels.NewRequestViewModel.js.tooltip2'"></span>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.OpisNaGradbata'">Опис на градбата</label>
+            <div class="controls">
+                <textarea class="input-xlarge" style="width: 92%; height: 80px;" data-bind="value: ConstructionDescription"></textarea>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.AdresaNaGradba'">Адреса на објектот / Делница со стационажа</label>
+            <div class="controls">
+                <textarea class="input-xlarge" style="width: 92%; height: 80px;" data-bind="value: ConstructionAddress"></textarea>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.Opstini'">Општина/и</label>
+            <div class="controls">
+                <span class="validationMessage" data-bind="validationMessage: RequestMunicipalities"></span>
+                <table class="table table-striped">
+                    <tbody data-bind="foreach: RequestMunicipalities">
+                        <tr>
+                            <td style="width: 10px"><span data-bind="text: ($index() + 1)"></span>.</td>
+                            <td>
+                                <label>
+                                    <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.Opstina'">Општина</span>
+                                </label>
+                                <select id="ddl-municipality" class="input-xlarge" data-bind="options: $parent.AvailableMunicipalities(),
+    optionsText: 'Text',
+    optionsValue: 'Value',
+    value: MunicipalityId,
+    optionsCaption: '...'">
+                                </select>
+
+                                <label>
+                                </label>
+
+                                <div data-bind="visible: AvailableCadastreMunicipalities().length > 0">
+                                    <label>
+                                        <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.KatastarskiOpstiniParceli'">Катастарски општини и парцели</span>
+                                    </label>
+                                    <table class="table">
+                                        <tbody data-bind="foreach: SelectedCadastreMunicipalities">
+                                            <tr>
+                                                <td style="width: 10px">
+                                                    <span data-bind="text: ($index() + 1)"></span>.
+                                                </td>
+                                                <td>
+                                                    <label>
+                                                        <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.KatastarskaOpstina'">Катастарска општина</span>
+                                                    </label>
+                                                    <select id="Select1" class="input-large" data-bind="options: $parent.AvailableCadastreMunicipalities(),
+    optionsText: 'Text',
+    optionsValue: 'Value',
+    value: CadastreMunicipalityId,
+    optionsCaption: '...'">
+                                                    </select>
+
+                                                    <label>
+                                                    </label>
+                                                    <label>
+                                                        <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.KatastarskaParcela'">Катастарска парцела/и</span>
+                                                    </label>
+
+                                                    <!--<input type="text" class="input-small" data-bind="value: CadastreParcel" />-->
+                                                    <textarea style="width: 100%; height: 100px;"
+                                                        data-bind="value: CadastreParcel, valueUpdate: 'afterkeydown'"
+                                                        placeholder="Катастарска парцела/и" />
+                                                </td>
+                                                <td>
+                                                    <!-- ko if: $index() != "0" -->
+                                                    <span class="btn btn-danger remove_fields" data-bind="click: $parent.removeCadastreMunicipality">
+                                                        <i class="icon-trash icon-white"></i>
+                                                    </span>
+                                                    <!-- /ko -->
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button class="btn" data-bind="click: addCadastreMunicipality, enable: canAddCadastreMunicipality, i18n: 'eDozvoli.Web.templates.new-request-common-informations.AddKoKp'">Кликнете овде за да дефинирате повеќе катастарски општини.</button>
+                                </div>
+                            </td>
+                            <td>
+                                <!-- ko if: $index() != "0" -->
+                                <span class="btn btn-danger remove_fields" data-bind="click: $root.removeRequestMunicipality">
+                                    <i class="icon-trash icon-white"></i>
+                                </span>
+                                <!-- /ko -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn" data-bind="click: $root.addRequestMunicipality, visible: canAddRequestMunicipality, enable: enableAddRequestMunicipality, i18n: 'eDozvoli.Web.templates.new-request-common-informations.AddRequestMunicipality'">Кликнете овде доколку градбата се протега низ повеќе општини.</button>
+            </div>
+        </div>
+
+        <div class="control-group ">
+            <label class="control-label" data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.Investitor'">Инвеститор/и</label>
+            <div class="controls">
+                <span class="validationMessage" data-bind="validationMessage: Investors"></span>
+                <table class="table table-striped">
+                    <tbody data-bind="foreach: Investors">
+                        <tr>
+                            <td style="width: 10px"><span data-bind="text: ($index() + 1)"></span>.</td>
+                            <td>
+                                <label>
+                                    <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.ImeIPrezime'">Име</span>
+                                </label>
+                                <input class="input-xlarge" type="text" data-bind="value: InvestorName, valueUpdate: 'afterkeydown'" placeholder="Име..." />
+                                <label>
+                                </label>
+                                <label>
+                                    <span data-bind="i18n: 'eDozvoli.Web.templates.new-request-common-informations.Adresa'">Адреса</span>
+                                </label>
+                                <textarea style="width: 100%; height: 100px;" data-bind="value: Address, valueUpdate: 'afterkeydown'" placeholder="Адреса..." />
+                            </td>
+                            <td>
+                                <!-- ko if: $index() != "0" -->
+                                <span class="btn btn-danger remove_fields tipTip"
+                                    data-bind="click: $root.removeInvestor, attr: { title: languagePack['Scripts.app.viewmodels.NewRequestViewModel.js.deleteInvesitorTooltip'] }">
+                                    <i class="icon-trash icon-white"></i>
+                                </span>
+                                <!-- /ko -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn" data-bind="click: addInvestor, enable: canAddInvestor, i18n: 'eDozvoli.Web.templates.new-request-common-informations.AddInvestor'">Кликнете овде за да дефинирате повеќе инвеститори.</button>
+            </div>
+        </div>
+    </div>
+</fieldset>
+

@@ -1,0 +1,46 @@
+﻿<div style="padding-bottom: 10px;">
+    <strong>Информации за Комуналии: </strong>
+    <span data-bind="visible: $root.Request().Level3Status() == '0'">
+        <span data-bind="i18n: 'eDozvoli.Web.templates.request-details-action-Finance2.KomunaliiteSePlateni'">Комуналиите се платени</span>
+    </span>
+
+    <span data-bind="visible: $root.Request().Level3Status() == '1'">
+        <span data-bind="i18n: 'eDozvoli.Web.templates.request-details-action-Finance2.KomunaliiteNeSePlateni'">Комуналиите не се платени</span>
+    </span>
+
+    <span data-bind="visible: $root.Request().Level3Status() == '2'">
+        <span data-bind="i18n: 'eDozvoli.Web.templates.request-details-action-Finance2.OslobodenOdKomunalii'">Ослободен од комуналиите</span>
+    </span>
+</div>
+
+<div class="control-group">
+    <label class="radio inline">
+        <input type="radio" name="rb-request-status" value="0" data-bind="checked: ActionModel().StatusId">
+        <span style="display: block" data-bind="i18n: 'eDozvoli.Web.templates.request-details-OfficerApprove.BaranjeOdobreno'">Барањето е одобрено</span>
+    </label>
+</div>
+
+<div class="control-group">
+    <label class="radio inline">
+        <input type="radio" name="rb-request-status" value="1" data-bind="checked: ActionModel().StatusId">
+        <span style="display: block" data-bind="i18n: 'eDozvoli.Web.templates.request-details-OfficerApprove.BaranjeOdbieno'">Барањето е одбиено</span>
+    </label>
+</div>
+
+<div class="file-upload-wrap">
+    <div data-bind="template: { name: 'workflow/workflow-document-actions', data: $root.WorkflowModel }">
+    </div>
+</div>
+<!-- ko if: $root.canUploadDocument($data) -->
+<div class="file-upload-wrap">
+    <span class="upload-text"><strong>Прикачете документ кој е електронски потпишан или скениран:&nbsp;&nbsp;</strong></span>
+    <a href="javascript:void(0)" class="request-upload-document btn btn-primary"
+        data-bind="i18n: 'eDozvoli.Web.templates.workflow.workflow-document-actions.PrikaciDokument'">Прикачи документ</a>
+
+</div>
+<!-- /ko -->
+
+<div class="control-group">
+    <label><span data-bind="i18n: 'eDozvoli.Web.templates.request-details-fullhistory.Komentar'">Коментар</span></label>
+    <textarea data-bind="value: ActionModel().Comment"></textarea>
+</div>

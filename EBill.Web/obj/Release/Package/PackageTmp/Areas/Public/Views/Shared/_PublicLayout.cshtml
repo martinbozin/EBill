@@ -1,0 +1,53 @@
+﻿@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<script type="text/javascript">
+    var appParams = new NS.ViewModels.ApplicationParametersViewModel();
+</script>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="@Url.Action("Index", "Home", new { area = "Public" })">
+                @Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("_MainLayout.cshtml.eDozvoli")
+            </a>
+            <div class="nav-collapse">
+                @Html.Partial("_PublicNavigation")
+                @Html.Partial("_LoginPartial")
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row-fluid">
+        @if (IsSectionDefined("Sidebar"))
+        {
+            <div class="span2">
+                <div class="well sidebar-nav">
+                    @RenderSection("Sidebar", false)
+                </div>
+            </div>
+            <div class="span10">
+                @RenderBody()
+            </div>
+        }
+        else
+        {
+            <div class="span12">
+                @RenderBody()
+            </div>
+        }
+    </div>
+    <!--/row-->
+    <hr />
+    <footer>
+        <p>© Nextsense 2013</p>
+    </footer>
+</div>
+

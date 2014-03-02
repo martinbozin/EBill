@@ -1,0 +1,15 @@
+﻿@model EBills.Web.ViewModels.RegistrationViewModel
+@{
+    Layout = "../Shared/_FrontPageLayout.cshtml";
+    ViewBag.Title = "Регистрација";
+}
+
+<div id="registration-holder">   
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#registration-holder").RegistrationWidget({});
+        $("#registration-holder").RegistrationWidget("load");
+    });
+</script>

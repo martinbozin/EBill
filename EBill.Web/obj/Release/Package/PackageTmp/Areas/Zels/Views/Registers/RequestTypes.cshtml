@@ -1,0 +1,192 @@
+﻿@{
+    ViewBag.Title = Nextsense.ResourcesCommon.ResourceManager.GetResourceValue("Zels.Registers.RequestTypes.cshtml.Title");
+}
+<h2>@ViewBag.Title</h2>
+<div id="component_RequestTypes_grid">
+</div>
+<script type="text/javascript">
+    $(function () {
+
+        var onGridComplete = function (theGrid) {
+            var ids = $(theGrid).Grid("getDataIDs");
+            for (var i = 0; i < ids.length; i++) {
+                var rowId = ids[i];
+                var actions = '<button type="button" data-id="' + rowId + '" class="add-required-documents btn btn-link">' + languagePack['Zels.Registers.RequestTypes.cshtml.PotrebniDokumenti'] + '</button>';
+                $(theGrid).Grid('setRowData', { Id: rowId, Actions: actions });
+            }
+        };
+
+  @*      var onSubGridExpanded = function (subgridId, rowId) {
+            $("#" + subgridId).html("<div id='" + subgridId + "_t" + "' ></div>");
+            var $subgrid = $("#" + subgridId + "_t");
+
+            $subgrid.Grid({
+                height: '100%',
+                sortorder: 'asc',
+                sortname: 'Name',
+                rowNum: 20,
+                rowList: [10, 20, 50, 100],
+                gridUrl: '@Url.Action("Grid", "RequestTypesSubGrid", new { area = "Zels" })',
+                colNames: ['',
+                    languagePack['Zels.Registers.RequestTypes.cshtml.PodtipNaBaranje'],
+                    'Тип на барање на Албански',
+                    ''],
+                colModel: [
+                    {
+                        name: 'ParentId',
+                        index: 'ParentId',
+                        sortable: false,
+                        search: false,
+                        editable: true,
+                        hidden: true,
+                        editoptions: {
+                            edithidden: true,
+                        }
+                    },
+                    {
+                        name: 'Name',
+                        index: 'Name',
+                        sortable: true,
+                        search: true,
+                        searchoptions: {
+                            sopt: ['cn']
+                        },
+                        editable: true,
+                        editoptions: {
+                            size: 40,
+                            maxlength: 255
+                        },
+                        editrules: {
+                            required: true
+                        },
+                        width: '80%',
+                    },
+                      {
+                          name: 'NameAl',
+                          index: 'NameAl',
+                          sortable: true,
+                          search: true,
+                          searchoptions: {
+                              sopt: ['cn']
+                          },
+                          editable: true,
+                          editoptions: {
+                              size: 40,
+                              maxlength: 255
+                          },
+                          editrules: {
+                              required: true,
+                              edithidden: true
+                          },
+                          hidden: true
+                      },
+                    {
+                        name: 'Actions',
+                        index: 'Actions',
+                        sortable: false,
+                        search: false,
+                        editable: false,
+                        title: false,
+                        align: 'center',
+                        width: '20%'
+                    }
+                ],
+                addCaption: languagePack['Zels.Registers.RequestTypes.cshtml.NovTipNaBaranje'],
+                editCaption: languagePack['Zels.Registers.RequestTypes.cshtml.PromenaNaTipNaBaranje'],
+                hasFilterToolbar: false,
+                postData: { ParentId: rowId },
+                afterShowForm: function (formid) {
+                    $("#ParentId", formid).val(rowId);
+                },
+                gridComplete: function () {
+                    onGridComplete($subgrid);
+                }
+            });
+
+            $subgrid.Grid("load");
+        };*@
+
+        $(document).on("click", ".add-required-documents", function (e) {
+            var requestId = $(this).data('id');
+            var holder = $.createWidgetHolder();
+            $(holder).DefineRequiredDocumentsWidget({});
+            $(holder).DefineRequiredDocumentsWidget("load", requestId);
+        });
+
+        var $grid = $("#component_RequestTypes_grid");
+        $grid.Grid(
+             {
+                 sortorder: 'asc',
+                 sortname: 'Name',
+                 rowNum: 20,
+                 rowList: [10, 20, 50, 100],
+                 gridUrl: '@Url.Action("Grid", "RequestTypesGrid", new { area = "Zels" })',
+                 colNames: [
+                     languagePack['Zels.Registers.RequestTypes.cshtml.TipNaBaranje'],
+                     'Тип на барање на Албански',
+                     ''],
+                 colModel: [
+                     {
+                         name: 'Name',
+                         index: 'Name',
+                         sortable: true,
+                         search: true,
+                         searchoptions: {
+                             sopt: ['cn']
+                         },
+                         editable: true,
+                         editoptions: {
+                             size: 40,
+                             maxlength: 255
+                         },
+                         editrules: {
+                             required: true
+                         },
+                         width: '80%'
+                     },
+                      {
+                          name: 'NameAl',
+                          index: 'NameAl',
+                          sortable: true,
+                          search: true,
+                          searchoptions: {
+                              sopt: ['cn']
+                          },
+                          editable: true,
+                          editoptions: {
+                              size: 40,
+                              maxlength: 255
+                          },
+                          editrules: {
+                              required: true,
+                              edithidden: true
+                          },
+                          hidden: true
+                      },
+                     {
+                         name: 'Actions',
+                         index: 'Actions',
+                         sortable: false,
+                         search: false,
+                         editable: false,
+                         title: false,
+                         width: '20%',
+                         align: 'center'
+                     }
+                 ],
+                 hasFilterToolbar: true,
+                 windowHeightMinus: 330,
+                 addCaption: languagePack['Zels.Registers.RequestTypes.cshtml.NovTipNaBaranje'],
+                 editCaption: languagePack['Zels.Registers.RequestTypes.cshtml.PromenaNaTipNaBaranje'],
+                 gridComplete: function () {
+                     onGridComplete($grid);
+                 },
+                 //subGrid: false,
+                 //subGridRowExpanded: function (subgridId, rowId) {
+                 //    onSubGridExpanded(subgridId, rowId);
+                 //}
+             }
+        );
+        $grid.Grid("load");
+    });
+</script>

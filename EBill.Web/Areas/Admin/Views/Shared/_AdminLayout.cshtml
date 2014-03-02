@@ -1,0 +1,54 @@
+﻿@using EBills.Infrastructure.Extensions
+@using EBills.Infrastructure.MVC.Notification
+@using EBills.Security
+
+@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+    var customPrincipal = (CustomPrincipal)HttpContext.Current.User;
+    var currentUser =  customPrincipal.User;
+    var userRoles = currentUser.Roles.Select(x => new { x.Id, x.RoleName });
+}
+
+<script type="text/javascript">
+    var currentUser = new NS.ViewModels.UserViewModel();
+    currentUser.Id('@currentUser.Id');
+    currentUser.UserName('@currentUser.UserName');
+    currentUser.FirstName('@currentUser.FirstName');
+    currentUser.LastName('@currentUser.LastName');
+@*    currentUser.InstitutionId('@currentUser.Institution.Id');
+    currentUser.InstitutionTag('@currentUser.Institution.Tag');*@
+    currentUser.Roles(@(Html.Raw(userRoles.ToJson())));
+
+    var appParams = new NS.ViewModels.ApplicationParametersViewModel();
+</script>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="@Url.Action("Index", "Home", new { area = "Admin" })">
+                @Martin.ResourcesCommon.ResourceManager.GetResourceValue("Admin.Shared._AdminLayout.cshtml.Title")
+            </a>
+            <div class="nav-collapse">
+                @Html.Partial("_AdminNavigation")
+                @Html.Partial("_LoginPartial")
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    
+    <!--/row-->
+    <hr />
+    <footer>
+        <p>© Martin 2013</p>
+    </footer>
+</div>
+<div id="messagewrapper">
+    @Html.RenderMessages()
+</div>

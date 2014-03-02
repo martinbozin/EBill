@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E37F0B04-59ED-448A-87B3-D4B3929FE33C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EBills.Infrastructure</RootNamespace>
+    <AssemblyName>EBills.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exceptions\DuplicateKeyException.cs" />
+    <Compile Include="Exceptions\JsonException.cs" />
+    <Compile Include="Exceptions\ModelException.cs" />
+    <Compile Include="Extensions\CollectionExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TimeSpanExtensions.cs" />
+    <Compile Include="Grid\GridModelBase.cs" />
+    <Compile Include="Grid\GridModelBinder.cs" />
+    <Compile Include="Grid\GridSettings.cs" />
+    <Compile Include="Grid\JqGridFilter.cs" />
+    <Compile Include="Grid\JqGridHelper.cs" />
+    <Compile Include="Grid\JqGridModel.cs" />
+    <Compile Include="Grid\JqGridRule.cs" />
+    <Compile Include="Grid\Rule.cs" />
+    <Compile Include="Helpers\CertHelpers.cs" />
+    <Compile Include="Helpers\HelpersMethods.cs" />
+    <Compile Include="Helpers\MimeTypesHelper.cs" />
+    <Compile Include="Helpers\XmlSerializer.cs" />
+    <Compile Include="Models\AppModel.cs" />
+    <Compile Include="MVC\Attributes\CompressContentAttribute.cs" />
+    <Compile Include="MVC\Attributes\IECheckAttribute.cs" />
+    <Compile Include="MVC\HtmlHelpers.cs" />
+    <Compile Include="MVC\LargeJsonResult.cs" />
+    <Compile Include="MVC\MyJsonValueProviderFactory.cs" />
+    <Compile Include="MVC\Notification\AjaxMessagesFilter.cs" />
+    <Compile Include="MVC\Notification\ControllerExtensions.cs" />
+    <Compile Include="MVC\Notification\HtmlHelperExtensions.cs" />
+    <Compile Include="MVC\Notification\MessageType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helpers\PasswordGenerator.cs" />
+    <Compile Include="SerializableEntities\SerializeableAlternateView.cs" />
+    <Compile Include="SerializableEntities\SerializeableAttachment.cs" />
+    <Compile Include="SerializableEntities\SerializeableCollection.cs" />
+    <Compile Include="SerializableEntities\SerializeableContentDisposition.cs" />
+    <Compile Include="SerializableEntities\SerializeableContentType.cs" />
+    <Compile Include="SerializableEntities\SerializeableLinkedResource.cs" />
+    <Compile Include="SerializableEntities\SerializeableMailAddress.cs" />
+    <Compile Include="SerializableEntities\SerializeableMailMessage.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
