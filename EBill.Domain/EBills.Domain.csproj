@@ -52,22 +52,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationParameter.cs" />
-    <Compile Include="Data\IPosRepository.cs" />
     <Compile Include="Data\ILocalizationRepository.cs" />
     <Compile Include="FailedMailMessage.cs" />
-    <Compile Include="Pos.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Localization.cs" />
     <Compile Include="Data\IApplicationParameterRepository.cs" />
     <Compile Include="Language.cs" />
     <Compile Include="Data\IRoleRepository.cs" />
     <Compile Include="Data\IUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PublicUser.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="PublicUserType.cs" />
     <Compile Include="Role.cs" />
     <Compile Include="Roles.cs" />
     <Compile Include="User.cs" />

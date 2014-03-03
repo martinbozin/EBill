@@ -23,7 +23,7 @@ namespace EBills.IntegrationTests
         {
             //Arrange
             var role = CreateRole();
-            var user = CreatePublicUser();
+            var user = CreateUser();
             //Act
             role.AddUser(user);
             Session.Update(role);

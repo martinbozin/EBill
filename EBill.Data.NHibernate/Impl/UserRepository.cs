@@ -34,9 +34,5 @@ namespace EBills.Data.NHibernate.Impl
         //                  .FirstOrDefault(x => x.CertificateHash == hash);
         //}
     }
-
-    public class PublicUserRepository : NHRepository<PublicUser>, IPublicUserRepository
-    {
-
-    }
+ 
 }

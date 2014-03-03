@@ -24,21 +24,18 @@ namespace EBills.Web.Areas.SuperAdmin.Controllers
     {
         private readonly IRoleRepository _roleRepository;
         private readonly IRepository<Language> _langRepository;
-        private readonly IRepository<Pos> _posRepository;
         private readonly IUserRepository _userRepository;
-        private readonly IPublicUserRepository _publicUserRepository;
+ 
 
         public PublicUsersController(IRoleRepository roleRepository,
             IRepository<Language> langRepository,
-            IRepository<Pos> posRepository,
-            IUserRepository userRepository,
-            IPublicUserRepository publicUserRepository)
+            IUserRepository userRepository
+          )
         {
             _roleRepository = roleRepository;
             _langRepository = langRepository;
-            _posRepository = posRepository;
             _userRepository = userRepository;
-            _publicUserRepository = publicUserRepository;
+       
         }
 
         protected override IList<UsersGridModel> FetchData(GridSettings gridSettings)
@@ -75,7 +72,7 @@ namespace EBills.Web.Areas.SuperAdmin.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    PublicUser newUser;
+                    User newUser;
                     //SendWelcomeEmailToUserViewModel sendWelcomeEmailToUserViewModel;
                     using (var scope = new UnitOfWorkScope())
                     {
@@ -92,12 +89,12 @@ namespace EBills.Web.Areas.SuperAdmin.Controllers
                         //Create new User
                         var lang = _langRepository.Get(GridModel.PreferedLanguage);
 
-                        newUser = new PublicUser(GridModel.UserName, passwordEnc, GridModel.FirstName, GridModel.LastName, lang);
+                        newUser = new User(GridModel.UserName, passwordEnc, GridModel.FirstName, GridModel.LastName, lang);
                         newUser.IsActive = GridModel.IsActive;
                         var role = _roleRepository.GetRoleByName(Roles.PublicUser);
                         newUser.AddToRole(role);
 
-                        _publicUserRepository.Save(newUser);
+                        _userRepository.Save(newUser);
                         scope.Commit();
                     }
 

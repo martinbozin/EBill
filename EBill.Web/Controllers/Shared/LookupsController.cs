@@ -30,20 +30,7 @@ namespace EBills.Web.Controllers.Shared
             return Json(viewModel);
         }
 
-        /// <summary>
-        /// Зема листа на Pos
-        /// </summary>
-        /// <returns>Сите Pos</returns>
-        [HttpPost]
-        public JsonResult GetAllPos()
-        {
-            var posRepository = ServiceLocator.Current.GetInstance<IRepository<Pos>>();
-            var poses = posRepository.Query()
-                .Where(x => x.IsActive)
-                .OrderBy(x => x.PosName).ToList();
-            var viewModel = poses.Select(p => p.MapToLookupViewModel()).ToList();
-            return Json(viewModel);
-        }
+ 
         /// <summary>
         /// Зема листа на Users
         /// </summary>

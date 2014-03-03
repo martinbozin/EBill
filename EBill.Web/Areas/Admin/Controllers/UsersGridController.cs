@@ -32,17 +32,17 @@ namespace EBills.Web.Areas.Admin.Controllers
     {
         private readonly IRoleRepository _roleRepository;
         private readonly IRepository<Language> _langRepository;
-        private readonly IRepository<Pos> _posRepository;
+ 
         private readonly IUserRepository _userRepository;
 
         public UsersGridController(IRoleRepository roleRepository,
             IRepository<Language> langRepository,
-            IRepository<Pos> posRepository,
+   
             IUserRepository userRepository)
         {
             _roleRepository = roleRepository;
             _langRepository = langRepository;
-            _posRepository = posRepository;
+       
             _userRepository = userRepository;
         }
         /// <summary>

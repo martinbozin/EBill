@@ -13,7 +13,7 @@
         $("#component_users_grid").UsersGridWidget({
             gridUrl: '@Url.Action("Grid", "UsersGrid", new { area = "SuperAdmin" })',
             languagesLoookupUrl: '@Url.Action("GetLanguages", "Lookups", new { area = "" })',
-            posLoookupUrl: '@Url.Action("GetPoses", "Lookups", new { area = "" })',
+            @*posLoookupUrl: '@Url.Action("GetPoses", "Lookups", new { area = "" })',*@
             resetPassword: true,
             addRoles: true,
         });

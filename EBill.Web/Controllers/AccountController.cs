@@ -55,7 +55,7 @@ namespace EBills.Web.Controllers
                 try
                 {
 
-                    PublicUser user = null;
+                    User user = null;
                     bool valid = false;
                     string code = "";
                     using (var scope = new UnitOfWorkScope())
@@ -81,11 +81,12 @@ namespace EBills.Web.Controllers
 
                             code = RandomString(6);
                             string password = model.Password.Md5String();
-                            user = new PublicUser(model.UserName, password, model.FirstName, model.LastName, defaultLanguage)
+                            user = new User(model.UserName, password, model.FirstName, model.LastName, defaultLanguage);
                             {
-                                IsActive = false,
-                                RegistrationCode = code
+                                //IsActive = false,
+                                //RegistrationCode = code
                             };
+                        
                             var roleRepository = ServiceLocator.Current.GetInstance<IRepository<Role>>();
                             //var role = roleRepository.Query().SingleOrDefault(x => x.RoleName == Domain.Roles.PublicUsers);
                             //user.AddToRole(role);

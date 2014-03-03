@@ -38,19 +38,7 @@ namespace EBills.IntegrationTests.Base
 
             return prm;
         }
-
-        public User CreatePublicUser()
-        {
-            var lang = CreateLanguage();
-            var user = new PublicUser("admir", "password", "Admir", "Durmishi", lang);
-            var pos = CreatePos();
-   
-            user.SetPublicUserType(PublicUserType.NormalUser);
-
-            session.Save(user);
-            session.Flush();
-            return user;
-        }
+ 
 
         protected Role CreateRole()
         {
@@ -72,17 +60,6 @@ namespace EBills.IntegrationTests.Base
 
             return lang;
         }
-
-        protected Pos CreatePos()
-        {
-         
-            var pos = new Pos("Centar");
-
-            Session.Save(pos);
-            Session.Flush();
-
-            return pos;
-
-        }
+ 
     }
 }

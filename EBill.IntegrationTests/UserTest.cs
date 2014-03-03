@@ -24,43 +24,8 @@ namespace EBills.IntegrationTests
             Assert.IsTrue(user.Id == user2.Id);
         }
 
-        [Test]
-        public void can_read_PublicUser()
-        {
-            //Arrange
-            var user = CreatePublicUser();
-            //Act
-            Session.Clear();
-
-            var user2 = Session.Load<PublicUser>(user.Id);
-
-
-            Debug.Write(user2.UserType);
-
-            //Assert
-            Assert.IsTrue(user2.Id > 0);
-            Assert.IsTrue(user.Id == user2.Id);
-            Assert.IsTrue(user2.UserType == PublicUserType.NormalUser);
-        }
-
-
-        [Test]
-        public void can_add_POS()
-        {
-            //Arrange
-            var user = CreatePublicUser();
-
-            //Act
-            var user2 = Session.Load<PublicUser>(user.Id);
-
-            Debug.Write(user2.UserType);
-
-            //Assert
-            Assert.IsTrue(user2.Id > 0);
-            Assert.IsTrue(user.Id == user2.Id);
  
-            Assert.IsTrue(user2.UserType == PublicUserType.NormalUser);
-        }
+
  
 
         //[Test]

@@ -9,10 +9,6 @@ namespace EBills.Domain.Data
         User GetUserByUsername(string username, bool eager = false);
         //User GetUserByCertHash(string hash);
     }
-
-    public interface IPublicUserRepository : IRepository<PublicUser>
-    {
-
-    }
+ 
 
 }

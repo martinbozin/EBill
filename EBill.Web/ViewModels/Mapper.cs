@@ -22,32 +22,7 @@ namespace EBills.Web.ViewModels
         }
 
         #endregion
-
-        #region Pos
-
-        public static LookupViewModel MapToLookupViewModel(this Pos model)
-        {
-            var viewModel = new LookupViewModel();
-            viewModel.Value = model.Id;
-
-            //ke ja vrati na tekovniot jazik na najaveniot korisnik
-            viewModel.Text = ResourceManager.GetMultilangValue(model.PosName);
-
-            //var externalInstitution = model as ExternalInstitution;
-            //if (externalInstitution != null)
-            //{
-            //    viewModel.AdditionalInfo = externalInstitution.AllMunicipalities.ToString().ToLower();
-            //}
-
-            return viewModel;
-        }
-
-        #endregion
-
-
-
-
-
+ 
 
         #region User
 
@@ -91,21 +66,7 @@ namespace EBills.Web.ViewModels
 
 
         #region User
-
-        public static PosGridModel MapToViewModel(this Pos model)
-        {
-            var viewModel = new PosGridModel()
-            {
-                Id = model.Id,
-                PosName = model.PosName,
-                PrimaryContact = model.PrimaryContact,
-                Phone = model.Phone,
-                IsActive = model.IsActive,
-                AdditionalEmailAdresses = model.AdditionalEmailAdresses
-            };
-
-            return viewModel;
-        }
+ 
 
         #endregion
 
