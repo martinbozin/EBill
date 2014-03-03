@@ -154,8 +154,6 @@
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\UsersGridController.cs" />
     <Compile Include="Areas\SuperAdmin\Controllers\InsideUsersController.cs" />
-    <Compile Include="Areas\SuperAdmin\Controllers\MasterAdminsController.cs" />
-    <Compile Include="Areas\SuperAdmin\Controllers\PosController.cs" />
     <Compile Include="Areas\SuperAdmin\Controllers\RegistersController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Areas\SuperAdmin\Controllers\LocalizationController.cs" />
@@ -334,10 +332,8 @@
     <Content Include="Areas\SuperAdmin\Views\Localization\Index.cshtml" />
     <Content Include="autofac.config" />
     <Content Include="Areas\Public\Views\Home\Index.cshtml" />
-    <Content Include="Areas\SuperAdmin\Views\Registers\MasterAdmins.cshtml" />
     <Content Include="Areas\SuperAdmin\Views\Registers\InsideUsers.cshtml" />
     <Content Include="Areas\SuperAdmin\Views\Registers\Users.cshtml" />
-    <Content Include="Areas\SuperAdmin\Views\Registers\Pos.cshtml" />
     <None Include="Properties\PublishProfiles\DevStaging.pubxml" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Properties\Settings.settings">

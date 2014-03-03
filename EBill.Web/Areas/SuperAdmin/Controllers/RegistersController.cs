@@ -32,35 +32,35 @@ namespace EBills.Web.Areas.SuperAdmin.Controllers
             return View();
         }
 
-        /// <summary>
-        /// Load PublicUsers View
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        public ActionResult MasterAdmins()
-        {
-            return View();
-        }
+        ///// <summary>
+        ///// Load PublicUsers View
+        ///// </summary>
+        ///// <returns></returns>
+        //[HttpGet]
+        //public ActionResult MasterAdmins()
+        //{
+        //    return View();
+        //}
 
-        /// <summary>
-        /// Load PublicUsers View
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        public ActionResult PublicUsers()
-        {
-            return View();
-        }
+        ///// <summary>
+        ///// Load PublicUsers View
+        ///// </summary>
+        ///// <returns></returns>
+        //[HttpGet]
+        //public ActionResult PublicUsers()
+        //{
+        //    return View();
+        //}
 
-        /// <summary>
-        /// Load POS
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        public ActionResult Pos()
-        {
-            return View();
-        }
+        ///// <summary>
+        ///// Load POS
+        ///// </summary>
+        ///// <returns></returns>
+        //[HttpGet]
+        //public ActionResult Pos()
+        //{
+        //    return View();
+        //}
 
     }
 }
