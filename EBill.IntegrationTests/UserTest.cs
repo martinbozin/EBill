@@ -1,9 +1,7 @@
 ﻿using EBills.Domain;
 using EBills.IntegrationTests.Base;
 using NUnit.Framework;
-using System;
-using System.Diagnostics;
- 
+
 
 namespace EBills.IntegrationTests
 {
